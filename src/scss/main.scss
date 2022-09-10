@@ -1,0 +1,15 @@
+@import "fonts";
+@import "vars";
+@import "settings";
+
+
+// Страницы
+@import "./pages/home";
+
+
+// Компоненты
+
+@import "./media/media-home";
+
+@import "./components/header";
+@import "./components/footer";
