@@ -1,0 +1,29 @@
+@media (max-width: 1024px) {
+  .home-page .caption-slider .caption-swiper__controls {
+    width: 98%;
+    top: 42%;
+  }
+
+  .home-page .caption-slider .caption-swiper__img {
+    padding-top: 26%;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-page .caption-slider .caption-swiper__controls .caption-swiper__swiper-button-prev svg, .home-page .caption-slider .caption-swiper__controls .caption-swiper__swiper-button-next svg {
+    height: 30px;
+    width: 30px;
+  }
+
+  .home-page .cta-line h2 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .home-page .caption-slider .caption-swiper__controls {
+    top: 36%;
+  }
+}
