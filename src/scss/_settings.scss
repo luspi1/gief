@@ -98,6 +98,20 @@ select::-ms-expand {
   }
 }
 
+
+.error-message {
+  @include montserrat-regular;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EF3124;
+  padding-top: 5px;
+  transition: all .2s;
+  margin-bottom: 20px;
+  .just-validate-error-label {
+    color: #EF3124 !important;
+  }
+}
+
 .choices__list--dropdown .choices__placeholder {
   display: none;
 }
@@ -106,4 +120,20 @@ select::-ms-expand {
   cursor: auto !important;
   pointer-events: none !important;
   opacity: 0.55 !important;
+}
+
+.just-validate-error-field {
+  border: 1px solid #EF3124 !important;
+  border-bottom: 2px solid #EF3124 !important;
+}
+
+.swiper-btn {
+
+  &__arrow {
+    transition: all .3s;
+    fill: #687582;
+  }
+  &:hover .swiper-btn__arrow{
+    fill: #000000;
+  }
 }

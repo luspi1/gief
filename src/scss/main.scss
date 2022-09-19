@@ -5,6 +5,8 @@
 
 // Страницы
 @import "./pages/home";
+@import "./pages/news";
+@import "./pages/one-news";
 
 
 // Компоненты
@@ -17,3 +19,5 @@
 @import "./media/media-home";
 @import "./media/media-header";
 @import "./media/media-footer";
+@import "./media/media-news";
+@import "./media/media-one-news";

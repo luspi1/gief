@@ -48,6 +48,9 @@
 
   &__menu {
     padding: 33px 0;
+    &._disable {
+      display: none;
+    }
   }
 
 
