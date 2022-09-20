@@ -107,6 +107,7 @@ select::-ms-expand {
   padding-top: 5px;
   transition: all .2s;
   margin-bottom: 20px;
+
   .just-validate-error-label {
     color: #EF3124 !important;
   }
@@ -133,7 +134,87 @@ select::-ms-expand {
     transition: all .3s;
     fill: #687582;
   }
-  &:hover .swiper-btn__arrow{
+
+  &:hover .swiper-btn__arrow {
     fill: #000000;
   }
 }
+
+
+// Боковое меню ссылок
+
+.main-sidebar {
+
+  &__link {
+    @include montserrat-semibold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #373A3C;
+  }
+
+  &__link-wrapper {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__link-wrapper_active {
+    .main-sidebar__link {
+      color: #FFFFFF;
+      background: #0D4CD3;
+      border-radius: 50px;
+      padding: 13px 25px;
+      display: inline-block;
+      margin: 20px 0;
+    }
+  }
+
+
+  &__submenu {
+    padding-top: 20px;
+    padding-left: 40px;
+    max-width: 354px;
+  }
+
+  &__submenu-link-wrapper {
+    margin-bottom: 25px;
+  }
+
+  &__submenu-link {
+    @include montserrat-regular;
+    font-size: 20px;
+    line-height: 24px;
+    color: #A5A8AA;
+  }
+
+  &__submenu-link_active {
+    color: #0D4CD3;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
