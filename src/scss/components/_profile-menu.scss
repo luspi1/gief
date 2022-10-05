@@ -1,0 +1,66 @@
+.profile-menu {
+  width: 450px;
+  margin-bottom: 40px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+
+    @media (max-width: 768px) {
+      align-items: center;
+    }
+
+  }
+
+
+  &__list-item {
+    padding: 12px 21px;
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+
+    a {
+      @include montserrat-medium;
+      font-size: 20px;
+      line-height: 24px;
+      color: #040402;
+
+    }
+
+  }
+
+  // Активный пункт меню
+
+  &.profile_active {
+    .profile-menu__list-item_profile {
+      background: #0D4CD3;
+      border-radius: 50px;
+
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+
+  &.edit-profile_active {
+    .profile-menu__list-item_edit-profile {
+      background: #0D4CD3;
+      border-radius: 50px;
+
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+
+}

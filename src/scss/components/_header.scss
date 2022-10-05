@@ -40,7 +40,7 @@
     justify-content: flex-end;
     margin-top: 17px;
 
-    button:first-child {
+    a {
       margin-right: 20px;
     }
   }
@@ -53,6 +53,13 @@
     }
   }
 
+  &__menu-link {
+    color: #242F82;
+    @include roboto-medium;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
 
   &__menu-list {
     display: flex;
@@ -62,10 +69,7 @@
 
   &__menu-item {
     position: relative;
-    @include roboto-medium;
-    font-size: 20px;
-    line-height: 23px;
-    color: #242F82;
+
     cursor: pointer;
     transition: all .3s;
 

@@ -8,6 +8,8 @@
 @import "./pages/news";
 @import "./pages/one-news";
 @import "./pages/enrollee";
+@import "./pages/profile";
+@import "./pages/edit-profile";
 
 
 // Компоненты
@@ -15,6 +17,8 @@
 
 @import "./components/header";
 @import "./components/footer";
+@import "./components/profile-menu";
+
 
 
 @import "./media/media-home";
@@ -22,3 +26,4 @@
 @import "./media/media-footer";
 @import "./media/media-news";
 @import "./media/media-one-news";
+@import "./media/media-profile";
