@@ -114,10 +114,21 @@ select::-ms-expand {
     border: 1px solid #0D4CD3;
     border-bottom: 2px solid #0D4CD3;
   }
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+    padding: 16px 12px;
+  }
+
 }
 
 .form-btns {
   display: flex;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 
   .save-btn {
     @include montserrat-regular;
@@ -134,6 +145,19 @@ select::-ms-expand {
     &:hover {
       background-color: #0F43B1;
     }
+
+    @media (max-width: 1024px) {
+      font-size: 18px;
+      line-height: 24px;
+      padding: 18px 20px;
+      margin-right: 30px;
+    }
+
+    @media (max-width: 768px) {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+
   }
 
   .close-btn {
@@ -146,6 +170,7 @@ select::-ms-expand {
       color: #0F43B1;
     }
   }
+
 }
 
 
@@ -162,6 +187,26 @@ select::-ms-expand {
     color: #EF3124 !important;
   }
 }
+
+.dz-details,
+.dz-progress,
+.dz-error-message,
+.dz-success-mark,
+.dz-error-mark {
+  display: none !important;
+}
+
+
+
+.dz-remove {
+  line-height: 0;
+  font-size: 0;
+}
+
+.dz-preview:not(.dz-preview.dz-processing) {
+  display: none;
+}
+
 
 .choices__list--dropdown .choices__placeholder {
   display: none;
