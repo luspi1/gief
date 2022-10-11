@@ -3,7 +3,6 @@ import { Dropzone } from "dropzone";
 //Dropzone для фото профиля
 
 const profilePhoto = document.querySelector('#profile-dropzone');
-console.log(profilePhoto)
 
 if (profilePhoto) {
   let profileDropzone = new Dropzone(profilePhoto, {
