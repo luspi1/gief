@@ -197,7 +197,6 @@ select::-ms-expand {
 }
 
 
-
 .dz-remove {
   line-height: 0;
   font-size: 0;
@@ -285,12 +284,39 @@ select::-ms-expand {
   &__submenu-link_active {
     color: #0D4CD3;
   }
-
 }
 
 
+//Стилизация таблицы
 
 
+.flex-table {
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+
+  &__row {
+    display: flex;
+    padding: 10px 0;
+  }
+
+  &__cell {
+    width: 100%;
+    flex: 1 1 auto;
+    @include montserrat-regular;
+    font-size: 16px;
+    line-height: 20px;
+    color: #040402;
+    position: relative;
+
+    &:not(:last-child) {
+      padding-right: 20px;
+
+    }
+
+  }
+
+}
 
 
 
