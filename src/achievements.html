@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+'title': 'Достижения',
+})
+
+<body class="page__body">
+<div class="site-container">
+  <div class="modal-overlay"></div>
+  @include('partials/header.html')
+  <main class="main achievements-page">
+    <section class="section">
+      <div class="container">
+        @include('partials/profile-menu.html', {
+        'active-achievements': 'profile-menu_active',
+        'submenu-achievements': 'profile-menu__submenu_active',
+        })
+
+        <div class="achievements-page__inner">
+          <h2 class="achievements-page__title">
+            Достижения
+          </h2>
+          <p class="achievements-page__desc">Это страница Ваших достижений</p>
+          <ul class="flex-table achievements-table">
+            <li class="flex-table__row achievements-table__inputs-row">
+              <p
+                class="flex-table__cell achievements-table__cell-date achievements-table__date-title">
+                Дата создания</p>
+              <div
+                class="flex-table__cell achievements-page__input-wrapper achievements-table__cell-name">
+                <label>Название</label>
+                <input class="achievements-page__input" name="achievements_name">
+              </div>
+              <div
+                class="flex-table__cell achievements-page__input-wrapper achievements-table__cell-type">
+                <label>Вид деятельности</label>
+                <input class="achievements-page__input" name="achievements_type">
+              </div>
+
+              <div
+                class="flex-table__cell achievements-page__input-wrapper achievements-table__cell-status">
+                <label>Статус</label>
+                <input class="achievements-page__input" name="achievements_status">
+              </div>
+            </li>
+            <li class="flex-table__row">
+              <p
+                class="flex-table__cell achievements-table__cell-date">
+                25 мар 2022 10:40
+              </p>
+
+              <a href="#"
+                class="flex-table__cell achievements-table__cell-name">
+                Общественно-полезная деятельность в ВУЗЕ
+              </a>
+              <p
+                class="flex-table__cell achievements-table__cell-type">
+                Научно-исследовательская
+              </p>
+
+              <p
+                class="flex-table__cell achievements-table__cell-status">
+                Статус 1
+              </p>
+            </li>
+            <li class="flex-table__row">
+              <p
+                class="flex-table__cell achievements-table__cell-date">
+                25 мар 2022 10:40
+              </p>
+
+              <a href="#"
+                class="flex-table__cell achievements-table__cell-name">
+                Просмотр
+              </a>
+              <p
+                class="flex-table__cell achievements-table__cell-type">
+                Культурно-творческая
+              </p>
+
+              <p
+                class="flex-table__cell achievements-table__cell-status">
+                Статус 2
+              </p>
+            </li>
+            <li class="flex-table__row">
+              <p
+                class="flex-table__cell achievements-table__cell-date">
+                25 мар 2022 10:40
+              </p>
+
+              <a href="#"
+                class="flex-table__cell achievements-table__cell-name">
+                Самостоятельная работа номер 10
+              </a>
+              <p
+                class="flex-table__cell achievements-table__cell-type">
+                Вневидовая (прочее)
+              </p>
+              <p
+                class="flex-table__cell achievements-table__cell-status">
+                Статус 1
+              </p>
+            </li>
+            <li class="flex-table__row">
+              <p
+                class="flex-table__cell achievements-table__cell-date">
+                25 мар 2022 10:40
+              </p>
+
+              <a href="#"
+                class="flex-table__cell achievements-table__cell-name">
+                Просмотр
+              </a>
+              <p
+                class="flex-table__cell achievements-table__cell-type">
+                Учебная
+              </p>
+              <p
+                class="flex-table__cell achievements-table__cell-status">
+                Статус 1
+              </p>
+            </li>
+            <li class="flex-table__row">
+              <p
+                class="flex-table__cell achievements-table__cell-date">
+                25 мар 2022 10:40
+              </p>
+
+              <a href="#"
+                class="flex-table__cell achievements-table__cell-name">
+                Самостоятельная работа номер 10
+              </a>
+              <p
+                class="flex-table__cell achievements-table__cell-type">
+                Спортивная
+              </p>
+              <p
+                class="flex-table__cell achievements-table__cell-status">
+                Статус 2
+              </p>
+            </li>
+            <li class="flex-table__row">
+              <p
+                class="flex-table__cell achievements-table__cell-date">
+                25 мар 2022 10:40
+              </p>
+
+              <a href="#"
+                class="flex-table__cell achievements-table__cell-name">
+                Просмотр
+              </a>
+              <p
+                class="flex-table__cell achievements-table__cell-type">
+                Учебная
+              </p>
+              <p
+                class="flex-table__cell achievements-table__cell-status">
+                Статус 1
+              </p>
+            </li>
+            <li class="flex-table__row">
+              <p
+                class="flex-table__cell achievements-table__cell-date">
+                25 мар 2022 10:40
+              </p>
+
+              <a href="#"
+                class="flex-table__cell achievements-table__cell-name">
+                Самостоятельная работа номер 10
+              </a>
+              <p
+                class="flex-table__cell achievements-table__cell-type">
+                Спортивная
+              </p>
+              <p
+                class="flex-table__cell achievements-table__cell-status">
+                Статус 2
+              </p>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  @include('partials/footer.html')
+</div>
+
+</body>
+
+</html>
