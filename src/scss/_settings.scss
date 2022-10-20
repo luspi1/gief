@@ -173,6 +173,29 @@ select::-ms-expand {
 
 }
 
+.delete-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  z-index: 10;
+  svg {
+    pointer-events: none;
+    path {
+      transition: all .3s;
+    }
+  }
+
+  &:hover {
+    .delete-btn__svg-bg {
+      fill: #0D4CD3;
+    }
+    .delete-btn__svg-content {
+      fill: #ffffff;
+    }
+  }
+}
+
 
 .error-message {
   @include montserrat-regular;
