@@ -80,6 +80,9 @@
     border-radius: 15px;
     padding: 43px 78px 43px 50px;
     display: none;
+    &.portfolio-page__form_active {
+      display: block;
+    }
   }
 
   &__form-title {
@@ -126,6 +129,11 @@
 
   &__works {
     margin-top: 50px;
+    display: none;
+
+    &.portfolio-page__works_active {
+      display: block;
+    }
 
     .form-btns {
       border: none;

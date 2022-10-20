@@ -11,13 +11,7 @@ if (feedbackForm) {
 
   feedbackForm.addEventListener('input', (e) => {
     const inputTarget = e.target
-    // if (!firstNameInput.validity.valid) {
-    //   firstNameInput.parentElement.classList.add('invalid')
-    //   firstNameErrorMessage.classList.add('_active')
-    // } else {
-    //   firstNameInput.parentElement.classList.remove('invalid')
-    //   firstNameErrorMessage.classList.remove('_active')
-    // }
+
 
     if (inputTarget.value) {
       inputTarget.classList.add('feedback__field_active')

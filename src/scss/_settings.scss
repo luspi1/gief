@@ -82,6 +82,10 @@ select::-ms-expand {
   margin: 0 auto;
 }
 
+.hidden {
+  display: none;
+}
+
 .modal-overlay {
   position: fixed;
   left: 0;
@@ -219,11 +223,25 @@ select::-ms-expand {
   display: none !important;
 }
 
+.dz-preview {
+  position: relative;
+}
 
 .dz-remove {
   line-height: 0;
   font-size: 0;
+  color: transparent;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: url("../img/delete-img-btn.png") no-repeat;
+  width: 26px;
+  height: 26px;
+  z-index: 100;
 }
+
+
+
 
 .dz-preview:not(.dz-preview.dz-processing) {
   display: none;

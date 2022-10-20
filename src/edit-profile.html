@@ -2,7 +2,7 @@
 <html lang="ru" class="page">
 
 @include('partials/head.html', {
-'title': 'Редактирование профиля',
+  'title': 'Редактирование профиля',
 })
 
 <body class="page__body">
@@ -155,12 +155,11 @@
               <button class="close-btn" type="button">Отмена</button>
             </div>
           </form>
-
         </div>
-
-
       </div>
     </section>
+    @include('partials/info-modal.html')
+    @include('partials/loader.html')
   </main>
 
   @include('partials/footer.html')
