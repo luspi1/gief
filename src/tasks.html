@@ -12,12 +12,53 @@
   <main class="main tasks-page">
     <section class="section">
       <div class="container">
-        @include('partials/profile-menu.html', {
-        'active-tasks': 'profile-menu_active',
-        'submenu-tasks': 'profile-menu__submenu_active',
-        'submenu-tasks-task': 'profile-menu__chapter_active',
-
-        })
+        <nav class="profile-menu">
+          <ul class="profile-menu__list">
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="#">Объявления</a>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="profile.html">Профиль</a>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="edit-profile.html">Редактирование профиля</a>
+            </li>
+            <li class="profile-menu__list-item profile-menu_active">
+              <a class="profile-menu__main-link" href="tasks.html">Учебная деятельность</a>
+              <ul class="profile-menu__submenu">
+                <li class="profile-menu__chapter">
+                  <a href="tasks.html">
+                    Задания
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Задания на доработку
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="achievements.html">Достижения</a>
+              <ul class="profile-menu__submenu">
+                <li>
+                  <a href="#">
+                    Добавить достижение
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="professors.html">Преподаватели</a>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="#">Научная деятельность</a>
+            </li>
+          </ul>
+        </nav>
 
         <div class="tasks-page__inner">
           <h2 class="tasks-page__title">
@@ -43,7 +84,22 @@
               <div
                 class="flex-table__cell tasks-page__input-wrapper tasks-table__cell-type">
                 <label>Вид отчета</label>
-                <input class="tasks-page__input" name="tasks_type">
+                <select class="tasks-page__input" name="tasks_type">
+                  <option value="">---</option>
+                  <option value="control">Контрольная работа</option>
+                  <option value="course">Курсовая работа</option>
+                  <option value="laboratory">Лабораторная работа</option>
+                  <option value="essay">Реферат</option>
+                  <option value="сathedral">Кафедральный просмотр</option>
+                  <option value="exam">Экзамен</option>
+                  <option value="offset">Зачет</option>
+                  <option value="practice">Отчет по практике</option>
+                  <option value="projection">Курсовой проект по проектированию</option>
+                  <option value="independent">Самостоятельная работа</option>
+                  <option value="graduation_work">ВКР (Выпускная квалификационная работа)</option>
+                  <option value="review">Рецензия на ВКР (Выпускная квалификационная работа)</option>
+                  <option value="extended_portfolio">Расширенное портфолио студента</option>
+                </select>
               </div>
               <div
                 class="flex-table__cell tasks-page__input-wrapper tasks-table__cell-professor">
@@ -54,6 +110,9 @@
                 class="flex-table__cell tasks-page__input-wrapper tasks-table__cell-department">
                 <label>Кафедра</label>
                 <input class="tasks-page__input" name="tasks_department">
+              </div>
+              <div class="flex-table__cell tasks-table__filter-btn">
+                <button type="submit">ОК</button>
               </div>
             </li>
             <li class="flex-table__row">

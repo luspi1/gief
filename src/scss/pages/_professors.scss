@@ -54,10 +54,21 @@
 
 
   .professors-table {
+    padding-right: 10px;
+    &__filter-btn {
+      max-width: 1px;
+      padding-top: 16px;
+      align-self: center;
+      button {
+        font-size: 20px;
+        line-height: 24px;
+        color: #040402;
+      }
+    }
+
     &__inputs-row {
       padding: 30px 0;
     }
-
 
     &__cell-name,
     &__cell-department {
@@ -69,11 +80,11 @@
     }
 
     &__cell-degree {
-      width: 19%;
+      width: 18%;
     }
 
     &__cell-rank {
-      width: 13%;
+      width: 14%;
     }
 
   }

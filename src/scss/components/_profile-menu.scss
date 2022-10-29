@@ -39,6 +39,9 @@
         color: #ffffff;
         text-align: center;
       }
+      .profile-menu__submenu {
+        display: block;
+      }
     }
 
 
@@ -62,13 +65,7 @@
 
   &__submenu {
     padding: 30px 0 0 50px;
-
-
     display: none;
-
-    &.profile-menu__submenu_active {
-      display: block;
-    }
 
     li:not(:last-child) {
       margin-bottom: 26px;
@@ -80,26 +77,6 @@
       line-height: 24px;
       color: #A5A8AA;
     }
-
-    li.profile-menu__chapter_active {
-      a {
-        color: #0D4CD3;
-        position: relative;
-        padding-right: 15px;
-        &::after {
-          content: '';
-          position: absolute;
-          right: 0;
-          top: 50%;
-          transform: translateY(-50%);
-          background: #0D4CD3;
-          width: 8px;
-          height: 8px;
-          border-radius: 50%;
-        }
-      }
-    }
-
 
   }
 

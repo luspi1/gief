@@ -1,6 +1,28 @@
 .tasks-page {
   padding: 20px 0 136px;
 
+
+  .profile-menu__chapter {
+    a {
+      color: #0D4CD3;
+      position: relative;
+      padding-right: 15px;
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #0D4CD3;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+
+
   .container {
     display: flex;
   }
@@ -62,6 +84,17 @@
 
 
   .tasks-table {
+    padding-right: 10px;
+    &__filter-btn {
+      max-width: 1px;
+      padding-top: 16px;
+      align-self: center;
+      button {
+        font-size: 20px;
+        line-height: 24px;
+        color: #040402;
+      }
+    }
 
     .flex-table__row:not(.tasks-table__inputs-row) {
       padding: 9px 0;

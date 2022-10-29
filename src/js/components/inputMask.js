@@ -1,4 +1,5 @@
 import Inputmask from "inputmask";
+import AirDatepicker from "air-datepicker";
 
 // Маска телефона
 const phoneInputs = document.querySelectorAll('.phone-input');
@@ -60,4 +61,26 @@ if (editProfileDivision) {
     showMaskOnFocus: false,
   }).mask(editProfileDivision);
 }
+
+// Маска инпутов с датой
+
+const dateInputs = document.querySelectorAll('.custom-date-input');
+
+if (dateInputs) {
+  dateInputs.forEach(dateInput => {
+    Inputmask({
+      "mask": "99.99.9999",
+      showMaskOnHover: false,
+      showMaskOnFocus: false,
+    }).mask(dateInput);
+  })
+}
+
+
+
+
+
+
+
+
 

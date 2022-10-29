@@ -66,13 +66,24 @@
 
 
   .achievements-table {
+    padding-right: 20px;
+    &__filter-btn {
+      max-width: 1px;
+      padding-top: 16px;
+      align-self: center;
+      button {
+        font-size: 20px;
+        line-height: 24px;
+        color: #040402;
+      }
+    }
 
     .flex-table__row:not(.achievements-table__inputs-row) {
       padding: 11px 0;
     }
 
     .flex-table__cell:not(:last-child) {
-      padding-right: 50px;
+      padding-right: 20px;
     }
 
 
@@ -93,14 +104,16 @@
     &__cell-date {
       width: 33%;
     }
+
     &__cell-type {
       width: 49%;
     }
-    &__cell-status {
-      width: 33%;
-    }
-
   }
+
+
+
+
+
 }
 
 
