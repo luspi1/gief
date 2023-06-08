@@ -1,0 +1,127 @@
+.org-info-page {
+  padding: 30px 0 40px;
+  font-size: 15px;
+  line-height: 22px;
+  color: $black;
+  h1 {
+    @include montserrat-semibold;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 40px;
+  }
+
+  h5 {
+    font-weight: 600;
+  }
+
+  &__main {
+    .container {
+      display: flex;
+      align-items: flex-start;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+
+    }
+  }
+
+  &__inner {
+    margin-right: 25px;
+    flex-grow: 1;
+  }
+
+  &__inner-block {
+    margin-bottom: 25px;
+  }
+
+  &__inner-item {
+    margin-bottom: 15px;
+
+    a {
+      color: $main-blue;
+    }
+
+    &._non-margin {
+      margin: 0;
+    }
+
+    &._one-line {
+      p {
+        display: inline;
+      }
+
+      h5 {
+        display: inline;
+      }
+    }
+  }
+
+  &__links-list {
+    margin-bottom: 30px;
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: $main-blue;
+    }
+  }
+
+  aside {
+    background: #F2F2F2;
+    width: 300px;
+    min-width: 300px;
+    padding: 23px 20px 60px 20px;
+
+    @media (max-width: 768px) {
+      order: -1;
+      margin-bottom: 30px;
+      padding: 15px 15px 20px 15px;
+      width: 100%;
+    }
+
+    ul {
+      width: 100%;
+
+      @media (max-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+    }
+
+    li {
+
+      @media (max-width: 768px) {
+        margin-right: 10px;
+      }
+
+      a {
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+      }
+
+      &._active {
+        a {
+          font-weight: 500;
+          color: $main-blue;
+        }
+      }
+
+      &:not(._active) {
+        padding-left: 10px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+
+    }
+
+  }
+
+
+}

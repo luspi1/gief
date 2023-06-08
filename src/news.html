@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+'title': 'Новости'
+})
+
+<body class="page__body">
+
+<div class="site-container">
+  @include('partials/header.html')
+
+  <main class="main news-page">
+    <section class="section">
+      <div class="container">
+        <div class="bread-crumbs">
+          <a class="_active">Университет Строганова</a> /
+          <span>Новости</span>
+        </div>
+        <div class="news-page__top">
+          <h1>Новости</h1>
+          <select name="period">
+            <option value="all">ВСЕ ГОДЫ</option>
+            <option value="1_year">За год</option>
+            <option value="5_year">За 5 лет</option>
+          </select>
+        </div>
+        <div class="news-page__inner">
+          <ul class="news-list">
+            <li class="news-list__item">
+              <a href="news-item.html">
+                <img src="./img/event-1.jpg" alt="новость 1">
+                <div class="news-list__content">
+                  <h4>С Днем победы!</h4>
+                  <p>Май – сентябрь 2023</p>
+                </div>
+              </a>
+            </li>
+            <li class="news-list__item">
+              <a href="news-item.html">
+                <img src="./img/event-2.jpg" alt="новость 2">
+                <div class="news-list__content">
+                  <h4>Выставка в Музее РГХПУ приуроченная ко Дню Победы над
+                    фашизмом!</h4>
+                  <p>Май – сентябрь 2023</p>
+                </div>
+              </a>
+            </li>
+            <li class="news-list__item">
+              <a href="news-item.html">
+                <img src="./img/event-3.jpg" alt="новость 3">
+                <div class="news-list__content">
+                  <h4>Cеминар из цикла «Права авторов произведений искусства: как
+                    ими пользоваться и как защищать»</h4>
+                  <p>Тема: «Актуальные проблемы взаимоотношений художника и
+                    куратора»</p>
+                </div>
+              </a>
+            </li>
+            <li class="news-list__item">
+              <a href="news-item.html">
+                <img src="./img/event-4.jpg" alt="новость 4">
+                <div class="news-list__content">
+                  <h4>День открытых дверей / Регистрация закрыта</h4>
+                  <p>23 апреля 2023</p>
+                </div>
+              </a>
+            </li>
+            <li class="news-list__item">
+              <a href="news-item.html">
+                <img src="./img/event-5.jpg" alt="новость 5">
+                <div class="news-list__content">
+                  <h4>«Великая Победа. Наследие и Память Строгановки» в галерее
+                    «Тоннель»</h4>
+                  <p>С 23 апреля 2023</p>
+                </div>
+              </a>
+            </li>
+            <li class="news-list__item">
+              <a href="news-item.html">
+                <img src="./img/event-6.jpg" alt="новость 6">
+                <div class="news-list__content">
+                  <h4>Отчетная выставка Детской академии дизайна</h4>
+                  <p>11 – 18 апреля 2023</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="news-tags">
+            <a href="#">Все новости</a>
+            <a href="#">Олимпиада</a>
+            <a href="#">Выставки</a>
+            <a href="#">Почетные гости</a>
+            <a href="#">Росмолодежь</a>
+            <a href="#">ВКМП</a>
+            <a href="#">НЛСК</a>
+            <a href="#">Наши награды</a>
+            <a href="#">Молодежная политика</a>
+            <a href="#">Наука</a>
+            <a href="#">Наши преподаватели</a>
+            <a href="#">Мывместе</a>
+            <a href="#">События</a>
+            <a href="#">Антикоррупция</a>
+            <a href="#">Анонс</a>
+            <a href="#">ФИП</a>
+            <a href="#">Колледж</a>
+          </div>
+        </div>
+        @include('partials/pagination.html')
+      </div>
+    </section>
+  </main>
+  @include('partials/footer.html')
+</div>
+
+</body>
+
+</html>

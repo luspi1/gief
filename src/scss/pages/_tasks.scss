@@ -1,0 +1,145 @@
+.tasks-page {
+  padding: 20px 0 136px;
+
+
+  .profile-menu__chapter {
+    a {
+      color: #0D4CD3;
+      position: relative;
+      padding-right: 15px;
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #0D4CD3;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+
+
+  .container {
+    display: flex;
+  }
+
+
+  &__inner {
+    padding: 45px 28px 24px 40px;
+    border: 1px solid #D8D8D8;
+    border-radius: 15px;
+    flex-grow: 1;
+
+  }
+
+  &__title {
+    @include montserrat-semibold;
+    font-size: 30px;
+    line-height: 37px;
+    color: #040402;
+    margin-bottom: 32px;
+  }
+
+  &__desc {
+    @include montserrat-semibold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #040402;
+    padding-bottom: 41px;
+    border-bottom: 1px solid #D8D8D8;
+  }
+
+  &__inputs {
+    display: flex;
+  }
+
+  &__input-wrapper {
+    label {
+      @include montserrat-regular;
+      font-size: 16px;
+      line-height: 20px;
+      color: #7B7B7D;
+      margin-bottom: 3px;
+    }
+
+
+  }
+
+  &__input {
+    font-size: 16px;
+    border: 1px solid #D8D8D8;
+    background: none;
+    outline: none;
+    padding: 3px 5px;
+    width: 100%;
+
+    &:focus {
+      border: 1px solid #0D4CD3;
+    }
+  }
+
+
+  .tasks-table {
+    padding-right: 10px;
+    &__filter-btn {
+      max-width: 1px;
+      padding-top: 16px;
+      align-self: center;
+      button {
+        font-size: 20px;
+        line-height: 24px;
+        color: #040402;
+      }
+    }
+
+    .flex-table__row:not(.tasks-table__inputs-row) {
+      padding: 9px 0;
+    }
+
+    .flex-table__cell:not(:last-child) {
+      padding-right: 17px;
+    }
+
+
+    &__inputs-row {
+      padding: 30px 0;
+    }
+
+    &__date-title {
+      color: #7B7B7D;
+    }
+
+    &__cell-name {
+      color: #0D4CD3;
+      max-width: 174px;
+    }
+
+    &__cell-date {
+      max-width: 145px;
+    }
+
+    &__cell-discipline {
+      max-width: 137px;
+    }
+
+    &__cell-type {
+      max-width: 184px;
+    }
+
+    &__cell-professor {
+      max-width: 197px;
+    }
+
+    &__cell-department {
+      max-width: 17%;
+    }
+
+
+  }
+}
+
+

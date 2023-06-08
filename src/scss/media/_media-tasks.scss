@@ -1,0 +1,97 @@
+@media (max-width: 1480px) {
+  .tasks-page .profile-menu {
+    width: 270px;
+  }
+  .tasks-page .flex-table__cell {
+    word-wrap: break-word;
+  }
+
+  .tasks-page .tasks-table__cell-name {
+    max-width: 160px;
+  }
+
+  .tasks-page .tasks-table__cell-type {
+    max-width: 160px;
+  }
+
+  .tasks-page__inner {
+    padding: 30px 20px 20px 20px;
+  }
+
+}
+
+
+@media (max-width: 1280px) {
+  .tasks-page .container {
+    flex-direction: column;
+  }
+
+  .tasks-page .profile-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .tasks-page .profile-menu__list {
+    width: auto;
+  }
+
+  .tasks-page .tasks-table {
+    padding-right: 20px;
+  }
+
+  .tasks-page .tasks-table__cell-name {
+    max-width: inherit;
+    width: 10%;
+  }
+
+  .tasks-page .tasks-table__cell-professor {
+    max-width: inherit;
+    width: 10%;
+  }
+
+  .tasks-page .tasks-table__cell-type {
+    max-width: inherit;
+    width: 10%;
+  }
+  .tasks-page .tasks-table__cell-discipline {
+    max-width: inherit;
+    width: 10%;
+  }
+
+  .tasks-page .tasks-table__cell-department {
+    max-width: inherit;
+    width: 10%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .tasks-page .tasks-table {
+    overflow-x: auto;
+  }
+
+  .tasks-page .flex-table__row {
+    width: 1050px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .tasks-page .profile-menu__list {
+    align-items: flex-start;
+  }
+  .tasks-page .profile-menu__list-item {
+    text-align: left;
+  }
+
+  .tasks-page__title {
+    font-size: 27px;
+    line-height: 35px;
+    margin-bottom: 25px;
+  }
+
+  .tasks-page__desc {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+}

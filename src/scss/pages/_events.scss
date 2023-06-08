@@ -1,0 +1,60 @@
+.events-page {
+  padding: 30px 0 75px;
+  font-size: 15px;
+  line-height: 22px;
+  color: $black;
+
+  h1 {
+    @include montserrat-semibold;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .events-list {
+    &__item {
+      padding: 45px 0;
+      border-bottom: 1px solid #878787;
+
+      a {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 550px) {
+          flex-direction: column;
+        }
+
+        img {
+          margin-right: 20px;
+          width: 200px;
+          height: 115px;
+          @media (max-width: 550px) {
+            margin-bottom: 20px;
+          }
+        }
+
+        h4 {
+          @include montserrat-semibold;
+          color: #000000;
+          font-size: 18px;
+          line-height: 22px;
+          margin-bottom: 7px;
+          @media (max-width: 550px) {
+            text-align: center;
+          }
+        }
+
+        p {
+          font-size: 13px;
+          line-height: 22px;
+          color: $main-blue;
+          @media (max-width: 550px) {
+            text-align: center;
+          }
+        }
+
+      }
+    }
+  }
+
+
+}

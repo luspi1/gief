@@ -1,0 +1,90 @@
+.profile-page {
+
+  padding: 20px 0 50px;
+
+  .container {
+    display: flex;
+  }
+
+  &__subtitle {
+    @include montserrat-semibold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #040402;
+  }
+
+
+
+  &__inner {
+    padding: 45px 206px 50px 40px;
+    border: 1px solid #D8D8D8;
+    border-radius: 15px;
+    flex-grow: 1;
+  }
+
+  &__inner-info {
+    &:first-child {
+      padding-bottom: 42px;
+      border-bottom: 1px solid #D8D8D8;
+      margin-bottom: 42px;
+    }
+  }
+
+  &__main-name {
+    @include montserrat-semibold;
+    font-size: 40px;
+    line-height: 49px;
+    color: #040402;
+
+    span {
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    margin-bottom: 16px;
+  }
+
+  &__reg-date {
+    font-size: 18px;
+    line-height: 22px;
+    color: #7B7B7D;
+  }
+
+  &__inner-caption {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #D8D8D8;
+  }
+
+  &__info-list {
+    margin-top: 20px;
+    .profile-page__list-row {
+      display: flex;
+      align-items: flex-end;
+      &:not(:last-child) {
+        margin-bottom: 26px;
+
+      }
+    }
+
+    .profile-page__row-title {
+      min-width: 210px;
+      width: 210px;
+      margin-right: 25px;
+      font-size: 18px;
+      line-height: 25px;
+      color: #7B7B7D;
+    }
+
+    .profile-page__row-content {
+      font-size: 18px;
+      line-height: 25px;
+      color: #040402;
+    }
+
+
+
+  }
+
+
+}

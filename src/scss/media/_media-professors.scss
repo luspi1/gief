@@ -1,0 +1,58 @@
+@media (max-width: 1280px) {
+  .professors-page .professors-table__cell-name {
+    width: 27%;
+  }
+
+  .professors-page .professors-table__cell-department {
+    width: 14%
+  }
+
+  .professors-page .professors-table__cell-degree {
+    width: 16%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .professors-page .container {
+    flex-direction: column;
+  }
+
+  .professors-page .profile-menu__list {
+    align-items: center;
+  }
+
+  .professors-page .profile-menu {
+    width: 100%;
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
+
+  .professors-page .professors-table__inputs-row {
+    align-items: flex-end;
+  }
+}
+
+@media (max-width: 768px) {
+  .professors-page .professors-table {
+    overflow-x: auto;
+  }
+
+  .professors-page .flex-table__row {
+    width: 800px;
+  }
+
+  .professors-page__title {
+    font-size: 27px;
+    line-height: 35px;
+    margin-bottom: 25px;
+  }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+'title': 'Профиль',
+})
+
+<body class="page__body">
+<div class="site-container">
+  <div class="modal-overlay"></div>
+  @include('partials/header.html')
+  <main class="main profile-page">
+    <section class="section">
+      <div class="container">
+        <nav class="profile-menu">
+          <ul class="profile-menu__list">
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="#">Объявления</a>
+            </li>
+            <li class="profile-menu__list-item profile-menu_active">
+              <a class="profile-menu__main-link" href="profile.html">Профиль</a>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="edit-profile.html">Редактирование профиля</a>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="tasks.html">Учебная деятельность</a>
+              <ul class="profile-menu__submenu profile-menu__tasks-submenu">
+                <li>
+                  <a href="tasks.html">
+                    Задания
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Задания на доработку
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="achievements.html">Достижения</a>
+              <ul class="profile-menu__submenu">
+                <li>
+                  <a href="#">
+                    Добавить достижение
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="professors.html">Преподаватели</a>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="#">Научная деятельность</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="profile-page__inner">
+          <div class="profile-page__inner-caption">
+            <h2 class="profile-page__main-name">
+              Сержантов-Шульц Константин<br>
+              <span>Константинович</span>
+            </h2>
+            <p class="profile-page__reg-date">
+              Зарегистрирован 21 августа 2022
+            </p>
+          </div>
+          <div class="profile-page__inner-info-list">
+            <div class="profile-page__inner-info">
+              <h3 class="profile-page__subtitle">
+                Личные данные
+              </h3>
+              <ul class="profile-page__info-list">
+                <li class="profile-page__list-row">
+                  <p class="profile-page__row-title">Дата рождения:</p>
+                  <p class="profile-page__row-content">21 августа 2002 (20
+                    лет)</p>
+                </li>
+                <li class="profile-page__list-row">
+                  <p class="profile-page__row-title">Пол студента:</p>
+                  <p class="profile-page__row-content">мужской</p>
+                </li>
+                <li class="profile-page__list-row">
+                  <p class="profile-page__row-title">Полный адрес:</p>
+                  <p class="profile-page__row-content">г. Санкт-Петербург, г.
+                    Павловск, ул. Госпитальная,д. 12, кв. 56 </p>
+                </li>
+                <li class="profile-page__list-row">
+                  <p class="profile-page__row-title">Номер телефона
+                    студента:</p>
+                  <p class="profile-page__row-content">8 965 260-69-12</p>
+                </li>
+              </ul>
+            </div>
+            <div class="profile-page__inner-info">
+              <h3 class="profile-page__subtitle">
+                Данные паспорта
+              </h3>
+              <ul class="profile-page__info-list">
+                <li class="profile-page__list-row">
+                  <p class="profile-page__row-title">Номер и серия:</p>
+                  <p class="profile-page__row-content">4005 369854</p>
+                </li>
+                <li class="profile-page__list-row">
+                  <p class="profile-page__row-title">Когда выдан:</p>
+                  <p class="profile-page__row-content">6 мая 2016</p>
+                </li>
+                <li class="profile-page__list-row">
+                  <p class="profile-page__row-title">Кем выдан:</p>
+                  <p class="profile-page__row-content">ТП №30 отдела УФМС г.
+                    Санкт-Петербурга в Калининском
+                    районе СПб и ЛО</p>
+                </li>
+                <li class="profile-page__list-row">
+                  <p class="profile-page__row-title">Код подразделения:</p>
+                  <p class="profile-page__row-content">454-364</p>
+                </li>
+                <li class="profile-page__list-row">
+                  <p class="profile-page__row-title">Адрес постоянной
+                    регистрации:</p>
+                  <p class="profile-page__row-content">196602, г.
+                    Санкт-Петербург, г. Павловск, ул. Госпитальная,
+                    д. 12, кв. 56</p>
+                </li>
+                <li class="profile-page__list-row">
+                  <p class="profile-page__row-title">Адрес регистрации
+                    по месту пребывания:</p>
+                  <p class="profile-page__row-content">196602, г.
+                    Санкт-Петербург, г. Павловск, ул. Госпитальная,
+                    д. 12, кв. 56</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+    </section>
+  </main>
+
+  @include('partials/footer.html')
+</div>
+
+</body>
+
+</html>

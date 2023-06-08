@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+'title': 'События'
+})
+
+<body class="page__body">
+
+<div class="site-container">
+  @include('partials/header.html')
+
+  <main class="main events-page">
+    <section class="section">
+      <div class="container">
+        <div class="bread-crumbs">
+          <a class="_active">Университет Строганова</a> /
+          <span>События</span>
+        </div>
+        <h1>События</h1>
+        <ul class="events-list">
+          <li class="events-list__item">
+            <a href="#">
+              <img src="./img/event-1.jpg" alt="событие 1">
+              <div class="events-list__content">
+                <h4>С Днем победы!</h4>
+                <p>Май – сентябрь 2023</p>
+              </div>
+            </a>
+          </li>
+          <li class="events-list__item">
+            <a href="#">
+              <img src="./img/event-2.jpg" alt="событие 2">
+              <div class="events-list__content">
+                <h4>Выставка в Музее РГХПУ приуроченная ко Дню Победы над
+                  фашизмом!</h4>
+                <p>Май – сентябрь 2023</p>
+              </div>
+            </a>
+          </li>
+          <li class="events-list__item">
+            <a href="#">
+              <img src="./img/event-3.jpg" alt="событие 3">
+              <div class="events-list__content">
+                <h4>Cеминар из цикла «Права авторов произведений искусства: как
+                  ими пользоваться и как защищать»</h4>
+                <p>Тема: «Актуальные проблемы взаимоотношений художника и
+                  куратора»</p>
+              </div>
+            </a>
+          </li>
+          <li class="events-list__item">
+            <a href="#">
+              <img src="./img/event-4.jpg" alt="событие 4">
+              <div class="events-list__content">
+                <h4>День открытых дверей / Регистрация закрыта</h4>
+                <p>23 апреля 2023</p>
+              </div>
+            </a>
+          </li>
+          <li class="events-list__item">
+            <a href="#">
+              <img src="./img/event-5.jpg" alt="событие 5">
+              <div class="events-list__content">
+                <h4>«Великая Победа. Наследие и Память Строгановки» в галерее
+                  «Тоннель»</h4>
+                <p>С 23 апреля 2023</p>
+              </div>
+            </a>
+          </li>
+          <li class="events-list__item">
+            <a href="#">
+              <img src="./img/event-6.jpg" alt="событие 6">
+              <div class="events-list__content">
+                <h4>Отчетная выставка Детской академии дизайна</h4>
+                <p>11 – 18 апреля 2023</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        @include('partials/pagination.html')
+      </div>
+    </section>
+  </main>
+  @include('partials/footer.html')
+</div>
+
+</body>
+
+</html>

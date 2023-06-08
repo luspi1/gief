@@ -1,0 +1,122 @@
+.footer {
+  padding: 36px 0 33px;
+  background: #303094;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba(#ffffff, 0.5);
+  }
+
+  &__text-list {
+    max-width: 273px;
+  }
+
+  &__text-list,
+  &__links-list {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__list-title {
+    @include montserrat-semibold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+
+  }
+
+  &__list-text {
+    @include montserrat-regular;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFFFFF;
+
+  }
+
+  &__list-politics {
+    a {
+      @include montserrat-regular;
+      font-size: 13px;
+      line-height: 16px;
+      text-decoration-line: underline;
+      color: #FFFFFF;
+    }
+  }
+
+  &__list-link {
+    a {
+      @include montserrat-regular;
+      font-size: 16px;
+      line-height: 20px;
+      color: #FFFFFF;
+      position: relative;
+
+      svg {
+        position: absolute;
+        left: -37px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .footer__links-list_lg {
+    max-width: 302px;
+  }
+
+  .footer__bottom {
+    padding: 15px 0 0;
+  }
+
+  .footer__bottom-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    li {
+      @include montserrat-regular;
+      font-size: 15px;
+      line-height: 18px;
+      color: rgba(#ffffff, 0.5);
+
+      a {
+        @include montserrat-regular;
+        font-size: 15px;
+        line-height: 18px;
+        color: rgba(#ffffff, 0.5);
+        padding-left: 30px;
+        position: relative;
+
+        svg {
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+  }
+
+  .footer__bottom-btn {
+    @include montserrat-bold;
+    font-size: 15px;
+    line-height: 18px;
+    padding-left: 36px;
+    color: rgba(#ffffff, 0.5);
+    position: relative;
+    svg {
+      opacity: 0.5;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+  }
+
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+'title': 'Портфолио',
+})
+
+<body class="page__body">
+<div class="site-container">
+  <div class="modal-overlay"></div>
+  @include('partials/header.html')
+  <main class="main portfolio-page">
+    <section class="section">
+      <div class="container">
+        <nav class="profile-menu">
+          <ul class="profile-menu__list">
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="#">Объявления</a>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="profile.html">Профиль</a>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="edit-profile.html">Редактирование профиля</a>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="tasks.html">Учебная деятельность</a>
+              <ul class="profile-menu__submenu profile-menu__tasks-submenu">
+                <li>
+                  <a href="tasks.html">
+                    Задания
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Задания на доработку
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="profile-menu__list-item profile-menu_active">
+              <a class="profile-menu__main-link" href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="achievements.html">Достижения</a>
+              <ul class="profile-menu__submenu">
+                <li>
+                  <a href="#">
+                    Добавить достижение
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="professors.html">Преподаватели</a>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="#">Научная деятельность</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="portfolio-page__inner">
+          <h1 class="portfolio-page__title">Портфолио</h1>
+          <p class="portfolio-page__desc"><span>Внимание!</span> В этом разделе
+            допускается
+            размещение работ, как связанных с учебным процессом, так и нет.</p>
+
+          <div class="portfolio-page__content">
+            <form class="portfolio-page__form" action="#">
+              <h2 class="portfolio-page__form-title">
+                Добавить работу
+              </h2>
+              <div class="portfolio-page__input-wrapper">
+                <input class="main-input" type="text"
+                       placeholder="Наименование работы"
+                       name="portfolio_name">
+              </div>
+              <div class="portfolio-page__input-wrapper">
+                <input class="main-input custom-date-input" type="text"
+                       placeholder="Дата выполнения"
+                       name="portfolio_date">
+              </div>
+              <div id="portfolio-dropzone"
+                   class="dropzone">
+                <div class="dz-message">
+                  <button class="portfolio-page__photo-download"
+                          id="portfolio-add"
+                          type="button"
+                          data-url="/include/ajax/upload_person_image.php"
+                          data-form-data='{"filetype": "portfolio","id_item":"1","onefile": 1}'
+                  >
+                    <svg width="25" height="25" viewBox="0 0 25 25"
+                         fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12.5 25C5.7 25 0 19.3 0 12.5C0 5.7 5.7 0 12.5 0C19.3 0 25 5.7 25 12.5C25 19.3 19.3 25 12.5 25ZM12.5 1.5C6.5 1.5 1.5 6.5 1.5 12.5C1.5 18.5 6.5 23.5 12.5 23.5C18.5 23.5 23.5 18.5 23.5 12.5C23.5 6.5 18.5 1.5 12.5 1.5Z"
+                        fill="#0D4CD3"/>
+                      <path
+                        d="M17.9002 13.2H7.00018C6.60018 13.2 6.2002 12.8999 6.2002 12.3999C6.2002 11.9999 6.50018 11.5999 7.00018 11.5999H18.0002C18.4002 11.5999 18.8002 11.8999 18.8002 12.3999C18.8002 12.8999 18.4002 13.2 17.9002 13.2Z"
+                        fill="#0D4CD3"/>
+                      <path
+                        d="M12.5002 18.7998C12.1002 18.7998 11.7002 18.5 11.7002 18V7C11.7002 6.6 12.0002 6.19995 12.5002 6.19995C12.9002 6.19995 13.3002 6.5 13.3002 7V18C13.3002 18.3 12.9002 18.7998 12.5002 18.7998Z"
+                        fill="#0D4CD3"/>
+                    </svg>
+                    Добавить изображение
+                  </button>
+                </div>
+              </div>
+              <p class="portfolio-page__prompt">Формат изображений — JPG, PNG
+                или
+                GIF. Максимальный размер: 2.5 Мб</p>
+
+              <div class="form-btns">
+                <button class="save-btn" type="submit">Сохранить изменения
+                </button>
+                <button class="close-btn portfolio-page__close-btn" type="button">Отмена</button>
+              </div>
+            </form>
+            <div class="portfolio-page__works portfolio-page__works_active">
+              <ul class="portfolio-page__works-list">
+                <li>
+                  <button class="delete-btn">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                      <path class="delete-btn__svg-bg"
+                            d="M12.5 24.7C19.1274 24.7 24.5 19.3274 24.5 12.7C24.5 6.07253 19.1274 0.699951 12.5 0.699951C5.87258 0.699951 0.5 6.07253 0.5 12.7C0.5 19.3274 5.87258 24.7 12.5 24.7Z"
+                            fill="white"/>
+                      <path class="delete-btn__svg-content"
+                            d="M12.5004 14.1001C11.8004 14.8001 11.2004 15.4001 10.6004 16.0001C9.80035 16.8001 9.00039 17.6001 8.20039 18.4001C7.80039 18.8001 7.10039 18.8001 6.70039 18.4001C6.30039 18.0001 6.30039 17.4001 6.70039 16.9001C8.00039 15.6001 9.40039 14.2001 10.7004 12.9001C10.8004 12.8001 10.9004 12.7001 11.0004 12.6001C10.9004 12.5001 10.8004 12.4001 10.8004 12.4001C9.50037 11.1001 8.10037 9.70011 6.80037 8.40011C6.30037 7.90011 6.40035 7.0001 7.10035 6.7001C7.50035 6.5001 7.90037 6.60009 8.30037 7.00009C9.60037 8.30009 10.9004 9.60009 12.3004 11.0001C12.4004 11.1001 12.5004 11.2001 12.6004 11.3001C12.7004 11.2001 12.8004 11.1001 12.8004 11.1001C14.1004 9.80006 15.5004 8.40006 16.8004 7.10006C17.3004 6.60006 18.2004 6.70011 18.5004 7.40011C18.7004 7.80011 18.6004 8.20006 18.2004 8.60006C16.9004 9.90006 15.5004 11.3001 14.2004 12.6001C14.1004 12.7001 14.0004 12.8001 13.9004 12.9001C14.0004 13.0001 14.1004 13.1001 14.2004 13.2001C15.5004 14.5001 16.9004 15.9001 18.2004 17.2001C18.6004 17.6001 18.6004 18.0001 18.4004 18.4001C18.2004 18.8001 17.8004 19.0001 17.3004 18.9001C17.1004 18.8001 16.9004 18.7001 16.7004 18.5001C15.4004 17.2001 14.1004 15.9001 12.8004 14.6001C12.7004 14.3001 12.7004 14.2001 12.5004 14.1001Z"
+                            fill="#969696"/>
+                    </svg>
+                  </button>
+                  <div class="portfolio-page__works-img">
+                    <img src="img/portfolio-img1.jpg" alt="work1">
+                  </div>
+                  <h3>Наименование работы на одну-две строки</h3>
+                  <p>Дата выполнения: 04.08.2022</p>
+                </li>
+                <li>
+                  <button class="delete-btn">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                      <path class="delete-btn__svg-bg"
+                            d="M12.5 24.7C19.1274 24.7 24.5 19.3274 24.5 12.7C24.5 6.07253 19.1274 0.699951 12.5 0.699951C5.87258 0.699951 0.5 6.07253 0.5 12.7C0.5 19.3274 5.87258 24.7 12.5 24.7Z"
+                            fill="white"/>
+                      <path class="delete-btn__svg-content"
+                            d="M12.5004 14.1001C11.8004 14.8001 11.2004 15.4001 10.6004 16.0001C9.80035 16.8001 9.00039 17.6001 8.20039 18.4001C7.80039 18.8001 7.10039 18.8001 6.70039 18.4001C6.30039 18.0001 6.30039 17.4001 6.70039 16.9001C8.00039 15.6001 9.40039 14.2001 10.7004 12.9001C10.8004 12.8001 10.9004 12.7001 11.0004 12.6001C10.9004 12.5001 10.8004 12.4001 10.8004 12.4001C9.50037 11.1001 8.10037 9.70011 6.80037 8.40011C6.30037 7.90011 6.40035 7.0001 7.10035 6.7001C7.50035 6.5001 7.90037 6.60009 8.30037 7.00009C9.60037 8.30009 10.9004 9.60009 12.3004 11.0001C12.4004 11.1001 12.5004 11.2001 12.6004 11.3001C12.7004 11.2001 12.8004 11.1001 12.8004 11.1001C14.1004 9.80006 15.5004 8.40006 16.8004 7.10006C17.3004 6.60006 18.2004 6.70011 18.5004 7.40011C18.7004 7.80011 18.6004 8.20006 18.2004 8.60006C16.9004 9.90006 15.5004 11.3001 14.2004 12.6001C14.1004 12.7001 14.0004 12.8001 13.9004 12.9001C14.0004 13.0001 14.1004 13.1001 14.2004 13.2001C15.5004 14.5001 16.9004 15.9001 18.2004 17.2001C18.6004 17.6001 18.6004 18.0001 18.4004 18.4001C18.2004 18.8001 17.8004 19.0001 17.3004 18.9001C17.1004 18.8001 16.9004 18.7001 16.7004 18.5001C15.4004 17.2001 14.1004 15.9001 12.8004 14.6001C12.7004 14.3001 12.7004 14.2001 12.5004 14.1001Z"
+                            fill="#969696"/>
+                    </svg>
+                  </button>
+                  <div class="portfolio-page__works-img">
+                    <img src="img/portfolio-img1.jpg" alt="work1">
+                  </div>
+                  <h3>Наименование работы на одну-две строки</h3>
+                  <p>Дата выполнения: 04.08.2022</p>
+                </li>
+              </ul>
+              <div class="form-btns">
+                <button class="save-btn portfolio-page__add-work-btn">Добавить работу</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+    @include('partials/info-modal.html')
+    @include('partials/loader.html')
+  </main>
+
+  @include('partials/footer.html')
+</div>
+
+</body>
+
+</html>

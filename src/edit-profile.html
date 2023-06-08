@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+  'title': 'Редактирование профиля',
+})
+
+<body class="page__body">
+<div class="site-container">
+  <div class="modal-overlay"></div>
+  @include('partials/header.html')
+  <main class="main edit-profile-page">
+    <section class="section">
+      <div class="container">
+        <nav class="profile-menu">
+          <ul class="profile-menu__list">
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="#">Объявления</a>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="profile.html">Профиль</a>
+            </li>
+            <li class="profile-menu__list-item profile-menu_active">
+              <a class="profile-menu__main-link" href="edit-profile.html">Редактирование профиля</a>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="tasks.html">Учебная деятельность</a>
+              <ul class="profile-menu__submenu profile-menu__tasks-submenu">
+                <li>
+                  <a href="tasks.html">
+                    Задания
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Задания на доработку
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="achievements.html">Достижения</a>
+              <ul class="profile-menu__submenu">
+                <li>
+                  <a href="#">
+                    Добавить достижение
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="professors.html">Преподаватели</a>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="#">Научная деятельность</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="edit-profile-page__inner">
+          <h1 class="edit-profile-page__title">Редактирование профиля</h1>
+          <section class="edit-profile-page__caption-section">
+            <p class="edit-profile-page__top-email">dmiroshin@gmail.com</p>
+            <p class="edit-profile-page__prompt">Адрес электронной почты был
+              указан и подтвержден Вами при
+              регистрации. Изменить его на этой странице нельзя. В случае
+              необходимости <a href="#">напишите Администратору</a>.</p>
+          </section>
+          <section class="edit-profile-page__date-section">
+            <p class="edit-profile-page__date-title">Дата рождения:</p>
+            <p class="edit-profile-page__date-content">21 августа 2002 (20
+              лет)</p>
+          </section>
+
+          <form class="edit-profile-page__form" action="#">
+            <section class="edit-profile-page__password-section">
+              <div class="edit-profile-page__input-wrapper">
+                <input class="main-input" type="text" placeholder="Ваш пароль"
+                       name="editProfile_password">
+                <p class="edit-profile-page__prompt">Пожалуйста, укажите новый
+                  пароль в случае, если Вы хотите его сменить. Во всех остальных
+                  случаях делать этого не нужно.</p>
+              </div>
+              <div class="edit-profile-page__input-wrapper">
+                <input class="main-input" type="text"
+                       placeholder="Повторите пароль"
+                       name="editProfile_password">
+                <p class="edit-profile-page__prompt">Пожалуйста, введите новый
+                  пароль еще раз. Нам нужно убедиться в том, что мы Вас
+                  правильно
+                  поняли. Пароли, указанные на этой странице, должны
+                  совпадать.</p>
+              </div>
+            </section>
+            <section class="edit-profile-page__passport-section">
+              <div class="edit-profile-page__input-wrapper">
+                <input class="main-input edit-profile-page__input-snils"
+                       type="text"
+                       placeholder="СНИЛС 123-456-789-20"
+                       name="editProfile_snils">
+              </div>
+              <div class="edit-profile-page__input-wrapper">
+                <input class="main-input edit-profile-page__input-passport"
+                       type="text"
+                       placeholder="Номер и серия паспорта"
+                       name="editProfile_passport">
+                <p class="edit-profile-page__prompt">0000 000000 — две группы
+                  цифр
+                  с пробелом между ними.</p>
+              </div>
+              <div class="edit-profile-page__input-wrapper">
+                <input class="main-input" type="text"
+                       placeholder="Место рождения"
+                       name="editProfile_placeBirth">
+              </div>
+
+              <div class="edit-profile-page__input-wrapper">
+                <input class="main-input edit-profile-page__input-date"
+                       type="text"
+                       placeholder="Дата выдачи паспорта"
+                       name="editProfile_dateIssue">
+                <p class="edit-profile-page__prompt">Точно так, как в
+                  документе.</p>
+              </div>
+
+              <div
+                class="edit-profile-page__input-wrapper edit-profile-page__input-wrapper_lg">
+                <input class="main-input" type="text"
+                       placeholder="Орган, выдавший паспорт"
+                       name="editProfile_organIssue">
+              </div>
+
+              <div class="edit-profile-page__input-wrapper">
+                <input class="main-input edit-profile-page__input-division"
+                       type="text"
+                       placeholder="Код подразделения"
+                       name="editProfile_divisionСode">
+                <p class="edit-profile-page__prompt">000-000 — две группы по три
+                  цифры с дефисом между ними.</p>
+              </div>
+              <div
+                class="edit-profile-page__input-wrapper edit-profile-page__input-wrapper_lg">
+                <input class="main-input" type="text"
+                       placeholder="Адрес постоянной регистрации"
+                       name="editProfile_constAddress">
+              </div>
+              <div
+                class="edit-profile-page__input-wrapper edit-profile-page__input-wrapper_lg">
+                <input class="main-input" type="text"
+                       placeholder="Адрес регистрации по месту пребывания"
+                       name="editProfile_stayAddress">
+              </div>
+
+            </section>
+            <section class="edit-profile-page__phone-section">
+              <div class="edit-profile-page__input-wrapper">
+                <input class="main-input phone-input" type="text"
+                       placeholder="Номер телефона"
+                       name="editProfile_phone">
+                <p class="edit-profile-page__prompt">Рекомендуем указать номер
+                  Вашего мобильного телефона. Он может потребоваться для
+                  экстренной связи с Вами и отправки системныхсообщений.</p>
+              </div>
+            </section>
+            <section class="edit-profile-page__photo-section">
+                <div id="profile-dropzone"
+                     class="dropzone">
+                  <div class="dz-message">
+                    <button class="edit-profile-page__photo-download"
+                            id="profile-add"
+                            type="button">
+                      <svg width="25" height="25" viewBox="0 0 25 25"
+                           fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M12.5 25C5.7 25 0 19.3 0 12.5C0 5.7 5.7 0 12.5 0C19.3 0 25 5.7 25 12.5C25 19.3 19.3 25 12.5 25ZM12.5 1.5C6.5 1.5 1.5 6.5 1.5 12.5C1.5 18.5 6.5 23.5 12.5 23.5C18.5 23.5 23.5 18.5 23.5 12.5C23.5 6.5 18.5 1.5 12.5 1.5Z"
+                          fill="#0D4CD3"/>
+                        <path
+                          d="M17.9002 13.2H7.00018C6.60018 13.2 6.2002 12.8999 6.2002 12.3999C6.2002 11.9999 6.50018 11.5999 7.00018 11.5999H18.0002C18.4002 11.5999 18.8002 11.8999 18.8002 12.3999C18.8002 12.8999 18.4002 13.2 17.9002 13.2Z"
+                          fill="#0D4CD3"/>
+                        <path
+                          d="M12.5002 18.7998C12.1002 18.7998 11.7002 18.5 11.7002 18V7C11.7002 6.6 12.0002 6.19995 12.5002 6.19995C12.9002 6.19995 13.3002 6.5 13.3002 7V18C13.3002 18.3 12.9002 18.7998 12.5002 18.7998Z"
+                          fill="#0D4CD3"/>
+                      </svg>
+                      Загрузите фотографию профиля
+                    </button>
+                  </div>
+                </div>
+              <p class="edit-profile-page__prompt">Эта фотография будет показана
+                в Вашем профиле.</p>
+            </section>
+
+            <div class="form-btns">
+              <button class="save-btn" type="submit">Сохранить изменения
+              </button>
+              <button class="close-btn" type="button">Отмена</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    @include('partials/info-modal.html')
+    @include('partials/loader.html')
+  </main>
+
+  @include('partials/footer.html')
+</div>
+
+</body>
+
+</html>

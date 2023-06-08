@@ -1,0 +1,119 @@
+.achievements-page {
+  padding: 20px 0 716px;
+
+  .profile-menu {
+    width: 388px;
+  }
+
+  .container {
+    display: flex;
+  }
+
+
+  &__inner {
+    padding: 45px 28px 24px 40px;
+    border: 1px solid #D8D8D8;
+    border-radius: 15px;
+    flex-grow: 1;
+
+  }
+
+  &__title {
+    @include montserrat-semibold;
+    font-size: 30px;
+    line-height: 37px;
+    color: #040402;
+    margin-bottom: 32px;
+  }
+
+  &__desc {
+    @include montserrat-semibold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #040402;
+    padding-bottom: 49px;
+    border-bottom: 1px solid #D8D8D8;
+  }
+
+  &__inputs {
+    display: flex;
+  }
+
+  &__input-wrapper {
+    label {
+      @include montserrat-regular;
+      font-size: 16px;
+      line-height: 20px;
+      color: #7B7B7D;
+      margin-bottom: 3px;
+    }
+
+
+  }
+
+  &__input {
+    font-size: 16px;
+    border: 1px solid #D8D8D8;
+    background: none;
+    outline: none;
+    padding: 3px 5px;
+    width: 100%;
+
+    &:focus {
+      border: 1px solid #0D4CD3;
+    }
+  }
+
+
+  .achievements-table {
+    padding-right: 20px;
+    &__filter-btn {
+      max-width: 1px;
+      padding-top: 16px;
+      align-self: center;
+      button {
+        font-size: 20px;
+        line-height: 24px;
+        color: #040402;
+      }
+    }
+
+    .flex-table__row:not(.achievements-table__inputs-row) {
+      padding: 11px 0;
+    }
+
+    .flex-table__cell:not(:last-child) {
+      padding-right: 20px;
+    }
+
+
+    &__inputs-row {
+      justify-content: space-between;
+      padding: 22px 0;
+    }
+
+    &__date-title {
+      color: #7B7B7D;
+    }
+
+    &__cell-name {
+      width: 66%;
+      color: #0D4CD3;
+    }
+
+    &__cell-date {
+      width: 33%;
+    }
+
+    &__cell-type {
+      width: 49%;
+    }
+  }
+
+
+
+
+
+}
+
+

@@ -1,0 +1,126 @@
+.edit-profile-page {
+
+  padding: 20px 0 50px;
+
+  .main-input {
+    max-width: 525px;
+  }
+
+  &__input-wrapper_lg {
+    .main-input {
+      max-width: 844px;
+    }
+  }
+
+  .container {
+    display: flex;
+  }
+
+  &__prompt {
+    font-size: 14px;
+    line-height: 20px;
+    color: #7B7B7D;
+    max-width: 480px;
+    margin-top: 15px;
+
+    a {
+      color: #0D4CD3;
+    }
+  }
+
+  &__input-wrapper {
+    margin-bottom: 27px;
+  }
+
+  &__inner {
+    padding: 45px 135px 67px 40px;
+    border: 1px solid #D8D8D8;
+    border-radius: 15px;
+    flex-grow: 1;
+  }
+
+  &__title {
+    @include montserrat-semibold;
+    font-size: 30px;
+    line-height: 37px;
+    color: #040402;
+    margin-bottom: 33px;
+  }
+
+  &__caption-section {
+    padding-bottom: 35px;
+    border-bottom: 1px solid #D8D8D8;
+  }
+
+  &__top-email {
+    @include montserrat-semibold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #040402;
+  }
+
+  &__date-section {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 1px solid #D8D8D8;
+
+    .edit-profile-page__date-title {
+      margin-right: 90px;
+      font-size: 18px;
+      line-height: 22px;
+      color: #7B7B7D;
+    }
+
+    .edit-profile-page__date-content {
+      font-size: 18px;
+      line-height: 22px;
+      color: #040402;
+    }
+  }
+
+  &__password-section {
+    padding: 43px 0 3px;
+    border-bottom: 1px solid #D8D8D8;
+  }
+
+  &__passport-section {
+    padding: 38px 0 14px;
+    border-bottom: 1px solid #D8D8D8;
+  }
+
+  &__phone-section {
+    padding: 38px 0 14px;
+    border-bottom: 1px solid #D8D8D8;
+  }
+
+  &__photo-section {
+    padding-top: 30px;
+    margin-bottom: 58px;
+  }
+
+  &__photo-download {
+    @include montserrat-regular;
+    font-size: 18px;
+    line-height: 22px;
+    color: #0D4CD3;
+    padding-left: 40px;
+    position: relative;
+    svg {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .dz-message {
+    margin-bottom: 20px;
+  }
+
+  .dz-preview {
+    width: 100px;
+    height: 100px;
+  }
+
+}

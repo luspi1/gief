@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+'title': 'Задания',
+})
+
+<body class="page__body">
+<div class="site-container">
+  <div class="modal-overlay"></div>
+  @include('partials/header.html')
+  <main class="main tasks-page">
+    <section class="section">
+      <div class="container">
+        <nav class="profile-menu">
+          <ul class="profile-menu__list">
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="#">Объявления</a>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="profile.html">Профиль</a>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="edit-profile.html">Редактирование профиля</a>
+            </li>
+            <li class="profile-menu__list-item profile-menu_active">
+              <a class="profile-menu__main-link" href="tasks.html">Учебная деятельность</a>
+              <ul class="profile-menu__submenu">
+                <li class="profile-menu__chapter">
+                  <a href="tasks.html">
+                    Задания
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Задания на доработку
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="achievements.html">Достижения</a>
+              <ul class="profile-menu__submenu">
+                <li>
+                  <a href="#">
+                    Добавить достижение
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="professors.html">Преподаватели</a>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="#">Научная деятельность</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="tasks-page__inner">
+          <h2 class="tasks-page__title">
+            Ваши задания
+          </h2>
+          <p class="tasks-page__desc">Эта страница содержит список заданий,
+            выданных Вам</p>
+          <ul class="flex-table tasks-table">
+            <li class="flex-table__row tasks-table__inputs-row">
+              <p
+                class="flex-table__cell tasks-table__cell-date tasks-table__date-title">
+                Дата создания / исполнения</p>
+              <div
+                class="flex-table__cell tasks-page__input-wrapper tasks-table__cell-name">
+                <label>Название</label>
+                <input class="tasks-page__input" name="tasks_name">
+              </div>
+              <div
+                class="flex-table__cell tasks-page__input-wrapper tasks-table__cell-discipline">
+                <label>Дисциплина</label>
+                <input class="tasks-page__input" name="tasks_discipline">
+              </div>
+              <div
+                class="flex-table__cell tasks-page__input-wrapper tasks-table__cell-type">
+                <label>Вид отчета</label>
+                <select class="tasks-page__input" name="tasks_type">
+                  <option value="">---</option>
+                  <option value="control">Контрольная работа</option>
+                  <option value="course">Курсовая работа</option>
+                  <option value="laboratory">Лабораторная работа</option>
+                  <option value="essay">Реферат</option>
+                  <option value="сathedral">Кафедральный просмотр</option>
+                  <option value="exam">Экзамен</option>
+                  <option value="offset">Зачет</option>
+                  <option value="practice">Отчет по практике</option>
+                  <option value="projection">Курсовой проект по проектированию</option>
+                  <option value="independent">Самостоятельная работа</option>
+                  <option value="graduation_work">ВКР (Выпускная квалификационная работа)</option>
+                  <option value="review">Рецензия на ВКР (Выпускная квалификационная работа)</option>
+                  <option value="extended_portfolio">Расширенное портфолио студента</option>
+                </select>
+              </div>
+              <div
+                class="flex-table__cell tasks-page__input-wrapper tasks-table__cell-professor">
+                <label>Преподаватель</label>
+                <input class="tasks-page__input" name="tasks_professor">
+              </div>
+              <div
+                class="flex-table__cell tasks-page__input-wrapper tasks-table__cell-department">
+                <label>Кафедра</label>
+                <input class="tasks-page__input" name="tasks_department">
+              </div>
+              <div class="flex-table__cell tasks-table__filter-btn">
+                <button type="submit">ОК</button>
+              </div>
+            </li>
+            <li class="flex-table__row">
+              <p class="flex-table__cell tasks-table__cell-date">25 мар 10:40
+                26 сен 16:00</p>
+              <a href="#"
+                 class="flex-table__cell tasks-table__cell-name">
+                Выполнение задания.docx
+              </a>
+              <p
+                class="flex-table__cell tasks-table__cell-discipline">
+                История искусств
+              </p>
+              <p
+                class="flex-table__cell tasks-table__cell-type">
+                Контрольная работа
+              </p>
+              <p
+                class="flex-table__cell tasks-table__cell-professor">
+                Иванов Иван Иванович
+              </p>
+              <div
+                class="flex-table__cell tasks-table__cell-department">
+                Кафедра управления социальными и экономическими процессами
+              </div>
+            </li>
+            <li class="flex-table__row">
+              <p class="flex-table__cell tasks-table__cell-date">25 мар 10:40
+                26 сен 16:00</p>
+              <a href="#"
+                 class="flex-table__cell tasks-table__cell-name">
+                Просмотр.docx
+              </a>
+              <p
+                class="flex-table__cell tasks-table__cell-discipline">
+                Иностранный язык
+              </p>
+              <p
+                class="flex-table__cell tasks-table__cell-type">
+                Самостоятельная работа
+              </p>
+              <p
+                class="flex-table__cell tasks-table__cell-professor">
+                Константинопольский Иван Иванович
+              </p>
+              <div
+                class="flex-table__cell tasks-table__cell-department">
+                Кафедра бухгалтерского учёта и статистики
+              </div>
+            </li>
+            <li class="flex-table__row">
+              <p class="flex-table__cell tasks-table__cell-date">25 мар 10:40
+                26 сен 16:00</p>
+              <a href="#"
+                 class="flex-table__cell tasks-table__cell-name">
+                Самостоятельная работа номер 10.docx
+              </a>
+              <p
+                class="flex-table__cell tasks-table__cell-discipline">
+                История искусств
+              </p>
+              <p
+                class="flex-table__cell tasks-table__cell-type">
+                Самостоятельная работа
+              </p>
+              <p
+                class="flex-table__cell tasks-table__cell-professor">
+                Шевчук-Роскошный Петр Арнольдович
+              </p>
+              <div
+                class="flex-table__cell tasks-table__cell-department">
+                Кафедра уголовно-правовых дисциплин
+              </div>
+            </li>
+            <li class="flex-table__row">
+              <p class="flex-table__cell tasks-table__cell-date">25 мар 10:40
+                26 сен 16:00</p>
+              <a href="#"
+                 class="flex-table__cell tasks-table__cell-name">
+                Просмотр.docx
+              </a>
+              <p
+                class="flex-table__cell tasks-table__cell-discipline">
+                Иностранный язык
+              </p>
+              <p
+                class="flex-table__cell tasks-table__cell-type">
+                Рецензия на ВКР (Выпускная квалификационная работа)
+              </p>
+              <p
+                class="flex-table__cell tasks-table__cell-professor">
+                Иванов Иван Иванович
+              </p>
+              <div
+                class="flex-table__cell tasks-table__cell-department">
+                Кафедра финансов и кредита
+              </div>
+            </li>
+            <li class="flex-table__row">
+              <p class="flex-table__cell tasks-table__cell-date">25 мар 10:40
+                26 сен 16:00</p>
+              <a href="#"
+                 class="flex-table__cell tasks-table__cell-name">
+                Самостоятельная работа номер 10.docx
+              </a>
+              <p
+                class="flex-table__cell tasks-table__cell-discipline">
+                История искусств
+              </p>
+              <p
+                class="flex-table__cell tasks-table__cell-type">
+                Контрольная работа
+              </p>
+              <p
+                class="flex-table__cell tasks-table__cell-professor">
+                Иванов Иван Иванович
+              </p>
+              <div
+                class="flex-table__cell tasks-table__cell-department">
+                Кафедра уголовно-правовых дисциплин
+              </div>
+            </li>
+            <li class="flex-table__row">
+              <p class="flex-table__cell tasks-table__cell-date">25 мар 10:40
+                26 сен 16:00</p>
+              <a href="#"
+                 class="flex-table__cell tasks-table__cell-name">
+                Выполнение задания.docx
+              </a>
+              <p
+                class="flex-table__cell tasks-table__cell-discipline">
+                История искусств
+              </p>
+              <p
+                class="flex-table__cell tasks-table__cell-type">
+                Контрольная работа
+              </p>
+              <p
+                class="flex-table__cell tasks-table__cell-professor">
+                Иванов Иван Иванович
+              </p>
+              <div
+                class="flex-table__cell tasks-table__cell-department">
+                Кафедра управления социальными и экономическими процессами
+              </div>
+            </li>
+            <li class="flex-table__row">
+              <p class="flex-table__cell tasks-table__cell-date">25 мар 10:40
+                26 сен 16:00</p>
+              <a href="#"
+                 class="flex-table__cell tasks-table__cell-name">
+                Просмотр.docx
+              </a>
+              <p
+                class="flex-table__cell tasks-table__cell-discipline">
+                Иностранный язык
+              </p>
+              <p
+                class="flex-table__cell tasks-table__cell-type">
+                Контрольная работа
+              </p>
+              <p
+                class="flex-table__cell tasks-table__cell-professor">
+                Константинопольский Иван Иванович
+              </p>
+              <div
+                class="flex-table__cell tasks-table__cell-department">
+                Кафедра бухгалтерского учёта и статистики
+              </div>
+            </li>
+            <li class="flex-table__row">
+              <p class="flex-table__cell tasks-table__cell-date">25 мар 10:40
+                26 сен 16:00</p>
+              <a href="#"
+                 class="flex-table__cell tasks-table__cell-name">
+                Самостоятельная работа номер 10.docx
+              </a>
+              <p
+                class="flex-table__cell tasks-table__cell-discipline">
+                История искусств
+              </p>
+              <p
+                class="flex-table__cell tasks-table__cell-type">
+                Рецензия на ВКР (Выпускная квалификационная работа)
+              </p>
+              <p
+                class="flex-table__cell tasks-table__cell-professor">
+                Шевчук-Роскошный Петр Арнольдович
+              </p>
+              <div
+                class="flex-table__cell tasks-table__cell-department">
+                Кафедра уголовно-правовых дисциплин
+              </div>
+            </li>
+            <li class="flex-table__row">
+              <p class="flex-table__cell tasks-table__cell-date">25 мар 10:40
+                26 сен 16:00</p>
+              <a href="#"
+                 class="flex-table__cell tasks-table__cell-name">
+                Просмотр.docx
+              </a>
+              <p
+                class="flex-table__cell tasks-table__cell-discipline">
+                Иностранный язык
+              </p>
+              <p
+                class="flex-table__cell tasks-table__cell-type">
+                Контрольная работа
+              </p>
+              <p
+                class="flex-table__cell tasks-table__cell-professor">
+                Иванов Иван Иванович
+              </p>
+              <div
+                class="flex-table__cell tasks-table__cell-department">
+                Кафедра финансов и кредита
+              </div>
+            </li>
+            <li class="flex-table__row">
+              <p class="flex-table__cell tasks-table__cell-date">25 мар 10:40
+                26 сен 16:00</p>
+              <a href="#"
+                 class="flex-table__cell tasks-table__cell-name">
+                Самостоятельная работа номер 10.docx
+              </a>
+              <p
+                class="flex-table__cell tasks-table__cell-discipline">
+                История искусств
+              </p>
+              <p
+                class="flex-table__cell tasks-table__cell-type">
+                Контрольная работа
+              </p>
+              <p
+                class="flex-table__cell tasks-table__cell-professor">
+                Иванов Иван Иванович
+              </p>
+              <div
+                class="flex-table__cell tasks-table__cell-department">
+                Кафедра уголовно-правовых дисциплин
+              </div>
+            </li>
+
+
+          </ul>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  @include('partials/footer.html')
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+@media (max-width: 1280px) {
+  .edit-profile-page__inner {
+    padding: 45px 40px 50px 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .edit-profile-page__inner {
+    padding: 30px 25px 40px 25px;
+  }
+
+  .edit-profile-page__date-section .edit-profile-page__date-title {
+    margin-right: 30px;
+    font-size: 16px;
+  }
+
+  .edit-profile-page__date-section .edit-profile-page__date-content {
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .edit-profile-page .container {
+    flex-direction: column;
+  }
+
+  .edit-profile-page__title {
+    font-size: 27px;
+    line-height: 35px;
+    margin-bottom: 25px;
+  }
+
+}

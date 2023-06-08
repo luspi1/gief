@@ -1,0 +1,47 @@
+@import "fonts";
+@import "vars";
+@import "settings";
+
+
+// Страницы
+@import "./pages/home";
+@import "./pages/news";
+@import "./pages/enrollee";
+@import "./pages/profile";
+@import "./pages/edit-profile";
+@import "./pages/professors";
+@import "./pages/tasks";
+@import "./pages/achievements";
+@import "./pages/portfolio";
+@import "./pages/events";
+@import "./pages/news-item";
+@import "./pages/org-info";
+@import "./pages/remote-education";
+
+
+// Компоненты
+
+
+@import "./components/header";
+@import "./components/footer";
+@import "./components/profile-menu";
+@import "./components/button-delete";
+@import "./components/customSelect";
+@import "./components/edit-btn";
+@import "./components/info-modal";
+@import "./components/main-accordion";
+@import "./components/main-checkbox";
+@import "./components/pagination";
+@import "./components/info-modal";
+
+
+
+@import "./media/media-home";
+@import "./media/media-header";
+@import "./media/media-footer";
+@import "./media/media-profile";
+@import "./media/media-edit-profile";
+@import "./media/media-professors";
+@import "./media/media-tasks";
+@import "./media/media-achievements";
+@import "./media/media-portfolio";

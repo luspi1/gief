@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+'title': 'Главная',
+})
+
+<body class="page__body">
+<div class="site-container">
+  <div class="modal-overlay"></div>
+  @include('partials/header.html')
+  <main class="main home-page">
+    <section class="section caption-slider">
+      <div class="swiper caption-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="caption-swiper__img">
+              <img src="img/caption-slide1.jpg"
+                   alt="caption-slide">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="caption-swiper__img">
+              <img src="img/caption-slide1.jpg"
+                   alt="caption-slide">
+            </div>
+          </div>
+        </div>
+
+        <div class="caption-swiper__controls">
+          <button class="caption-swiper__swiper-button-prev swiper-btn">
+            <svg width="47" height="47" viewBox="0 0 47 47" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M23.3999 46.2C36.1025 46.2 46.3999 35.9025 46.3999 23.2C46.3999 10.4974 36.1025 0.199951 23.3999 0.199951C10.6974 0.199951 0.399902 10.4974 0.399902 23.2C0.399902 35.9025 10.6974 46.2 23.3999 46.2Z"
+                fill="white"/>
+              <path class="swiper-btn__arrow"
+                d="M25.8998 34.6C26.8998 33.6 27.9999 32.5 29.0999 31.4C26.3999 28.7 23.6998 26 20.9998 23.3C23.6998 20.6 26.3999 17.9 29.0999 15.2C27.9999 14.1 26.8998 13 25.8998 12C22.0998 15.8 18.3999 19.5 14.5999 23.3C18.2999 27 22.0998 30.8 25.8998 34.6Z"
+                fill="black"/>
+            </svg>
+          </button>
+          <button class="caption-swiper__swiper-button-next swiper-btn">
+            <svg width="47" height="47" viewBox="0 0 47 47" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M23.7 46.2C36.4025 46.2 46.7 35.9025 46.7 23.2C46.7 10.4974 36.4025 0.199951 23.7 0.199951C10.9974 0.199951 0.699951 10.4974 0.699951 23.2C0.699951 35.9025 10.9974 46.2 23.7 46.2Z"
+                fill="white"/>
+              <path class="swiper-btn__arrow"
+                d="M21.0999 34.6C20.0999 33.6 18.9999 32.5 17.8999 31.4C20.5999 28.7 23.2999 26 25.9999 23.3C23.2999 20.6 20.5999 17.9 17.8999 15.2C18.9999 14.1 20.0999 13 21.0999 12C24.8999 15.8 28.5999 19.5 32.3999 23.3C28.6999 27 24.8999 30.8 21.0999 34.6Z"
+                fill="black"/>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </section>
+    <section class="section cta-line">
+      <div class="container">
+        <h2>Продолжается прием на программы бакалавриата. Остались последние
+          бюджетные места!</h2>
+      </div>
+    </section>
+    <section class="section accounting">
+      <div class="container">
+        <div class="accounting__inner">
+          <div class="accounting__content">
+            <div class="accounting__content-img">
+              <img src="img/1c-logo.png" alt="1C Бухгалтерия">
+            </div>
+            <div class="accounting__content-text">
+              <h2 class="accounting__title">1С Предприятие: Бухгалтерия
+                8.3 </h2>
+              <div class="accounting__content-info">
+                <h3 class="accounting__subtitle">Программа курсов — структура
+                  программ
+                  на платформах 1С</h3>
+                <p>ввод начальных данных; ввод сведений об организации; движение
+                  денежных средств: (наличные д.ср.); движение денежных средств:
+                  (б/наличные д.ср.); платежные поручения (входящие,
+                  исходящие)...</p>
+                <h3 class="accounting__subtitle">Стоимость обучения — 6000
+                  ₽</h3>
+                <p>для студентов ГИЭФПТ (очная форма обучения) –
+                  <span>3000 руб.</span>
+                  Объем программы: <span>72 часа</span></p>
+              </div>
+              <button class="btn">Записаться</button>
+            </div>
+          </div>
+          <div class="accounting__contacts">
+            <h3 class="accounting__contacts-title">Контактная информация</h3>
+            <p class="accounting__contacts-email">
+              <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.900146 2.89978C0.900146 2.79978 0.900146 2.59976 0.900146 2.49976C0.900146 2.39976 0.900122 2.19973 1.00012 2.09973C1.20012 1.49973 1.5001 0.99978 2.1001 0.89978C2.3001 0.79978 2.50011 0.799805 2.80011 0.799805C7.80011 0.799805 12.8001 0.799805 17.8001 0.799805C17.9001 0.799805 18.0001 0.799805 18.1001 0.799805C18.4001 0.799805 18.7001 0.999707 19.0001 1.19971C19.4001 1.49971 19.5001 1.8998 19.6001 2.2998C19.6001 2.3998 19.6001 2.59971 19.6001 2.69971C19.5001 3.09971 19.4001 3.3998 19.3001 3.7998C18.9001 4.4998 18.4001 4.99978 17.8001 5.39978C15.9001 6.69978 14.1001 7.9998 12.2001 9.2998C11.9001 9.4998 11.6001 9.69978 11.2001 9.89978C10.6001 10.1998 10.0001 10.1998 9.40015 9.89978C9.10015 9.69978 8.9001 9.59978 8.6001 9.39978C6.7001 7.99978 4.70011 6.6998 2.80011 5.2998C1.90011 4.6998 1.20015 3.99978 0.900146 2.89978Z"
+                  fill="#0D4CD3"/>
+                <path
+                  d="M1 5.7998C2.1 6.8998 3.49999 7.69973 4.79999 8.59973C5.09999 8.79973 5.40001 8.99971 5.70001 9.19971L5.59998 9.2998C4.09998 10.7998 2.59998 12.2998 1.09998 13.7998C1.09998 13.7998 1.1 13.7998 1 13.8998C1 11.1998 1 8.4998 1 5.7998Z"
+                  fill="#0D4CD3"/>
+                <path
+                  d="M19.7 13.8999C19.6 13.8999 19.6 13.7999 19.5 13.7999C18 12.2999 16.6 10.8999 15.1 9.3999L15 9.29993C15.1 9.29993 15.1 9.19983 15.2 9.19983C16.2 8.49983 17.3 7.79988 18.3 6.99988C18.8 6.69988 19.2 6.2999 19.7 5.8999C19.7 8.4999 19.7 11.1999 19.7 13.8999Z"
+                  fill="#0D4CD3"/>
+                <path
+                  d="M13.8001 10.0996C15.6001 11.8996 17.3001 13.5997 19.1001 15.3997C18.9001 15.5997 18.6001 15.7997 18.2001 15.7997C18.1001 15.7997 18.0001 15.7997 17.9001 15.7997C12.9001 15.7997 7.80011 15.7997 2.80011 15.7997C2.40011 15.7997 2.0001 15.6997 1.6001 15.3997C3.4001 13.5997 5.10015 11.8996 6.90015 10.0996C7.30015 10.3996 7.7001 10.6997 8.1001 10.8997C8.6001 11.1997 9.20011 11.4996 9.80011 11.6996C10.4001 11.8996 11.0001 11.6996 11.6001 11.4996C12.3001 11.1996 12.9001 10.7997 13.5001 10.2997C13.6001 10.1997 13.7001 10.0996 13.8001 10.0996Z"
+                  fill="#0D4CD3"/>
+              </svg>
+              Эл. почта:<br> <a
+              href="mailto:abiturient@gief.ru">abiturient@gief.ru</a>
+            </p>
+            <p class="accounting__contacts-phone">
+              <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.3003 9.59973C20.3003 9.99973 20.3003 10.3998 20.3003 10.7998C20.3003 10.8998 20.3003 10.8998 20.3003 10.9998C20.2003 12.3998 19.8002 13.6998 19.2002 14.8998C17.6002 17.6998 15.3002 19.3998 12.1002 19.9998C11.7002 20.0998 11.3003 20.0997 10.9003 20.1997C10.5003 20.1997 10.1002 20.1997 9.7002 20.1997C9.60019 20.1997 9.60024 20.1997 9.50024 20.1997C8.10024 20.0997 6.80024 19.6997 5.50024 19.0997C2.70024 17.4997 1.00027 15.1998 0.400269 11.9998C0.300269 11.5998 0.300195 11.1998 0.200195 10.7998C0.200195 10.3998 0.200195 9.99973 0.200195 9.59973C0.200195 9.49973 0.200195 9.49978 0.200195 9.39978C0.300195 7.99978 0.700293 6.69976 1.30029 5.49976C2.90029 2.69976 5.20027 0.99978 8.40027 0.39978C8.80027 0.29978 9.20022 0.299707 9.60022 0.199707C10.0002 0.199707 10.4003 0.199707 10.8003 0.199707C10.9003 0.199707 10.9002 0.199707 11.0002 0.199707C12.4002 0.299707 13.7002 0.699805 15.0002 1.2998C17.8002 2.8998 19.5002 5.19978 20.1002 8.39978C20.2002 8.79978 20.2003 9.19973 20.3003 9.59973ZM7.7002 9.49976C8.0002 9.39976 8.30024 9.19973 8.50024 9.09973C8.90024 8.89973 9.10029 8.59973 8.80029 8.09973C8.40029 7.19973 8.20022 6.19971 8.10022 5.19971C8.10022 4.79971 7.80027 4.49976 7.40027 4.49976C6.70027 4.49976 6.00029 4.49976 5.30029 4.49976C4.80029 4.49976 4.60022 4.69971 4.60022 5.19971C4.60022 6.89971 5.00029 8.49976 5.80029 9.99976C7.80029 13.6998 11.0002 15.5997 15.2002 15.6997C15.6002 15.6997 15.9003 15.3998 15.9003 14.9998C15.9003 14.2998 15.9003 13.5998 15.9003 12.7998C15.9003 12.2998 15.7002 12.0997 15.2002 12.0997C14.2002 12.0997 13.2003 11.8998 12.3003 11.3998C11.8003 11.1998 11.5003 11.2998 11.3003 11.7998C11.2003 12.0998 11.0003 12.2997 10.9003 12.5997C9.60027 11.9997 8.5002 10.8998 7.7002 9.49976Z"
+                  fill="#0D4CD3"/>
+              </svg>
+              Телефон:<br> +7 (813) 71 413-21
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section news">
+      <div class="container">
+        <div class="home-page__subtitle-wrapper">
+          <h2 class="home-page__subtitle">
+            Новости
+          </h2>
+          <a class="home-page__subtitle-link " href="news.html">
+            Все новости
+            <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.8862 6.21631H0.38623V7.81641H13.8862V6.21631Z"
+                    fill="#0D4CD3"/>
+              <path
+                d="M8.68628 13.3163L7.68628 12.2162L13.2863 7.01624L7.68628 1.71619L8.68628 0.616211L15.5863 7.01624L8.68628 13.3163Z"
+                fill="#0D4CD3"/>
+            </svg>
+          </a>
+        </div>
+        <div class="swiper news-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="news-swiper__img">
+                <img src="img/news-slide1.jpg"
+                     alt="news-slide">
+              </div>
+
+              <div class="news-swiper__content">
+                <a href="news-item.html" class="news-swiper__title swiper-no-swiping">
+                  Заселение в общежитие
+                </a>
+
+                <p class="news-swiper__date swiper-no-swiping">
+                  10 августа 2022
+                </p>
+              </div>
+
+
+            </div>
+            <div class="swiper-slide">
+              <div class="news-swiper__img">
+                <img src="img/news-slide2.jpg"
+                     alt="news-slide">
+              </div>
+
+              <div class="news-swiper__content">
+                <a href="news-item.html" class="news-swiper__title swiper-no-swiping">
+                  Продолжается прием на программы бакалавриата
+                </a>
+                <p class="news-swiper__date swiper-no-swiping">
+                  05 августа 2022
+                </p>
+              </div>
+
+
+            </div>
+            <div class="swiper-slide">
+              <div class="news-swiper__img">
+                <img src="img/news-slide3.jpg"
+                     alt="news-slide">
+              </div>
+              <div class="news-swiper__content">
+                <a href="news-item.html" class="news-swiper__title swiper-no-swiping">
+                  Участвуем и побеждаем во Всероссийской олимпиаде
+                </a>
+
+                <p class="news-swiper__date swiper-no-swiping">
+                  29 июля 2022
+                </p>
+              </div>
+
+
+            </div>
+            <div class="swiper-slide">
+              <div class="news-swiper__img">
+                <img src="img/news-slide4.jpg"
+                     alt="news-slide">
+              </div>
+              <div class="news-swiper__content">
+                <a href="news-item.html" class="news-swiper__title swiper-no-swiping">
+                  Проведение выборов и конкурсный отбор
+                </a>
+
+                <p class="news-swiper__date swiper-no-swiping">
+                  29 июля 2022
+                </p>
+              </div>
+
+            </div>
+            <div class="swiper-slide">
+              <div class="news-swiper__img">
+                <img src="img/news-slide2.jpg"
+                     alt="news-slide">
+              </div>
+              <div class="news-swiper__content">
+                <a href="news-item.html" class="news-swiper__title swiper-no-swiping">
+                  Участвуем и побеждаем во Всероссийской олимпиаде
+                </a>
+                <p class="news-swiper__date swiper-no-swiping">
+                  10 августа 2022
+                </p>
+              </div>
+
+            </div>
+            <div class="swiper-slide">
+              <div class="news-swiper__img">
+                <img src="img/news-slide4.jpg"
+                     alt="news-slide">
+              </div>
+              <div class="news-swiper__content">
+                <a href="news-item.html" class="news-swiper__title swiper-no-swiping">
+                  Заселение в общежитие
+                </a>
+
+                <p class="news-swiper__date swiper-no-swiping">
+                  10 августа 2022
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="news-swiper__controls">
+            <button class="news-swiper__swiper-button-prev swiper-btn">
+              <svg width="47" height="47" viewBox="0 0 47 47" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M23.3999 46.2C36.1025 46.2 46.3999 35.9025 46.3999 23.2C46.3999 10.4974 36.1025 0.199951 23.3999 0.199951C10.6974 0.199951 0.399902 10.4974 0.399902 23.2C0.399902 35.9025 10.6974 46.2 23.3999 46.2Z"
+                  fill="white"/>
+                <path class="swiper-btn__arrow"
+                  d="M25.8998 34.6C26.8998 33.6 27.9999 32.5 29.0999 31.4C26.3999 28.7 23.6998 26 20.9998 23.3C23.6998 20.6 26.3999 17.9 29.0999 15.2C27.9999 14.1 26.8998 13 25.8998 12C22.0998 15.8 18.3999 19.5 14.5999 23.3C18.2999 27 22.0998 30.8 25.8998 34.6Z"
+                  fill="black"/>
+              </svg>
+            </button>
+            <button class="news-swiper__swiper-button-next swiper-btn">
+              <svg width="47" height="47" viewBox="0 0 47 47" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M23.7 46.2C36.4025 46.2 46.7 35.9025 46.7 23.2C46.7 10.4974 36.4025 0.199951 23.7 0.199951C10.9974 0.199951 0.699951 10.4974 0.699951 23.2C0.699951 35.9025 10.9974 46.2 23.7 46.2Z"
+                  fill="white"/>
+                <path class="swiper-btn__arrow"
+                  d="M21.0999 34.6C20.0999 33.6 18.9999 32.5 17.8999 31.4C20.5999 28.7 23.2999 26 25.9999 23.3C23.2999 20.6 20.5999 17.9 17.8999 15.2C18.9999 14.1 20.0999 13 21.0999 12C24.8999 15.8 28.5999 19.5 32.3999 23.3C28.6999 27 24.8999 30.8 21.0999 34.6Z"
+                  fill="black"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section faculty">
+      <div class="container">
+        <div class="home-page__subtitle-wrapper">
+          <h2 class="home-page__subtitle">
+            Факультеты и кафедры
+          </h2>
+          <a class="home-page__subtitle-link " href="#">
+            Все подразделения
+            <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.8862 6.21631H0.38623V7.81641H13.8862V6.21631Z"
+                    fill="#0D4CD3"/>
+              <path
+                d="M8.68628 13.3163L7.68628 12.2162L13.2863 7.01624L7.68628 1.71619L8.68628 0.616211L15.5863 7.01624L8.68628 13.3163Z"
+                fill="#0D4CD3"/>
+            </svg>
+          </a>
+        </div>
+        <div class="swiper faculty-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide bg-color-1">
+              <div class="faculty-swiper__wrapper">
+                <h3 class="faculty-swiper__title swiper-no-swiping">
+                  Кафедра уголовно-правовых дисциплин
+                </h3>
+                <div class="faculty-swiper__info swiper-no-swiping">
+                  <p><span>Email:</span> kaf-ugp@gief.ru</p>
+                  <p><span>Адрес:</span> г. Гатчина ул. Рощинская д.5 1 этаж
+                    кабинет № 14, 18
+                    Номер внутренней линии: 132</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-slide bg-color-2">
+              <div class="faculty-swiper__wrapper">
+                <h3 class="faculty-swiper__title swiper-no-swiping">
+                  Кафедра управления социальнымии экономическими процессами
+                </h3>
+                <div class="faculty-swiper__info swiper-no-swiping">
+                  <p><span>Email:</span> kaf-usep@gief.ru</p>
+                  <p><span>Телефон:</span> +7 (813) 71 41-568, доб. 145</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-slide bg-color-3">
+              <div class="faculty-swiper__wrapper">
+                <h3 class="faculty-swiper__title swiper-no-swiping">
+                  Кафедра бухгалтерского учёта и статистики
+                </h3>
+                <div class="faculty-swiper__info swiper-no-swiping">
+                  <p><span>Email:</span> kaf-buh@gief.ru</p>
+                  <p><span>Телефон:</span> +7 (813) 71 42-269, доб. 148</p>
+                  <p><span>Время работы:</span> +7 (813) 71 42-269, доб. 148</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-slide bg-color-4">
+              <div class="faculty-swiper__wrapper">
+                <h3 class="faculty-swiper__title swiper-no-swiping">
+                  Кафедра финансов и кредита
+                </h3>
+                <div class="faculty-swiper__info swiper-no-swiping">
+                  <p><span>Email:</span> kaf-fin@gief.ru</p>
+                  <p><span>Телефон:</span> +7 (813) 71 42-009, доб. 143</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-slide bg-color-2">
+              <div class="faculty-swiper__wrapper">
+                <h3 class="faculty-swiper__title swiper-no-swiping">
+                  Кафедра финансов и кредита
+                </h3>
+                <div class="faculty-swiper__info swiper-no-swiping">
+                  <p><span>Email:</span> kaf-fin@gief.ru</p>
+                  <p><span>Телефон:</span> +7 (813) 71 42-009, доб. 143</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-slide bg-color-1">
+              <div class="faculty-swiper__wrapper">
+                <h3 class="faculty-swiper__title swiper-no-swiping">
+                  Кафедра финансов и кредита
+                </h3>
+                <div class="faculty-swiper__info swiper-no-swiping">
+                  <p><span>Email:</span> kaf-fin@gief.ru</p>
+                  <p><span>Телефон:</span> +7 (813) 71 42-009, доб. 143</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="faculty-swiper__controls">
+            <button class="faculty-swiper__swiper-button-prev swiper-btn">
+              <svg width="47" height="47" viewBox="0 0 47 47" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M23.3999 46.2C36.1025 46.2 46.3999 35.9025 46.3999 23.2C46.3999 10.4974 36.1025 0.199951 23.3999 0.199951C10.6974 0.199951 0.399902 10.4974 0.399902 23.2C0.399902 35.9025 10.6974 46.2 23.3999 46.2Z"
+                  fill="white"/>
+                <path class="swiper-btn__arrow"
+                  d="M25.8998 34.6C26.8998 33.6 27.9999 32.5 29.0999 31.4C26.3999 28.7 23.6998 26 20.9998 23.3C23.6998 20.6 26.3999 17.9 29.0999 15.2C27.9999 14.1 26.8998 13 25.8998 12C22.0998 15.8 18.3999 19.5 14.5999 23.3C18.2999 27 22.0998 30.8 25.8998 34.6Z"
+                  fill="black"/>
+              </svg>
+            </button>
+            <button class="faculty-swiper__swiper-button-next swiper-btn">
+              <svg width="47" height="47" viewBox="0 0 47 47" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M23.7 46.2C36.4025 46.2 46.7 35.9025 46.7 23.2C46.7 10.4974 36.4025 0.199951 23.7 0.199951C10.9974 0.199951 0.699951 10.4974 0.699951 23.2C0.699951 35.9025 10.9974 46.2 23.7 46.2Z"
+                  fill="white"/>
+                <path class="swiper-btn__arrow"
+                  d="M21.0999 34.6C20.0999 33.6 18.9999 32.5 17.8999 31.4C20.5999 28.7 23.2999 26 25.9999 23.3C23.2999 20.6 20.5999 17.9 17.8999 15.2C18.9999 14.1 20.0999 13 21.0999 12C24.8999 15.8 28.5999 19.5 32.3999 23.3C28.6999 27 24.8999 30.8 21.0999 34.6Z"
+                  fill="black"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section ads">
+      <div class="container">
+        <div class="ads__categories">
+          <ul class="ads__categories-list">
+            <li>
+              <a href="#">
+                <div class="ads__categories-img">
+                  <img src="img/ads-category1.jpg" alt="coronavirus">
+                </div>
+                <p>Коронавирус</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="ads__categories-img">
+                  <img src="img/ads-category2.jpg" alt="anti-corruption">
+                </div>
+                <p>Антикоррупция</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="ads__categories-img">
+                  <img src="img/ads-category3.jpg" alt="anti-terror">
+                </div>
+                <p>Антитеррор</p>
+              </a>
+            </li>
+          </ul>
+          <ul class="ads__categories-list">
+            <li>
+              <a href="#">
+                <div class="ads__categories-img">
+                  <img src="img/ads-category4.jpg" alt="employment">
+                </div>
+                <p>Трудоустройство</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="ads__categories-img">
+                  <img src="img/ads-category5.jpg" alt="hostel">
+                </div>
+                <p>Общежитие</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="ads__categories-img">
+                  <img src="img/ads-category6.jpg" alt="library">
+                </div>
+                <p>Библиотека</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="ads__aside">
+          <h3 class="ads__aside-title">Объявления</h3>
+          <ul class="ads__aside-list">
+            <li>
+              <h4>26 авг, 2020</h4>
+              <a href="#">На кафедру бухгалтерского учета и статистики
+                требуется...</a>
+            </li>
+            <li>
+              <h4>26 авг, 2020</h4>
+              <a href="#">На кафедру бухгалтерского учета и статистики
+                требуется...</a>
+            </li>
+            <li>
+              <h4>26 авг, 2020</h4>
+              <a href="#">На кафедру бухгалтерского учета и статистики
+                требуется...</a>
+            </li>
+            <li>
+              <h4>26 авг, 2020</h4>
+              <a href="#">На кафедру бухгалтерского учета и статистики
+                требуется...</a>
+            </li>
+            <li>
+              <h4>26 авг, 2020</h4>
+              <a href="#">На кафедру бухгалтерского учета и статистики
+                требуется...</a>
+            </li>
+          </ul>
+          <a href="#" class="ads__aside-link">
+            Все объявления
+            <svg width="16" height="13" viewBox="0 0 16 13" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.7002 5.84668H0.200195V7.44653H13.7002V5.84668Z"
+                    fill="#0D4CD3"/>
+              <path
+                d="M8.5 12.9465L7.5 11.8467L13.1001 6.54663L7.5 1.34668L8.5 0.246582L15.4 6.54663L8.5 12.9465Z"
+                fill="#0D4CD3"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="section sponsors-slider">
+      <div class="container">
+        <h2 class="sponsors-slider__title">
+          При поддержке
+        </h2>
+        <div class="swiper sponsors-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="sponsors-swiper__img">
+                <img src="img/sponsors-slide.jpg"
+                     alt="sponsors-slide">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="sponsors-swiper__img">
+                <img src="img/sponsors-slide.jpg"
+                     alt="sponsors-slide">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="sponsors-swiper__img">
+                <img src="img/sponsors-slide.jpg"
+                     alt="sponsors-slide">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="sponsors-swiper__img">
+                <img src="img/sponsors-slide.jpg"
+                     alt="sponsors-slide">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="sponsors-swiper__img">
+                <img src="img/sponsors-slide.jpg"
+                     alt="sponsors-slide">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="sponsors-swiper__img">
+                <img src="img/sponsors-slide.jpg"
+                     alt="sponsors-slide">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="sponsors-swiper__img">
+                <img src="img/sponsors-slide.jpg"
+                     alt="sponsors-slide">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="sponsors-swiper__img">
+                <img src="img/sponsors-slide.jpg"
+                     alt="sponsors-slide">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="sponsors-swiper__img">
+                <img src="img/sponsors-slide.jpg"
+                     alt="sponsors-slide">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="sponsors-swiper__img">
+                <img src="img/sponsors-slide.jpg"
+                     alt="sponsors-slide">
+              </div>
+            </div>
+          </div>
+          <div class="sponsors-swiper__controls">
+            <button class="sponsors-swiper__swiper-button-prev swiper-btn">
+              <svg width="47" height="47" viewBox="0 0 47 47" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M23.3999 46.2C36.1025 46.2 46.3999 35.9025 46.3999 23.2C46.3999 10.4974 36.1025 0.199951 23.3999 0.199951C10.6974 0.199951 0.399902 10.4974 0.399902 23.2C0.399902 35.9025 10.6974 46.2 23.3999 46.2Z"
+                  fill="white"/>
+                <path class="swiper-btn__arrow"
+                  d="M25.8998 34.6C26.8998 33.6 27.9999 32.5 29.0999 31.4C26.3999 28.7 23.6998 26 20.9998 23.3C23.6998 20.6 26.3999 17.9 29.0999 15.2C27.9999 14.1 26.8998 13 25.8998 12C22.0998 15.8 18.3999 19.5 14.5999 23.3C18.2999 27 22.0998 30.8 25.8998 34.6Z"
+                  fill="black"/>
+              </svg>
+            </button>
+            <button class="sponsors-swiper__swiper-button-next swiper-btn">
+              <svg width="47" height="47" viewBox="0 0 47 47" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M23.7 46.2C36.4025 46.2 46.7 35.9025 46.7 23.2C46.7 10.4974 36.4025 0.199951 23.7 0.199951C10.9974 0.199951 0.699951 10.4974 0.699951 23.2C0.699951 35.9025 10.9974 46.2 23.7 46.2Z"
+                  fill="white"/>
+                <path class="swiper-btn__arrow"
+                  d="M21.0999 34.6C20.0999 33.6 18.9999 32.5 17.8999 31.4C20.5999 28.7 23.2999 26 25.9999 23.3C23.2999 20.6 20.5999 17.9 17.8999 15.2C18.9999 14.1 20.0999 13 21.0999 12C24.8999 15.8 28.5999 19.5 32.3999 23.3C28.6999 27 24.8999 30.8 21.0999 34.6Z"
+                  fill="black"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section feedback">
+      <div class="container">
+        <div class="feedback__inner">
+          <h2 class="feedback__title">Обратная связь</h2>
+          <form class="feedback__form" action="#">
+            <div class="feedback__form-fields">
+              <div class="feedback__form-left">
+                <div class="feedback__field-wrapper">
+                  <input class="feedback__field" type="text"
+                         name="first_name">
+                  <label class="feedback__field-label">Имя</label>
+                </div>
+                <div class="feedback__field-wrapper">
+                  <input class="feedback__field feedback__field-phone phone-input"
+                         type="text" name="phone" required>
+                  <label class="feedback__field-label">Моб. телефон</label>
+                </div>
+                <div class="feedback__field-wrapper">
+                  <input class="feedback__field" type="email"
+                         name="email" required>
+                  <label class="feedback__field-label">E-mail</label>
+                </div>
+
+              </div>
+              <div class="feedback__form-right">
+                <textarea class="feedback__field" placeholder="Сообщение"
+                          name="message"></textarea>
+              </div>
+            </div>
+            <div class="error-message feedback__error-message_fields"></div>
+
+            <div class="feedback__form-agreement">
+
+              <div class="feedback__agreement-checkbox">
+
+                <div
+                  class="feedback__checkbox-wrapper">
+                  <input type="checkbox" class="feedback__checkbox"
+                         id="agreementCheck"
+                         name="agreement_check"
+                  >
+                  <label for="agreementCheck"> Нажимая кнопку «Отправить»,
+                    я даю свое согласие на обработку
+                    моих персональных данных, в соответствии с Федеральным
+                    законом от 27.07.2006 года №152-ФЗ «О персональных данных»,
+                    на условиях и для целей, определенных в Согласии на
+                    обработку персональных данных</label>
+                </div>
+                <p class="error-message feedback__error-message_agreement"></p>
+                <button class="btn">Отправить</button>
+
+              </div>
+              <div class="feedback__agreement-img">
+                <img src="img/feedback-bg.png" alt="">
+              </div>
+
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  @include('partials/footer.html')
+</div>
+
+</body>
+
+</html>

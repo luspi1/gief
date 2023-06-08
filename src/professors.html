@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+'title': 'Преподаватели',
+})
+
+<body class="page__body">
+<div class="site-container">
+  <div class="modal-overlay"></div>
+  @include('partials/header.html')
+  <main class="main professors-page">
+    <section class="section">
+      <div class="container">
+        <nav class="profile-menu">
+          <ul class="profile-menu__list">
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="#">Объявления</a>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="profile.html">Профиль</a>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="edit-profile.html">Редактирование профиля</a>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="tasks.html">Учебная деятельность</a>
+              <ul class="profile-menu__submenu profile-menu__tasks-submenu">
+                <li>
+                  <a href="tasks.html">
+                    Задания
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Задания на доработку
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="achievements.html">Достижения</a>
+              <ul class="profile-menu__submenu">
+                <li>
+                  <a href="#">
+                    Добавить достижение
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="profile-menu__list-item profile-menu_active">
+              <a class="profile-menu__main-link" href="professors.html">Преподаватели</a>
+            </li>
+            <li class="profile-menu__list-item">
+              <a class="profile-menu__main-link" href="#">Научная деятельность</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="professors-page__inner">
+          <h2 class="professors-page__title">
+            Преподаватели
+          </h2>
+          <ul class="flex-table professors-table">
+
+            <li class="flex-table__row professors-table__inputs-row">
+              <div class="flex-table__cell professors-page__input-wrapper professors-table__cell-name">
+                <label>Фамилия, имя, отчество</label>
+                <input class="professors-page__input" name="professor_name">
+              </div>
+              <div class="flex-table__cell professors-page__input-wrapper professors-table__cell-department">
+                <label>Кафедра</label>
+                <input class="professors-page__input" name="professor_department">
+              </div>
+              <div class="flex-table__cell professors-page__input-wrapper professors-table__cell-degree">
+                <label>Ученая степень</label>
+                <input class="professors-page__input" name="professor_degree">
+              </div>
+              <div class="flex-table__cell professors-page__input-wrapper professors-table__cell-rank">
+                <label>Ученое звание</label>
+                <input class="professors-page__input" name="professor_rank">
+              </div>
+              <div class="flex-table__cell professors-table__filter-btn">
+                <button type="submit">ОК</button>
+              </div>
+            </li>
+            <li class="flex-table__row">
+              <a href="#" class="flex-table__cell professors-table__cell-name">
+                Иванов Иван Иванович
+              </a>
+              <p class="flex-table__cell professors-table__cell-department">
+                Кафедра управления социальными и экономическими процессами
+              </p>
+              <p class="flex-table__cell professors-table__cell-degree">
+
+              </p>
+              <p class="flex-table__cell professors-table__cell-rank">
+                Доцент
+              </p>
+            </li>
+            <li class="flex-table__row">
+              <a href="#" class="flex-table__cell professors-table__cell-name">
+                Константинопольский Иван Иванович
+              </a>
+              <p class="flex-table__cell professors-table__cell-department">
+                Кафедра Истории и Теории Декоративного Искусства и Дизайна
+              </p>
+              <p class="flex-table__cell professors-table__cell-degree">
+                Доктор искусствоведения
+              </p>
+              <p class="flex-table__cell professors-table__cell-rank">
+                Профессор
+              </p>
+            </li>
+            <li class="flex-table__row">
+              <a href="#" class="flex-table__cell professors-table__cell-name">
+                Шевчук-Роскошный Петр Арнольдович
+              </a>
+              <p class="flex-table__cell professors-table__cell-department">
+                Кафедра уголовно-правовых дисциплин
+              </p>
+              <p class="flex-table__cell professors-table__cell-degree">
+                Доктор педагогических наук
+              </p>
+              <p class="flex-table__cell professors-table__cell-rank">
+                Доцент
+              </p>
+            </li>
+            <li class="flex-table__row">
+              <a href="#" class="flex-table__cell professors-table__cell-name">
+                Мухортых Татьяна Александровна
+              </a>
+              <p class="flex-table__cell professors-table__cell-department">
+                Кафедра финансов и кредита
+              </p>
+              <p class="flex-table__cell professors-table__cell-degree">
+
+              </p>
+              <p class="flex-table__cell professors-table__cell-rank">
+
+              </p>
+            </li>
+            <li class="flex-table__row">
+              <a href="#" class="flex-table__cell professors-table__cell-name">
+                Науменко Софья Николаевна
+              </a>
+              <p class="flex-table__cell professors-table__cell-department">
+                Кафедра уголовно-правовых дисциплин
+              </p>
+              <p class="flex-table__cell professors-table__cell-degree">
+
+              </p>
+              <p class="flex-table__cell professors-table__cell-rank">
+                Профессор
+              </p>
+            </li>
+            <li class="flex-table__row">
+              <a href="#" class="flex-table__cell professors-table__cell-name">
+                Тюляхов Иннокентий Иннокентьевич
+              </a>
+              <p class="flex-table__cell professors-table__cell-department">
+                Кафедра управления социальными и экономическими процессами
+              </p>
+              <p class="flex-table__cell professors-table__cell-degree">
+
+              </p>
+              <p class="flex-table__cell professors-table__cell-rank">
+
+              </p>
+            </li>
+            <li class="flex-table__row">
+              <a href="#" class="flex-table__cell professors-table__cell-name">
+                Константинопольский Иван Иванович
+              </a>
+              <p class="flex-table__cell professors-table__cell-department">
+                Кафедра бухгалтерского учёта и статистики
+              </p>
+              <p class="flex-table__cell professors-table__cell-degree">
+                Кандидат искусствоведения
+              </p>
+              <p class="flex-table__cell professors-table__cell-rank">
+                Профессор
+              </p>
+            </li>
+            <li class="flex-table__row">
+              <a href="#" class="flex-table__cell professors-table__cell-name">
+                Шевчук-Роскошный Петр Арнольдович
+              </a>
+              <p class="flex-table__cell professors-table__cell-department">
+                Кафедра уголовно-правовых дисциплин
+              </p>
+              <p class="flex-table__cell professors-table__cell-degree">
+
+              </p>
+              <p class="flex-table__cell professors-table__cell-rank">
+
+              </p>
+            </li>
+            <li class="flex-table__row">
+              <a href="#" class="flex-table__cell professors-table__cell-name">
+                Лаврентьева Екатерина Александровна
+              </a>
+              <p class="flex-table__cell professors-table__cell-department">
+                Кафедра финансов и кредита
+              </p>
+              <p class="flex-table__cell professors-table__cell-degree">
+
+              </p>
+              <p class="flex-table__cell professors-table__cell-rank">
+                Доцент
+              </p>
+            </li>
+            <li class="flex-table__row">
+              <a href="#" class="flex-table__cell professors-table__cell-name">
+                Отрадинский-Марков Марк Федорович
+              </a>
+              <p class="flex-table__cell professors-table__cell-department">
+                Кафедра уголовно-правовых дисциплин
+              </p>
+              <p class="flex-table__cell professors-table__cell-degree">
+
+              </p>
+              <p class="flex-table__cell professors-table__cell-rank">
+
+              </p>
+            </li>
+            <li class="flex-table__row">
+              <a href="#" class="flex-table__cell professors-table__cell-name">
+                Константинопольский Иван Иванович
+              </a>
+              <p class="flex-table__cell professors-table__cell-department">
+                Кафедра бухгалтерского учёта и статистики
+              </p>
+              <p class="flex-table__cell professors-table__cell-degree">
+                Кандидат искусствоведения
+              </p>
+              <p class="flex-table__cell professors-table__cell-rank">
+                Профессор
+              </p>
+            </li>
+            <li class="flex-table__row">
+              <a href="#" class="flex-table__cell professors-table__cell-name">
+                Шевчук-Роскошный Петр Арнольдович
+              </a>
+              <p class="flex-table__cell professors-table__cell-department">
+                Кафедра уголовно-правовых дисциплин
+              </p>
+              <p class="flex-table__cell professors-table__cell-degree">
+
+              </p>
+              <p class="flex-table__cell professors-table__cell-rank">
+
+              </p>
+            </li>
+            <li class="flex-table__row">
+              <a href="#" class="flex-table__cell professors-table__cell-name">
+                Сержантов-Шульц Константин Владимирович
+              </a>
+              <p class="flex-table__cell professors-table__cell-department">
+                Кафедра финансов и кредита
+              </p>
+              <p class="flex-table__cell professors-table__cell-degree">
+
+              </p>
+              <p class="flex-table__cell professors-table__cell-rank">
+                Доцент
+              </p>
+            </li>
+            <li class="flex-table__row">
+              <a href="#" class="flex-table__cell professors-table__cell-name">
+                Вильчес-Ногерол Антонио Владимирович
+              </a>
+              <p class="flex-table__cell professors-table__cell-department">
+                Кафедра бухгалтерского учёта и статистики
+              </p>
+              <p class="flex-table__cell professors-table__cell-degree">
+
+              </p>
+              <p class="flex-table__cell professors-table__cell-rank">
+
+              </p>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  @include('partials/footer.html')
+</div>
+
+</body>
+
+</html>
