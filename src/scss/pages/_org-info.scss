@@ -5,14 +5,12 @@
   color: $black;
   h1 {
     @include montserrat-semibold;
-    font-size: 30px;
-    line-height: 37px;
-    margin-bottom: 40px;
+    margin-bottom: 23px;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
   }
 
-  h5 {
-    font-weight: 600;
-  }
 
   &__main {
     .container {
@@ -26,55 +24,17 @@
     }
   }
 
-  &__inner {
+  .text-template {
     margin-right: 25px;
     flex-grow: 1;
   }
 
-  &__inner-block {
-    margin-bottom: 25px;
-  }
-
-  &__inner-item {
-    margin-bottom: 15px;
-
-    a {
-      color: $main-blue;
-    }
-
-    &._non-margin {
-      margin: 0;
-    }
-
-    &._one-line {
-      p {
-        display: inline;
-      }
-
-      h5 {
-        display: inline;
-      }
-    }
-  }
-
-  &__links-list {
-    margin-bottom: 30px;
-
-    li {
-      margin-bottom: 10px;
-    }
-
-    a {
-      color: $main-blue;
-    }
-  }
-
-  aside {
-    background: #F2F2F2;
-    width: 300px;
+   aside {
+     width: 300px;
     min-width: 300px;
     padding: 23px 20px 60px 20px;
-
+     background: #EFF5FE;
+     border-radius: 10px;
     @media (max-width: 768px) {
       order: -1;
       margin-bottom: 30px;
