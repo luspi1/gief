@@ -1,6 +1,6 @@
 .footer {
   padding: 36px 0 33px;
-  background: #303094;
+  background-color: #242F82;
 
   &__top {
     display: flex;
@@ -33,7 +33,7 @@
     @include montserrat-regular;
     font-size: 13px;
     line-height: 18px;
-    color: #FFFFFF;
+    color:  #9297C1;
 
   }
 
@@ -43,7 +43,7 @@
       font-size: 13px;
       line-height: 16px;
       text-decoration-line: underline;
-      color: #FFFFFF;
+      color:  #9297C1;
     }
   }
 
@@ -53,13 +53,11 @@
       font-size: 16px;
       line-height: 20px;
       color: #FFFFFF;
-      position: relative;
+      display: flex;
+      align-items: center;
 
       svg {
-        position: absolute;
-        left: -37px;
-        top: 50%;
-        transform: translateY(-50%);
+        margin-right: 3px;
       }
     }
   }
@@ -71,7 +69,14 @@
   .footer__bottom {
     padding: 15px 0 0;
   }
-
+  &__bottom-item-mobile {
+    max-width: 210px;
+    display: none;
+   a {
+     display: block;
+     text-align: center;
+   }
+  }
   .footer__bottom-list {
     display: flex;
     justify-content: space-between;
@@ -81,13 +86,13 @@
       @include montserrat-regular;
       font-size: 15px;
       line-height: 18px;
-      color: rgba(#ffffff, 0.5);
+      color: #FFFFFF;
 
       a {
         @include montserrat-regular;
         font-size: 15px;
         line-height: 18px;
-        color: rgba(#ffffff, 0.5);
+        color: #A1A2A2;
         padding-left: 30px;
         position: relative;
 
@@ -107,7 +112,7 @@
     font-size: 15px;
     line-height: 18px;
     padding-left: 36px;
-    color: rgba(#ffffff, 0.5);
+    color: #A1A2A2;
     position: relative;
     svg {
       opacity: 0.5;
@@ -119,4 +124,12 @@
 
   }
 
+}
+#footer__bottom-list-social-id {
+  display: flex;
+  li {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }

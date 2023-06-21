@@ -1,13 +1,13 @@
 import { Swiper } from "swiper/bundle";
 
 const swiperCaption = new Swiper('.caption-swiper', {
-  navigation: {
-    nextEl: '.caption-swiper__swiper-button-next',
-    prevEl: '.caption-swiper__swiper-button-prev'
+  grabCursor: true,
+  loop: true,
+  autoplay: {
+    delay: 3200,
   },
-
   slidesPerView: 1,
-
+  spaceBetween: 50,
 });
 
 
@@ -21,21 +21,28 @@ const swiperNews = new Swiper('.news-swiper', {
   noSwipingClass: 'swiper-no-swiping',
 
   slidesPerView: 1,
-  spaceBetween: 20,
+  spaceBetween: 40,
   breakpoints: {
     768: {
       slidesPerView: 2,
-      spaceBetween: 15
     },
     1024: {
       slidesPerView: 3,
-      spaceBetween: 20
     },
     1280: {
-      spaceBetween: 27,
       slidesPerView: 4,
     },
   }
+});
+
+const swiperBg = new Swiper('.bg-swiper', {
+  grabCursor: true,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  },
+  slidesPerView: 1,
+  spaceBetween: 0,
 });
 
 
@@ -49,18 +56,15 @@ const swiperFaculty = new Swiper('.faculty-swiper', {
   noSwipingClass: 'swiper-no-swiping',
 
   slidesPerView: 1,
-  spaceBetween: 20,
+  spaceBetween: 25,
   breakpoints: {
     768: {
       slidesPerView: 2,
-      spaceBetween: 15
     },
     1024: {
       slidesPerView: 3,
-      spaceBetween: 20
     },
     1280: {
-      spaceBetween: 25,
       slidesPerView: 4,
     },
   }
@@ -74,28 +78,22 @@ const swiperSponsors = new Swiper('.sponsors-swiper', {
   },
 
   slidesPerView: 1,
-  spaceBetween: 15,
+  spaceBetween: 30,
   breakpoints: {
-    500: {
-      slidesPerView: 2,
-      spaceBetween: 20
-    },
+
     600: {
-      slidesPerView: 3,
-      spaceBetween: 25
+      slidesPerView: 2,
     },
 
     768: {
-      slidesPerView: 4,
-      spaceBetween: 25
+      slidesPerView: 3,
     },
     1024: {
-      slidesPerView: 5,
-      spaceBetween: 25
+      slidesPerView: 4,
+      spaceBetween: 45
     },
-    1280: {
-      spaceBetween: 33,
-      slidesPerView: 7,
+    1400: {
+      slidesPerView: 5,
     },
   }
 });

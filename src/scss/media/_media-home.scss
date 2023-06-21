@@ -1,97 +1,26 @@
-@media (max-width: 1500px) {
-  .home-page .accounting__contacts {
-    padding-left: 0;
-    justify-content: space-between;
-  }
-
-  .home-page .accounting__contacts-title {
-    margin-right: 30px;
-  }
-
-  .home-page .accounting__contacts-email {
-    margin-right: 30px;
-  }
-}
-
 @media (max-width: 1280px) {
-  .home-page .accounting__inner {
-    padding: 57px 40px 45px 30px;
+  .home-page .media-center__photos {
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
-
-  .home-page .accounting__content-img {
-    position: relative;
-    padding-top: 31.5%;
-    width: 44%;
-    margin-right: 60px;
+  .home-page .media-center__photo {
+    max-width: 48%;
   }
-
-  .home-page .accounting__contacts-title {
-    margin-right: 25px;
+  .home-page .caption-slider .caption-swiper img {
+    min-height: 380px;
   }
-
-  .home-page .accounting__contacts-email {
-    margin-right: 25px;
-  }
-
 
   .home-page .feedback__inner {
     padding: 40px 80px 40px 80px;
   }
-
-
 }
 
 @media (max-width: 1024px) {
-
   .home-page__subtitle {
     font-size: 35px;
     line-height: 29px;
     margin-right: 30px;
   }
-
-
-  .home-page .caption-slider .caption-swiper__controls {
-    width: 98%;
-    top: 42%;
-  }
-
-  .home-page .caption-slider .caption-swiper__img {
-    padding-top: 26%;
-  }
-
-  .home-page .accounting__inner {
-    padding: 40px 30px 45px 30px;
-  }
-
-  .home-page .accounting__content-img {
-    padding-top: 34.5%;
-    width: 48%;
-    margin-right: 30px;
-  }
-
-  .home-page .accounting__title {
-    font-size: 35px;
-    line-height: 50px;
-    margin-bottom: 15px;
-    min-width: 320px;
-  }
-
-  .home-page .accounting__subtitle {
-    font-size: 19px;
-    line-height: 25px;
-    margin-bottom: 10px;
-  }
-
-  .home-page .accounting__contacts-title {
-    font-size: 22px;
-    line-height: 28px;
-    max-width: 170px;
-  }
-
-  .home-page .accounting__contacts br {
-    display: block;
-  }
-
 
   .home-page .ads .container {
     flex-direction: column;
@@ -105,12 +34,12 @@
   .home-page .ads__aside {
     width: 100%;
     padding: 32px 22px 29px;
-    background: #F3F4F5;
     border-radius: 12px;
   }
 
   .home-page .feedback__inner {
     padding: 40px 60px 40px 60px;
+    background-position: right center;
   }
 
   .home-page .feedback__title {
@@ -119,14 +48,31 @@
     margin-bottom: 30px;
   }
 
-  .home-page .feedback__agreement-img {
-    display: none;
-  }
-
   .home-page .feedback__field {
     font-size: 16px;
     line-height: 20px;
     padding: 18px 15px;
+  }
+  .home-page .feedback__form-left,
+  .home-page .feedback__form-right {
+    width: 49%;
+  }
+}
+
+@media (max-width: 992px) {
+  .home-page .media-center .container {
+    flex-direction: column;
+  }
+  .home-page .media-center__inner {
+    margin-bottom: 20px;
+    padding: 40px 20px;
+  }
+  .home-page .media-center__content {
+    max-width: 100%;
+  }
+  .home-page .media-center__link {
+    font-size: 42px;
+    line-height: 54px;
   }
 }
 
@@ -143,71 +89,56 @@
     margin-bottom: 25px;
   }
 
-
-  .home-page .caption-slider .caption-swiper__controls .caption-swiper__swiper-button-prev svg, .home-page .caption-slider .caption-swiper__controls .caption-swiper__swiper-button-next svg {
-    height: 30px;
-    width: 30px;
+  .home-page .caption-slider .caption-swiper__content {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  .home-page .caption-slider .caption-swiper__description {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 22px;
   }
 
-  .home-page .cta-line h2 {
-    font-size: 24px;
-    line-height: 34px;
+  .home-page .caption-slider .caption-swiper img {
+    min-height: 250px;
   }
 
+  .home-page .swiper-btn svg {
+    height: 35px;
+    width: 35px;
+  }
+  .home-page .media-center__content p {
+    margin-bottom: 35px;
+  }
+
+  .home-page .media-center__photo:not(:last-child) {
+    margin-right: 15px;
+  }
+  .home-page .media-center__photo {
+    max-width: 42%;
+  }
+  .home-page .media-center__link {
+    font-size: 32px;
+    line-height: 40px;
+  }
   .home-page .btn {
-    border-radius: 30px;
+    margin: 0 auto;
+    padding: 17px 70px;
+    display: block;
     font-size: 18px;
     line-height: 24px;
     text-align: center;
-    padding: 17px 70px;
+  }
+  .home-page .news .container {
+    padding-bottom: 15px;
+  }
+  .home-page .news .news-swiper__title {
+    min-height: max-content;
   }
 
-  .home-page .accounting {
-    margin-bottom: 60px;
+  .home-page .faculty .container {
+    padding-top: 10px;
   }
-
-  .home-page .accounting__title {
-    font-size: 30px;
-    line-height: 40px;
-    margin-bottom: 15px;
-    min-width: 270px;
-    max-width: 270px;
-  }
-
-
-  .home-page .accounting__content-img {
-    display: none;
-  }
-
-  .home-page .accounting__content-text {
-    width: 100%;
-  }
-
-  .home-page .accounting__contacts {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .home-page .accounting__contacts-title {
-    max-width: 100%;
-    margin-right: 0;
-    margin-bottom: 15px;
-  }
-
-  .home-page .accounting__contacts-email {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-
-  .home-page .accounting__contacts br {
-    display: none;
-  }
-
-  .home-page .news {
-    margin-bottom: 100px;
-  }
-
-
   .home-page .faculty .faculty-swiper__title {
     font-size: 24px;
     line-height: 30px;
@@ -222,9 +153,12 @@
   }
 
   .home-page .feedback__inner {
-    padding: 30px 30px 40px 30px;
+    padding: 30px 20px 40px;
+    background-position: center;
   }
-
+  .home-page .feedback__title {
+    font-size: 26px;
+  }
   .home-page .feedback__form-fields {
     flex-direction: column;
   }
@@ -249,7 +183,7 @@
     margin-top: 5px;
   }
 
-  .home-page .feedback__checkbox + label{
+  .home-page .feedback__checkbox + label {
     align-items: flex-start;
   }
 }
@@ -264,7 +198,6 @@
     align-items: center;
   }
 
-
   .home-page .ads__categories-list li:not(:last-child) {
     margin-right: 0;
   }
@@ -273,12 +206,4 @@
     width: 70%;
     margin-bottom: 40px;
   }
-
-}
-
-@media (max-width: 500px) {
-  .home-page .caption-slider .caption-swiper__controls {
-    top: 36%;
-  }
-
 }

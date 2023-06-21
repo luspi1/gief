@@ -8,117 +8,61 @@
 <body class="page__body">
 <div class="site-container">
   <div class="modal-overlay"></div>
-  @include('partials/header.html')
+  @include('partials/header.html', {
+  'slider-bg': '_active',
+  'slider-caption': '_active',
+  'container-height' : '_active'
+  })
   <main class="main home-page">
-    <section class="section caption-slider">
-      <div class="swiper caption-swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="caption-swiper__img">
-              <img src="img/caption-slide1.jpg"
-                   alt="caption-slide">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="caption-swiper__img">
-              <img src="img/caption-slide1.jpg"
-                   alt="caption-slide">
-            </div>
-          </div>
-        </div>
 
-        <div class="caption-swiper__controls">
-          <button class="caption-swiper__swiper-button-prev swiper-btn">
-            <svg width="47" height="47" viewBox="0 0 47 47" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
+    <section class="section media-center">
+      <div class="container">
+        <div class="media-center__inner">
+          <a href="#" class="media-center__link">Медиа-центр института
+            <svg width="32" height="27" viewBox="0 0 32 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M28.2999 12H0.199951V15.2H28.2999V12Z" fill="#1D1814"/>
               <path
-                d="M23.3999 46.2C36.1025 46.2 46.3999 35.9025 46.3999 23.2C46.3999 10.4974 36.1025 0.199951 23.3999 0.199951C10.6974 0.199951 0.399902 10.4974 0.399902 23.2C0.399902 35.9025 10.6974 46.2 23.3999 46.2Z"
-                fill="white"/>
-              <path class="swiper-btn__arrow"
-                d="M25.8998 34.6C26.8998 33.6 27.9999 32.5 29.0999 31.4C26.3999 28.7 23.6998 26 20.9998 23.3C23.6998 20.6 26.3999 17.9 29.0999 15.2C27.9999 14.1 26.8998 13 25.8998 12C22.0998 15.8 18.3999 19.5 14.5999 23.3C18.2999 27 22.0998 30.8 25.8998 34.6Z"
-                fill="black"/>
+                d="M17.5999 26.8L15.3999 24.5L27.0999 13.6L15.3999 2.69995L17.5999 0.300049L31.7999 13.6L17.5999 26.8Z"
+                fill="#1D1814"/>
             </svg>
-          </button>
-          <button class="caption-swiper__swiper-button-next swiper-btn">
-            <svg width="47" height="47" viewBox="0 0 47 47" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M23.7 46.2C36.4025 46.2 46.7 35.9025 46.7 23.2C46.7 10.4974 36.4025 0.199951 23.7 0.199951C10.9974 0.199951 0.699951 10.4974 0.699951 23.2C0.699951 35.9025 10.9974 46.2 23.7 46.2Z"
-                fill="white"/>
-              <path class="swiper-btn__arrow"
-                d="M21.0999 34.6C20.0999 33.6 18.9999 32.5 17.8999 31.4C20.5999 28.7 23.2999 26 25.9999 23.3C23.2999 20.6 20.5999 17.9 17.8999 15.2C18.9999 14.1 20.0999 13 21.0999 12C24.8999 15.8 28.5999 19.5 32.3999 23.3C28.6999 27 24.8999 30.8 21.0999 34.6Z"
-                fill="black"/>
-            </svg>
-          </button>
+          </a>
+          <div class="media-center__photos">
+            <div class="media-center__photo">
+              <img src="../img/media-center_1.png" alt="">
+            </div>
+            <div class="media-center__photo">
+              <img src="../img/media-center_2.png" alt="">
+            </div>
+            <div class="media-center__photo">
+              <img src="../img/media-center_3.png" alt="">
+            </div>
+            <div class="media-center__photo">
+              <img src="../img/media-center_4.png" alt="">
+            </div>
+          </div>
         </div>
+        <div class="media-center__content">
+          <h4>Изучать новые
+            технологии</h4>
+          <p>Изучению новых технологий в ГИЭФПТ уделено особое внимание.... Sed ut perspiciatis, unde omnis iste natus
+            error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore
+            veritatis et ...</p>
+          <div class="media-center__image">
+            <img src="../img/media-center_5.jpg" alt="">
+          </div>
+        </div>
+        <svg class="word _g" width="111" height="236" viewBox="0 0 111 236" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+          <path d="M110.6 221.4L52.8001 235.6L0.800049 24.3L98.2 0.400024L109.4 45.7L69.8 55.4L110.6 221.4Z"
+                fill="#EFF5FE"/>
+        </svg>
+        <svg class="word _i" width="157" height="234" viewBox="0 0 157 234" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M127 233.6L77 226.7L88.6 142.1L51.8 223.3L0.5 216.3L30 0.699951L80 7.59998L68.3 92.5L107.3 11.3L156.5 18L127 233.6Z"
+            fill="#EFF5FE"/>
+        </svg>
 
-      </div>
-    </section>
-    <section class="section cta-line">
-      <div class="container">
-        <h2>Продолжается прием на программы бакалавриата. Остались последние
-          бюджетные места!</h2>
-      </div>
-    </section>
-    <section class="section accounting">
-      <div class="container">
-        <div class="accounting__inner">
-          <div class="accounting__content">
-            <div class="accounting__content-img">
-              <img src="img/1c-logo.png" alt="1C Бухгалтерия">
-            </div>
-            <div class="accounting__content-text">
-              <h2 class="accounting__title">1С Предприятие: Бухгалтерия
-                8.3 </h2>
-              <div class="accounting__content-info">
-                <h3 class="accounting__subtitle">Программа курсов — структура
-                  программ
-                  на платформах 1С</h3>
-                <p>ввод начальных данных; ввод сведений об организации; движение
-                  денежных средств: (наличные д.ср.); движение денежных средств:
-                  (б/наличные д.ср.); платежные поручения (входящие,
-                  исходящие)...</p>
-                <h3 class="accounting__subtitle">Стоимость обучения — 6000
-                  ₽</h3>
-                <p>для студентов ГИЭФПТ (очная форма обучения) –
-                  <span>3000 руб.</span>
-                  Объем программы: <span>72 часа</span></p>
-              </div>
-              <button class="btn">Записаться</button>
-            </div>
-          </div>
-          <div class="accounting__contacts">
-            <h3 class="accounting__contacts-title">Контактная информация</h3>
-            <p class="accounting__contacts-email">
-              <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
-                   xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M0.900146 2.89978C0.900146 2.79978 0.900146 2.59976 0.900146 2.49976C0.900146 2.39976 0.900122 2.19973 1.00012 2.09973C1.20012 1.49973 1.5001 0.99978 2.1001 0.89978C2.3001 0.79978 2.50011 0.799805 2.80011 0.799805C7.80011 0.799805 12.8001 0.799805 17.8001 0.799805C17.9001 0.799805 18.0001 0.799805 18.1001 0.799805C18.4001 0.799805 18.7001 0.999707 19.0001 1.19971C19.4001 1.49971 19.5001 1.8998 19.6001 2.2998C19.6001 2.3998 19.6001 2.59971 19.6001 2.69971C19.5001 3.09971 19.4001 3.3998 19.3001 3.7998C18.9001 4.4998 18.4001 4.99978 17.8001 5.39978C15.9001 6.69978 14.1001 7.9998 12.2001 9.2998C11.9001 9.4998 11.6001 9.69978 11.2001 9.89978C10.6001 10.1998 10.0001 10.1998 9.40015 9.89978C9.10015 9.69978 8.9001 9.59978 8.6001 9.39978C6.7001 7.99978 4.70011 6.6998 2.80011 5.2998C1.90011 4.6998 1.20015 3.99978 0.900146 2.89978Z"
-                  fill="#0D4CD3"/>
-                <path
-                  d="M1 5.7998C2.1 6.8998 3.49999 7.69973 4.79999 8.59973C5.09999 8.79973 5.40001 8.99971 5.70001 9.19971L5.59998 9.2998C4.09998 10.7998 2.59998 12.2998 1.09998 13.7998C1.09998 13.7998 1.1 13.7998 1 13.8998C1 11.1998 1 8.4998 1 5.7998Z"
-                  fill="#0D4CD3"/>
-                <path
-                  d="M19.7 13.8999C19.6 13.8999 19.6 13.7999 19.5 13.7999C18 12.2999 16.6 10.8999 15.1 9.3999L15 9.29993C15.1 9.29993 15.1 9.19983 15.2 9.19983C16.2 8.49983 17.3 7.79988 18.3 6.99988C18.8 6.69988 19.2 6.2999 19.7 5.8999C19.7 8.4999 19.7 11.1999 19.7 13.8999Z"
-                  fill="#0D4CD3"/>
-                <path
-                  d="M13.8001 10.0996C15.6001 11.8996 17.3001 13.5997 19.1001 15.3997C18.9001 15.5997 18.6001 15.7997 18.2001 15.7997C18.1001 15.7997 18.0001 15.7997 17.9001 15.7997C12.9001 15.7997 7.80011 15.7997 2.80011 15.7997C2.40011 15.7997 2.0001 15.6997 1.6001 15.3997C3.4001 13.5997 5.10015 11.8996 6.90015 10.0996C7.30015 10.3996 7.7001 10.6997 8.1001 10.8997C8.6001 11.1997 9.20011 11.4996 9.80011 11.6996C10.4001 11.8996 11.0001 11.6996 11.6001 11.4996C12.3001 11.1996 12.9001 10.7997 13.5001 10.2997C13.6001 10.1997 13.7001 10.0996 13.8001 10.0996Z"
-                  fill="#0D4CD3"/>
-              </svg>
-              Эл. почта:<br> <a
-              href="mailto:abiturient@gief.ru">abiturient@gief.ru</a>
-            </p>
-            <p class="accounting__contacts-phone">
-              <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
-                   xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M20.3003 9.59973C20.3003 9.99973 20.3003 10.3998 20.3003 10.7998C20.3003 10.8998 20.3003 10.8998 20.3003 10.9998C20.2003 12.3998 19.8002 13.6998 19.2002 14.8998C17.6002 17.6998 15.3002 19.3998 12.1002 19.9998C11.7002 20.0998 11.3003 20.0997 10.9003 20.1997C10.5003 20.1997 10.1002 20.1997 9.7002 20.1997C9.60019 20.1997 9.60024 20.1997 9.50024 20.1997C8.10024 20.0997 6.80024 19.6997 5.50024 19.0997C2.70024 17.4997 1.00027 15.1998 0.400269 11.9998C0.300269 11.5998 0.300195 11.1998 0.200195 10.7998C0.200195 10.3998 0.200195 9.99973 0.200195 9.59973C0.200195 9.49973 0.200195 9.49978 0.200195 9.39978C0.300195 7.99978 0.700293 6.69976 1.30029 5.49976C2.90029 2.69976 5.20027 0.99978 8.40027 0.39978C8.80027 0.29978 9.20022 0.299707 9.60022 0.199707C10.0002 0.199707 10.4003 0.199707 10.8003 0.199707C10.9003 0.199707 10.9002 0.199707 11.0002 0.199707C12.4002 0.299707 13.7002 0.699805 15.0002 1.2998C17.8002 2.8998 19.5002 5.19978 20.1002 8.39978C20.2002 8.79978 20.2003 9.19973 20.3003 9.59973ZM7.7002 9.49976C8.0002 9.39976 8.30024 9.19973 8.50024 9.09973C8.90024 8.89973 9.10029 8.59973 8.80029 8.09973C8.40029 7.19973 8.20022 6.19971 8.10022 5.19971C8.10022 4.79971 7.80027 4.49976 7.40027 4.49976C6.70027 4.49976 6.00029 4.49976 5.30029 4.49976C4.80029 4.49976 4.60022 4.69971 4.60022 5.19971C4.60022 6.89971 5.00029 8.49976 5.80029 9.99976C7.80029 13.6998 11.0002 15.5997 15.2002 15.6997C15.6002 15.6997 15.9003 15.3998 15.9003 14.9998C15.9003 14.2998 15.9003 13.5998 15.9003 12.7998C15.9003 12.2998 15.7002 12.0997 15.2002 12.0997C14.2002 12.0997 13.2003 11.8998 12.3003 11.3998C11.8003 11.1998 11.5003 11.2998 11.3003 11.7998C11.2003 12.0998 11.0003 12.2997 10.9003 12.5997C9.60027 11.9997 8.5002 10.8998 7.7002 9.49976Z"
-                  fill="#0D4CD3"/>
-              </svg>
-              Телефон:<br> +7 (813) 71 413-21
-            </p>
-          </div>
-        </div>
       </div>
     </section>
     <section class="section news">
@@ -129,13 +73,13 @@
           </h2>
           <a class="home-page__subtitle-link " href="news.html">
             Все новости
-            <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.8862 6.21631H0.38623V7.81641H13.8862V6.21631Z"
-                    fill="#0D4CD3"/>
+            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
-                d="M8.68628 13.3163L7.68628 12.2162L13.2863 7.01624L7.68628 1.71619L8.68628 0.616211L15.5863 7.01624L8.68628 13.3163Z"
-                fill="#0D4CD3"/>
+                d="M23.7 0.900024H3.69995C2.0431 0.900024 0.699951 2.24317 0.699951 3.90003V23.9C0.699951 25.5569 2.0431 26.9 3.69995 26.9H23.7C25.3568 26.9 26.7 25.5569 26.7 23.9V3.90002C26.7 2.24317 25.3568 0.900024 23.7 0.900024Z"
+                fill="#AFCDFB"/>
+              <path
+                d="M11.3999 20.4C10.7999 19.8 10.1999 19.2 9.59985 18.6C11.1999 17 12.6999 15.5 14.2999 13.9C12.6999 12.3 11.1999 10.8 9.59985 9.19995C10.1999 8.59995 10.8999 7.90005 11.4999 7.30005C13.6999 9.50005 15.7999 11.6 17.9999 13.8C15.7999 16 13.5999 18.2 11.3999 20.4Z"
+                fill="white"/>
             </svg>
           </a>
         </div>
@@ -143,126 +87,120 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="news-swiper__img">
-                <img src="img/news-slide1.jpg"
+                <img src="../img/news-slide1.jpg"
                      alt="news-slide">
               </div>
-
               <div class="news-swiper__content">
-                <a href="news-item.html" class="news-swiper__title swiper-no-swiping">
+                <a href="one-news.html" class="news-swiper__title swiper-no-swiping">
                   Заселение в общежитие
                 </a>
-
+                <p class="news-swiper__description swiper-no-swiping" data-shear="77">Изучению новых технологий в ГИЭФПТ
+                  уделено особое внимание lorem...</p>
                 <p class="news-swiper__date swiper-no-swiping">
                   10 августа 2022
                 </p>
               </div>
-
-
             </div>
             <div class="swiper-slide">
               <div class="news-swiper__img">
-                <img src="img/news-slide2.jpg"
+                <img src="../img/news-slide2.jpg"
                      alt="news-slide">
               </div>
-
               <div class="news-swiper__content">
-                <a href="news-item.html" class="news-swiper__title swiper-no-swiping">
+                <a href="one-news.html" class="news-swiper__title swiper-no-swiping">
                   Продолжается прием на программы бакалавриата
                 </a>
+                <p class="news-swiper__description swiper-no-swiping" data-shear="77">Изучению новых технологий в ГИЭФПТ
+                  уделено особое внимание lorem...</p>
                 <p class="news-swiper__date swiper-no-swiping">
                   05 августа 2022
                 </p>
               </div>
-
-
             </div>
             <div class="swiper-slide">
               <div class="news-swiper__img">
-                <img src="img/news-slide3.jpg"
+                <img src="../img/news-slide3.jpg"
                      alt="news-slide">
               </div>
               <div class="news-swiper__content">
-                <a href="news-item.html" class="news-swiper__title swiper-no-swiping">
+                <a href="one-news.html" class="news-swiper__title swiper-no-swiping">
                   Участвуем и побеждаем во Всероссийской олимпиаде
                 </a>
-
+                <p class="news-swiper__description swiper-no-swiping" data-shear="77">Изучению новых технологий в ГИЭФПТ
+                  уделено особое внимание lorem...</p>
                 <p class="news-swiper__date swiper-no-swiping">
                   29 июля 2022
                 </p>
               </div>
-
-
             </div>
             <div class="swiper-slide">
               <div class="news-swiper__img">
-                <img src="img/news-slide4.jpg"
+                <img src="../img/news-slide4.jpg"
                      alt="news-slide">
               </div>
               <div class="news-swiper__content">
-                <a href="news-item.html" class="news-swiper__title swiper-no-swiping">
+                <a href="one-news.html" class="news-swiper__title swiper-no-swiping">
                   Проведение выборов и конкурсный отбор
                 </a>
-
+                <p class="news-swiper__description swiper-no-swiping" data-shear="77">Изучению новых технологий в ГИЭФПТ
+                  уделено особое внимание lorem...</p>
                 <p class="news-swiper__date swiper-no-swiping">
                   29 июля 2022
                 </p>
               </div>
-
             </div>
             <div class="swiper-slide">
               <div class="news-swiper__img">
-                <img src="img/news-slide2.jpg"
+                <img src="../img/news-slide2.jpg"
                      alt="news-slide">
               </div>
               <div class="news-swiper__content">
-                <a href="news-item.html" class="news-swiper__title swiper-no-swiping">
+                <a href="one-news.html" class="news-swiper__title swiper-no-swiping">
                   Участвуем и побеждаем во Всероссийской олимпиаде
                 </a>
+                <p class="news-swiper__description swiper-no-swiping" data-shear="77">Изучению новых технологий в ГИЭФПТ
+                  уделено особое внимание lorem...</p>
                 <p class="news-swiper__date swiper-no-swiping">
                   10 августа 2022
                 </p>
               </div>
-
             </div>
             <div class="swiper-slide">
               <div class="news-swiper__img">
-                <img src="img/news-slide4.jpg"
+                <img src="../img/news-slide4.jpg"
                      alt="news-slide">
               </div>
               <div class="news-swiper__content">
-                <a href="news-item.html" class="news-swiper__title swiper-no-swiping">
+                <a href="one-news.html" class="news-swiper__title swiper-no-swiping">
                   Заселение в общежитие
                 </a>
-
+                <p class="news-swiper__description swiper-no-swiping" data-shear="77">Изучению новых технологий в ГИЭФПТ
+                  уделено особое внимание lorem...</p>
                 <p class="news-swiper__date swiper-no-swiping">
                   10 августа 2022
                 </p>
               </div>
-
             </div>
-
           </div>
-          <div class="news-swiper__controls">
-            <button class="news-swiper__swiper-button-prev swiper-btn">
-              <svg width="47" height="47" viewBox="0 0 47 47" fill="none"
-                   xmlns="http://www.w3.org/2000/svg">
+          <div class="swiper__controls news-swiper__controls">
+            <button class="news-swiper__swiper-button-prev swiper-btn _prev">
+              <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
-                  d="M23.3999 46.2C36.1025 46.2 46.3999 35.9025 46.3999 23.2C46.3999 10.4974 36.1025 0.199951 23.3999 0.199951C10.6974 0.199951 0.399902 10.4974 0.399902 23.2C0.399902 35.9025 10.6974 46.2 23.3999 46.2Z"
+                  d="M41.7 0.900024H5.69995C2.93853 0.900024 0.699951 3.1386 0.699951 5.90002V41.9C0.699951 44.6614 2.93853 46.9 5.69995 46.9H41.7C44.4614 46.9 46.7 44.6614 46.7 41.9V5.90002C46.7 3.1386 44.4614 0.900024 41.7 0.900024Z"
+                  fill="#AFCDFB"/>
+                <path
+                  d="M27.8 35.2C28.8 34.2 29.9 33.1 31 32C28.3 29.3 25.6 26.6 22.9 23.9C25.6 21.2 28.3 18.5 31 15.8C29.9 14.7 28.8 13.6 27.8 12.6C24 16.4 20.3 20.1 16.5 23.9C20.2 27.6 24 31.4 27.8 35.2Z"
                   fill="white"/>
-                <path class="swiper-btn__arrow"
-                  d="M25.8998 34.6C26.8998 33.6 27.9999 32.5 29.0999 31.4C26.3999 28.7 23.6998 26 20.9998 23.3C23.6998 20.6 26.3999 17.9 29.0999 15.2C27.9999 14.1 26.8998 13 25.8998 12C22.0998 15.8 18.3999 19.5 14.5999 23.3C18.2999 27 22.0998 30.8 25.8998 34.6Z"
-                  fill="black"/>
               </svg>
             </button>
-            <button class="news-swiper__swiper-button-next swiper-btn">
-              <svg width="47" height="47" viewBox="0 0 47 47" fill="none"
-                   xmlns="http://www.w3.org/2000/svg">
+            <button class="news-swiper__swiper-button-next swiper-btn _next">
+              <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
-                  d="M23.7 46.2C36.4025 46.2 46.7 35.9025 46.7 23.2C46.7 10.4974 36.4025 0.199951 23.7 0.199951C10.9974 0.199951 0.699951 10.4974 0.699951 23.2C0.699951 35.9025 10.9974 46.2 23.7 46.2Z"
+                  d="M41.8 0.900024H5.80005C3.03863 0.900024 0.800049 3.1386 0.800049 5.90002V41.9C0.800049 44.6614 3.03862 46.9 5.80005 46.9H41.8C44.5615 46.9 46.8 44.6614 46.8 41.9V5.90002C46.8 3.1386 44.5615 0.900024 41.8 0.900024Z"
+                  fill="#AFCDFB"/>
+                <path
+                  d="M19.7 35.2C18.7 34.2 17.6 33.1 16.5 32C19.2 29.3 21.9 26.6 24.6 23.9C21.9 21.2 19.2 18.5 16.5 15.8C17.6 14.7 18.7 13.6 19.7 12.6C23.5 16.4 27.2 20.1 31 23.9C27.3 27.6 23.5 31.4 19.7 35.2Z"
                   fill="white"/>
-                <path class="swiper-btn__arrow"
-                  d="M21.0999 34.6C20.0999 33.6 18.9999 32.5 17.8999 31.4C20.5999 28.7 23.2999 26 25.9999 23.3C23.2999 20.6 20.5999 17.9 17.8999 15.2C18.9999 14.1 20.0999 13 21.0999 12C24.8999 15.8 28.5999 19.5 32.3999 23.3C28.6999 27 24.8999 30.8 21.0999 34.6Z"
-                  fill="black"/>
               </svg>
             </button>
           </div>
@@ -277,13 +215,13 @@
           </h2>
           <a class="home-page__subtitle-link " href="#">
             Все подразделения
-            <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.8862 6.21631H0.38623V7.81641H13.8862V6.21631Z"
-                    fill="#0D4CD3"/>
+            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
-                d="M8.68628 13.3163L7.68628 12.2162L13.2863 7.01624L7.68628 1.71619L8.68628 0.616211L15.5863 7.01624L8.68628 13.3163Z"
-                fill="#0D4CD3"/>
+                d="M23.7 0.900024H3.69995C2.0431 0.900024 0.699951 2.24317 0.699951 3.90003V23.9C0.699951 25.5569 2.0431 26.9 3.69995 26.9H23.7C25.3568 26.9 26.7 25.5569 26.7 23.9V3.90002C26.7 2.24317 25.3568 0.900024 23.7 0.900024Z"
+                fill="#AFCDFB"/>
+              <path
+                d="M11.3999 20.4C10.7999 19.8 10.1999 19.2 9.59985 18.6C11.1999 17 12.6999 15.5 14.2999 13.9C12.6999 12.3 11.1999 10.8 9.59985 9.19995C10.1999 8.59995 10.8999 7.90005 11.4999 7.30005C13.6999 9.50005 15.7999 11.6 17.9999 13.8C15.7999 16 13.5999 18.2 11.3999 20.4Z"
+                fill="white"/>
             </svg>
           </a>
         </div>
@@ -362,35 +300,37 @@
                   <p><span>Телефон:</span> +7 (813) 71 42-009, доб. 143</p>
                 </div>
               </div>
-
             </div>
-
           </div>
-          <div class="faculty-swiper__controls">
-            <button class="faculty-swiper__swiper-button-prev swiper-btn">
-              <svg width="47" height="47" viewBox="0 0 47 47" fill="none"
-                   xmlns="http://www.w3.org/2000/svg">
+          <div class="swiper__controls faculty-swiper__controls">
+            <button class="faculty-swiper__swiper-button-prev swiper-btn _prev">
+              <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
-                  d="M23.3999 46.2C36.1025 46.2 46.3999 35.9025 46.3999 23.2C46.3999 10.4974 36.1025 0.199951 23.3999 0.199951C10.6974 0.199951 0.399902 10.4974 0.399902 23.2C0.399902 35.9025 10.6974 46.2 23.3999 46.2Z"
+                  d="M41.7 0.800049H5.69995C2.93853 0.800049 0.699951 3.03862 0.699951 5.80005V41.8C0.699951 44.5615 2.93853 46.8 5.69995 46.8H41.7C44.4614 46.8 46.7 44.5615 46.7 41.8V5.80005C46.7 3.03863 44.4614 0.800049 41.7 0.800049Z"
+                  fill="#AFCDFB"/>
+                <path
+                  d="M27.8 35.2C28.8 34.2 29.9 33.1 31 32C28.3 29.3 25.6 26.5999 22.9 23.8999C25.6 21.1999 28.3 18.5 31 15.8C29.9 14.7 28.8 13.6001 27.8 12.6001C24 16.4001 20.3 20.0999 16.5 23.8999C20.2 27.5999 24 31.4 27.8 35.2Z"
                   fill="white"/>
-                <path class="swiper-btn__arrow"
-                  d="M25.8998 34.6C26.8998 33.6 27.9999 32.5 29.0999 31.4C26.3999 28.7 23.6998 26 20.9998 23.3C23.6998 20.6 26.3999 17.9 29.0999 15.2C27.9999 14.1 26.8998 13 25.8998 12C22.0998 15.8 18.3999 19.5 14.5999 23.3C18.2999 27 22.0998 30.8 25.8998 34.6Z"
-                  fill="black"/>
               </svg>
             </button>
-            <button class="faculty-swiper__swiper-button-next swiper-btn">
-              <svg width="47" height="47" viewBox="0 0 47 47" fill="none"
-                   xmlns="http://www.w3.org/2000/svg">
+            <button class="faculty-swiper__swiper-button-next swiper-btn _next">
+              <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
-                  d="M23.7 46.2C36.4025 46.2 46.7 35.9025 46.7 23.2C46.7 10.4974 36.4025 0.199951 23.7 0.199951C10.9974 0.199951 0.699951 10.4974 0.699951 23.2C0.699951 35.9025 10.9974 46.2 23.7 46.2Z"
+                  d="M41.8 0.800049H5.80005C3.03863 0.800049 0.800049 3.03862 0.800049 5.80005V41.8C0.800049 44.5615 3.03862 46.8 5.80005 46.8H41.8C44.5615 46.8 46.8 44.5615 46.8 41.8V5.80005C46.8 3.03863 44.5615 0.800049 41.8 0.800049Z"
+                  fill="#AFCDFB"/>
+                <path
+                  d="M19.7 35.2C18.7 34.2 17.6 33.1 16.5 32C19.2 29.3 21.9 26.5999 24.6 23.8999C21.9 21.1999 19.2 18.5 16.5 15.8C17.6 14.7 18.7 13.6001 19.7 12.6001C23.5 16.4001 27.2 20.0999 31 23.8999C27.3 27.5999 23.5 31.4 19.7 35.2Z"
                   fill="white"/>
-                <path class="swiper-btn__arrow"
-                  d="M21.0999 34.6C20.0999 33.6 18.9999 32.5 17.8999 31.4C20.5999 28.7 23.2999 26 25.9999 23.3C23.2999 20.6 20.5999 17.9 17.8999 15.2C18.9999 14.1 20.0999 13 21.0999 12C24.8999 15.8 28.5999 19.5 32.3999 23.3C28.6999 27 24.8999 30.8 21.0999 34.6Z"
-                  fill="black"/>
               </svg>
             </button>
           </div>
         </div>
+        <svg class="word _e" width="129" height="221" viewBox="0 0 129 221" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M64.7 221C42 221 25.3 216.1 15.3 206.5C5.2 196.9 0.0999985 180.3 0.0999985 157.2V138.5H57.3V173.2C57.3 183 61.4 184.1 64.4 184.1C68.8 184.1 69.9 182.2 70.2 180.6C70.7 178.4 71.3 172.4 71.3 156.6V123.2H40.5V88.2H71.3V53.7C71.3 45.5 70.6 41.7 70.1 40C69.7 38.9 68.8 37.3 65 37.3C61.4 37.3 57.2 38.5 57.2 48V74.6001H0V54.5C0 34 4.9 19.6999 14.4 11.8999C23.9 4.2999 40.3 0.399902 63.2 0.399902C84.4 0.399902 100.7 5.10005 111.7 14.3C122.8 23.6 128.4 37.4 128.4 55.2V159.2C128.4 180.3 123.1 196 112.6 205.9C102.3 216 86.2 221 64.7 221Z"
+            fill="#EFF5FE"/>
+        </svg>
       </div>
     </section>
     <section class="section ads">
@@ -400,7 +340,7 @@
             <li>
               <a href="#">
                 <div class="ads__categories-img">
-                  <img src="img/ads-category1.jpg" alt="coronavirus">
+                  <img src="../img/ads-category1.jpg" alt="coronavirus">
                 </div>
                 <p>Коронавирус</p>
               </a>
@@ -409,7 +349,7 @@
             <li>
               <a href="#">
                 <div class="ads__categories-img">
-                  <img src="img/ads-category2.jpg" alt="anti-corruption">
+                  <img src="../img/ads-category2.jpg" alt="anti-corruption">
                 </div>
                 <p>Антикоррупция</p>
               </a>
@@ -417,7 +357,7 @@
             <li>
               <a href="#">
                 <div class="ads__categories-img">
-                  <img src="img/ads-category3.jpg" alt="anti-terror">
+                  <img src="../img/ads-category3.jpg" alt="anti-terror">
                 </div>
                 <p>Антитеррор</p>
               </a>
@@ -427,7 +367,7 @@
             <li>
               <a href="#">
                 <div class="ads__categories-img">
-                  <img src="img/ads-category4.jpg" alt="employment">
+                  <img src="../img/ads-category4.jpg" alt="employment">
                 </div>
                 <p>Трудоустройство</p>
               </a>
@@ -435,7 +375,7 @@
             <li>
               <a href="#">
                 <div class="ads__categories-img">
-                  <img src="img/ads-category5.jpg" alt="hostel">
+                  <img src="../img/ads-category5.jpg" alt="hostel">
                 </div>
                 <p>Общежитие</p>
               </a>
@@ -443,7 +383,7 @@
             <li>
               <a href="#">
                 <div class="ads__categories-img">
-                  <img src="img/ads-category6.jpg" alt="library">
+                  <img src="../img/ads-category6.jpg" alt="library">
                 </div>
                 <p>Библиотека</p>
               </a>
@@ -455,42 +395,50 @@
           <ul class="ads__aside-list">
             <li>
               <h4>26 авг, 2020</h4>
-              <a href="#">На кафедру бухгалтерского учета и статистики
+              <a href="#" data-shear="70">На кафедру бухгалтерского учета и статистики
+                требуется lorem bla-bla</a>
+            </li>
+            <li>
+              <h4>26 авг, 2020</h4>
+              <a href="#" data-shear="70">На кафедру бухгалтерского учета и статистики
                 требуется...</a>
             </li>
             <li>
               <h4>26 авг, 2020</h4>
-              <a href="#">На кафедру бухгалтерского учета и статистики
+              <a href="#" data-shear="70">На кафедру бухгалтерского учета и статистики
                 требуется...</a>
             </li>
             <li>
               <h4>26 авг, 2020</h4>
-              <a href="#">На кафедру бухгалтерского учета и статистики
+              <a href="#" data-shear="70">На кафедру бухгалтерского учета и статистики
                 требуется...</a>
             </li>
-            <li>
-              <h4>26 авг, 2020</h4>
-              <a href="#">На кафедру бухгалтерского учета и статистики
-                требуется...</a>
-            </li>
-            <li>
-              <h4>26 авг, 2020</h4>
-              <a href="#">На кафедру бухгалтерского учета и статистики
-                требуется...</a>
-            </li>
+
           </ul>
           <a href="#" class="ads__aside-link">
             Все объявления
-            <svg width="16" height="13" viewBox="0 0 16 13" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.7002 5.84668H0.200195V7.44653H13.7002V5.84668Z"
-                    fill="#0D4CD3"/>
+            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
-                d="M8.5 12.9465L7.5 11.8467L13.1001 6.54663L7.5 1.34668L8.5 0.246582L15.4 6.54663L8.5 12.9465Z"
-                fill="#0D4CD3"/>
+                d="M23.8999 0.5H3.8999C2.24305 0.5 0.899902 1.84315 0.899902 3.5V23.5C0.899902 25.1569 2.24305 26.5 3.8999 26.5H23.8999C25.5568 26.5 26.8999 25.1569 26.8999 23.5V3.5C26.8999 1.84315 25.5568 0.5 23.8999 0.5Z"
+                fill="#AFCDFB"/>
+              <path
+                d="M11.5997 20C10.9997 19.4 10.3998 18.8 9.7998 18.2C11.3998 16.6 12.8998 15.1 14.4998 13.5C12.8998 11.9 11.3998 10.4 9.7998 8.80005C10.3998 8.20005 11.0997 7.4999 11.6997 6.8999C13.8997 9.0999 15.9997 11.1999 18.1997 13.3999C15.8997 15.5999 13.7997 17.8 11.5997 20Z"
+                fill="white"/>
             </svg>
           </a>
         </div>
+        <svg class="word _f" width="216" height="226" viewBox="0 0 216 226" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M212.3 96.7L211.7 93.1001C209.2 79.3001 206.8 69.2999 204.3 63.3999C200.9 54.9999 195.4 47.7999 188.1 41.8999C176.9 32.9999 158 30.8 131.9 35.5C130.2 35.8 127.7 36.2001 124.2 36.6001L117.8 0.899902L59.0998 11.3999L65.4998 47.1001C62.7998 47.8001 60.5998 48.3 59.0998 48.5C33.0998 53.2 16.0998 61.7 8.49984 74C3.69984 82 0.999789 90.7 0.699789 99.8C0.499789 106.2 1.59981 116.5 4.09981 130.2L4.69979 133.8C7.19979 147.6 9.59981 157.6 12.0998 163.5C15.4998 171.9 20.9999 179.1 28.2999 185C39.7999 194.1 58.6998 196.4 84.6998 191.8L91.1998 190.6L97.3999 225.4L156.1 214.9L149.9 180.1L157.5 178.7C183.4 174.1 200.3 165.4 207.9 152.8C212.7 144.8 215.4 136.1 215.7 127C215.9 120.8 214.8 110.5 212.3 96.7Z"
+            fill="#EFF5FE"/>
+          <path
+            d="M147.6 146.9L140.1 148.2L126.1 69.9L133.6 68.5001C138.4 67.6001 142.9 69.4001 147 73.7001C150.8 77.8001 153.5 83.7001 154.8 91.2001L159.6 118.3C160.9 125.7 160.5 132.1 158.3 137.3C156.1 142.8 152.5 146 147.6 146.9Z"
+            fill="white"/>
+          <path
+            d="M89.3 157.3L82.8001 158.5C78.0001 159.4 73.6 157.6 69.5 153.3C65.6 149.2 63 143.3 61.7 135.9L56.9 108.8C55.6 101.3 56 94.8001 58.2 89.6001C60.5 84.1001 64.1001 80.9001 68.8001 80.1001L75.3001 78.8999L89.3 157.3Z"
+            fill="white"/>
+        </svg>
       </div>
     </section>
     <section class="section sponsors-slider">
@@ -502,90 +450,124 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="sponsors-swiper__img">
-                <img src="img/sponsors-slide.jpg"
-                     alt="sponsors-slide">
+                <a href="#">
+                  <img src="../img/sponsors-slide1.jpg"
+                       alt="sponsors-slide">
+                </a>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="sponsors-swiper__img">
-                <img src="img/sponsors-slide.jpg"
-                     alt="sponsors-slide">
+                <a href="#">
+                  <img src="../img/sponsors-slide2.jpg"
+                       alt="sponsors-slide">
+                </a>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="sponsors-swiper__img">
-                <img src="img/sponsors-slide.jpg"
-                     alt="sponsors-slide">
+                <a href="#">
+                  <img src="../img/sponsors-slide3.jpg"
+                       alt="sponsors-slide">
+                </a>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="sponsors-swiper__img">
-                <img src="img/sponsors-slide.jpg"
-                     alt="sponsors-slide">
+                <a href="#">
+                  <img src="../img/sponsors-slide4.jpg"
+                       alt="sponsors-slide">
+                </a>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="sponsors-swiper__img">
-                <img src="img/sponsors-slide.jpg"
-                     alt="sponsors-slide">
+                <a href="#">
+                  <img src="../img/sponsors-slide5.jpg"
+                       alt="sponsors-slide">
+                </a>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="sponsors-swiper__img">
-                <img src="img/sponsors-slide.jpg"
-                     alt="sponsors-slide">
+                <a href="#">
+                  <img src="../img/sponsors-slide6.jpg"
+                       alt="sponsors-slide">
+                </a>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="sponsors-swiper__img">
-                <img src="img/sponsors-slide.jpg"
-                     alt="sponsors-slide">
+                <a href="#">
+                  <img src="../img/sponsors-slide7.jpg"
+                       alt="sponsors-slide">
+                </a>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="sponsors-swiper__img">
-                <img src="img/sponsors-slide.jpg"
-                     alt="sponsors-slide">
+                <a href="#">
+                  <img src="../img/sponsors-slide8.jpg"
+                       alt="sponsors-slide">
+                </a>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="sponsors-swiper__img">
-                <img src="img/sponsors-slide.jpg"
-                     alt="sponsors-slide">
+                <a href="#">
+                  <img src="../img/sponsors-slide9.jpg"
+                       alt="sponsors-slide">
+                </a>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="sponsors-swiper__img">
-                <img src="img/sponsors-slide.jpg"
-                     alt="sponsors-slide">
+                <a href="#">
+                  <img src="../img/sponsors-slide10.jpg"
+                       alt="sponsors-slide">
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="sponsors-swiper__img">
+                <a href="#">
+                  <img src="../img/sponsors-slide11.jpg"
+                       alt="sponsors-slide">
+                </a>
               </div>
             </div>
           </div>
-          <div class="sponsors-swiper__controls">
-            <button class="sponsors-swiper__swiper-button-prev swiper-btn">
-              <svg width="47" height="47" viewBox="0 0 47 47" fill="none"
-                   xmlns="http://www.w3.org/2000/svg">
+          <div class="swiper__controls sponsors-swiper__controls">
+            <button class="sponsors-swiper__swiper-button-prev swiper-btn _prev">
+              <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
-                  d="M23.3999 46.2C36.1025 46.2 46.3999 35.9025 46.3999 23.2C46.3999 10.4974 36.1025 0.199951 23.3999 0.199951C10.6974 0.199951 0.399902 10.4974 0.399902 23.2C0.399902 35.9025 10.6974 46.2 23.3999 46.2Z"
+                  d="M41.7 0.199951H5.69995C2.93853 0.199951 0.699951 2.43853 0.699951 5.19995V41.2C0.699951 43.9614 2.93853 46.2 5.69995 46.2H41.7C44.4614 46.2 46.7 43.9614 46.7 41.2V5.19995C46.7 2.43853 44.4614 0.199951 41.7 0.199951Z"
+                  fill="#AFCDFB"/>
+                <path
+                  d="M27.8 34.6001C28.8 33.6001 29.9 32.4999 31 31.3999C28.3 28.6999 25.6 26 22.9 23.3C25.6 20.6 28.3 17.9 31 15.2C29.9 14.1 28.8 13 27.8 12C24 15.8 20.3 19.5 16.5 23.3C20.2 27 24 30.8001 27.8 34.6001Z"
                   fill="white"/>
-                <path class="swiper-btn__arrow"
-                  d="M25.8998 34.6C26.8998 33.6 27.9999 32.5 29.0999 31.4C26.3999 28.7 23.6998 26 20.9998 23.3C23.6998 20.6 26.3999 17.9 29.0999 15.2C27.9999 14.1 26.8998 13 25.8998 12C22.0998 15.8 18.3999 19.5 14.5999 23.3C18.2999 27 22.0998 30.8 25.8998 34.6Z"
-                  fill="black"/>
               </svg>
+
             </button>
-            <button class="sponsors-swiper__swiper-button-next swiper-btn">
-              <svg width="47" height="47" viewBox="0 0 47 47" fill="none"
-                   xmlns="http://www.w3.org/2000/svg">
+            <button class="sponsors-swiper__swiper-button-next swiper-btn _next">
+              <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
-                  d="M23.7 46.2C36.4025 46.2 46.7 35.9025 46.7 23.2C46.7 10.4974 36.4025 0.199951 23.7 0.199951C10.9974 0.199951 0.699951 10.4974 0.699951 23.2C0.699951 35.9025 10.9974 46.2 23.7 46.2Z"
+                  d="M41.8 0.199951H5.80005C3.03863 0.199951 0.800049 2.43853 0.800049 5.19995V41.2C0.800049 43.9614 3.03862 46.2 5.80005 46.2H41.8C44.5615 46.2 46.8 43.9614 46.8 41.2V5.19995C46.8 2.43853 44.5615 0.199951 41.8 0.199951Z"
+                  fill="#AFCDFB"/>
+                <path
+                  d="M19.7 34.6001C18.7 33.6001 17.6 32.4999 16.5 31.3999C19.2 28.6999 21.9 26 24.6 23.3C21.9 20.6 19.2 17.9 16.5 15.2C17.6 14.1 18.7 13 19.7 12C23.5 15.8 27.2 19.5 31 23.3C27.3 27 23.5 30.8001 19.7 34.6001Z"
                   fill="white"/>
-                <path class="swiper-btn__arrow"
-                  d="M21.0999 34.6C20.0999 33.6 18.9999 32.5 17.8999 31.4C20.5999 28.7 23.2999 26 25.9999 23.3C23.2999 20.6 20.5999 17.9 17.8999 15.2C18.9999 14.1 20.0999 13 21.0999 12C24.8999 15.8 28.5999 19.5 32.3999 23.3C28.6999 27 24.8999 30.8 21.0999 34.6Z"
-                  fill="black"/>
               </svg>
             </button>
           </div>
         </div>
+        <svg class="word _p" width="175" height="228" viewBox="0 0 175 228" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M116.1 227.3L63.5 211.3L109.4 60.5L98.5999 57.3L52.8 208L0.199951 192L58.5 0.100098L174.5 35.3999L116.1 227.3Z"
+            fill="#EFF5FE"/>
+        </svg>
+
       </div>
     </section>
     <section class="section feedback">
@@ -638,16 +620,19 @@
                 </div>
                 <p class="error-message feedback__error-message_agreement"></p>
                 <button class="btn">Отправить</button>
-
-              </div>
-              <div class="feedback__agreement-img">
-                <img src="img/feedback-bg.png" alt="">
               </div>
 
             </div>
 
           </form>
         </div>
+        <svg class="word _t" width="132" height="230" viewBox="0 0 132 230" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M66.3002 229.9L7.40015 220.9L33.2001 51.8999L0.600098 47L7.70007 0.899902L131.5 19.8L124.4 65.8999L92.1001 60.8999L66.3002 229.9Z"
+            fill="#EFF5FE"/>
+        </svg>
+
       </div>
     </section>
   </main>
