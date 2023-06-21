@@ -7,637 +7,678 @@
 
 <body class="page__body">
 <div class="site-container">
-  <div class="modal-overlay"></div>
-  @include('partials/header.html', {
-  'slider-bg': '_active',
-  'slider-caption': '_active',
-  'container-height' : '_active'
-  })
-  <main class="main home-page">
+	<div class="modal-overlay"></div>
+	@include('partials/header.html', {
+	'slider-bg': '_active',
+	'slider-caption': '_active',
+	'container-height' : '_active'
+	})
+	<main class="main home-page">
 
-    <section class="section media-center">
-      <div class="container">
-        <div class="media-center__inner">
-          <a href="#" class="media-center__link">Медиа-центр института
-            <svg width="32" height="27" viewBox="0 0 32 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M28.2999 12H0.199951V15.2H28.2999V12Z" fill="#1D1814"/>
-              <path
-                d="M17.5999 26.8L15.3999 24.5L27.0999 13.6L15.3999 2.69995L17.5999 0.300049L31.7999 13.6L17.5999 26.8Z"
-                fill="#1D1814"/>
-            </svg>
-          </a>
-          <div class="media-center__photos">
-            <div class="media-center__photo">
-              <img src="../img/media-center_1.png" alt="">
-            </div>
-            <div class="media-center__photo">
-              <img src="../img/media-center_2.png" alt="">
-            </div>
-            <div class="media-center__photo">
-              <img src="../img/media-center_3.png" alt="">
-            </div>
-            <div class="media-center__photo">
-              <img src="../img/media-center_4.png" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="media-center__content">
-          <h4>Изучать новые
-            технологии</h4>
-          <p>Изучению новых технологий в ГИЭФПТ уделено особое внимание.... Sed ut perspiciatis, unde omnis iste natus
-            error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore
-            veritatis et ...</p>
-          <div class="media-center__image">
-            <img src="../img/media-center_5.jpg" alt="">
-          </div>
-        </div>
-        <svg class="word _g" width="111" height="236" viewBox="0 0 111 236" fill="none"
-             xmlns="http://www.w3.org/2000/svg">
-          <path d="M110.6 221.4L52.8001 235.6L0.800049 24.3L98.2 0.400024L109.4 45.7L69.8 55.4L110.6 221.4Z"
-                fill="#EFF5FE"/>
-        </svg>
-        <svg class="word _i" width="157" height="234" viewBox="0 0 157 234" fill="none"
-             xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M127 233.6L77 226.7L88.6 142.1L51.8 223.3L0.5 216.3L30 0.699951L80 7.59998L68.3 92.5L107.3 11.3L156.5 18L127 233.6Z"
-            fill="#EFF5FE"/>
-        </svg>
+		<section class="section media-center">
+			<div class="container">
+				<div class="media-center__inner">
 
-      </div>
-    </section>
-    <section class="section news">
-      <div class="container">
-        <div class="home-page__subtitle-wrapper">
-          <h2 class="home-page__subtitle">
-            Новости
-          </h2>
-          <a class="home-page__subtitle-link " href="news.html">
-            Все новости
-            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M23.7 0.900024H3.69995C2.0431 0.900024 0.699951 2.24317 0.699951 3.90003V23.9C0.699951 25.5569 2.0431 26.9 3.69995 26.9H23.7C25.3568 26.9 26.7 25.5569 26.7 23.9V3.90002C26.7 2.24317 25.3568 0.900024 23.7 0.900024Z"
-                fill="#AFCDFB"/>
-              <path
-                d="M11.3999 20.4C10.7999 19.8 10.1999 19.2 9.59985 18.6C11.1999 17 12.6999 15.5 14.2999 13.9C12.6999 12.3 11.1999 10.8 9.59985 9.19995C10.1999 8.59995 10.8999 7.90005 11.4999 7.30005C13.6999 9.50005 15.7999 11.6 17.9999 13.8C15.7999 16 13.5999 18.2 11.3999 20.4Z"
-                fill="white"/>
-            </svg>
-          </a>
-        </div>
-        <div class="swiper news-swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="news-swiper__img">
-                <img src="../img/news-slide1.jpg"
-                     alt="news-slide">
-              </div>
-              <div class="news-swiper__content">
-                <a href="one-news.html" class="news-swiper__title swiper-no-swiping">
-                  Заселение в общежитие
-                </a>
-                <p class="news-swiper__description swiper-no-swiping" data-shear="77">Изучению новых технологий в ГИЭФПТ
-                  уделено особое внимание lorem...</p>
-                <p class="news-swiper__date swiper-no-swiping">
-                  10 августа 2022
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="news-swiper__img">
-                <img src="../img/news-slide2.jpg"
-                     alt="news-slide">
-              </div>
-              <div class="news-swiper__content">
-                <a href="one-news.html" class="news-swiper__title swiper-no-swiping">
-                  Продолжается прием на программы бакалавриата
-                </a>
-                <p class="news-swiper__description swiper-no-swiping" data-shear="77">Изучению новых технологий в ГИЭФПТ
-                  уделено особое внимание lorem...</p>
-                <p class="news-swiper__date swiper-no-swiping">
-                  05 августа 2022
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="news-swiper__img">
-                <img src="../img/news-slide3.jpg"
-                     alt="news-slide">
-              </div>
-              <div class="news-swiper__content">
-                <a href="one-news.html" class="news-swiper__title swiper-no-swiping">
-                  Участвуем и побеждаем во Всероссийской олимпиаде
-                </a>
-                <p class="news-swiper__description swiper-no-swiping" data-shear="77">Изучению новых технологий в ГИЭФПТ
-                  уделено особое внимание lorem...</p>
-                <p class="news-swiper__date swiper-no-swiping">
-                  29 июля 2022
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="news-swiper__img">
-                <img src="../img/news-slide4.jpg"
-                     alt="news-slide">
-              </div>
-              <div class="news-swiper__content">
-                <a href="one-news.html" class="news-swiper__title swiper-no-swiping">
-                  Проведение выборов и конкурсный отбор
-                </a>
-                <p class="news-swiper__description swiper-no-swiping" data-shear="77">Изучению новых технологий в ГИЭФПТ
-                  уделено особое внимание lorem...</p>
-                <p class="news-swiper__date swiper-no-swiping">
-                  29 июля 2022
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="news-swiper__img">
-                <img src="../img/news-slide2.jpg"
-                     alt="news-slide">
-              </div>
-              <div class="news-swiper__content">
-                <a href="one-news.html" class="news-swiper__title swiper-no-swiping">
-                  Участвуем и побеждаем во Всероссийской олимпиаде
-                </a>
-                <p class="news-swiper__description swiper-no-swiping" data-shear="77">Изучению новых технологий в ГИЭФПТ
-                  уделено особое внимание lorem...</p>
-                <p class="news-swiper__date swiper-no-swiping">
-                  10 августа 2022
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="news-swiper__img">
-                <img src="../img/news-slide4.jpg"
-                     alt="news-slide">
-              </div>
-              <div class="news-swiper__content">
-                <a href="one-news.html" class="news-swiper__title swiper-no-swiping">
-                  Заселение в общежитие
-                </a>
-                <p class="news-swiper__description swiper-no-swiping" data-shear="77">Изучению новых технологий в ГИЭФПТ
-                  уделено особое внимание lorem...</p>
-                <p class="news-swiper__date swiper-no-swiping">
-                  10 августа 2022
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper__controls news-swiper__controls">
-            <button class="news-swiper__swiper-button-prev swiper-btn _prev">
-              <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M41.7 0.900024H5.69995C2.93853 0.900024 0.699951 3.1386 0.699951 5.90002V41.9C0.699951 44.6614 2.93853 46.9 5.69995 46.9H41.7C44.4614 46.9 46.7 44.6614 46.7 41.9V5.90002C46.7 3.1386 44.4614 0.900024 41.7 0.900024Z"
-                  fill="#AFCDFB"/>
-                <path
-                  d="M27.8 35.2C28.8 34.2 29.9 33.1 31 32C28.3 29.3 25.6 26.6 22.9 23.9C25.6 21.2 28.3 18.5 31 15.8C29.9 14.7 28.8 13.6 27.8 12.6C24 16.4 20.3 20.1 16.5 23.9C20.2 27.6 24 31.4 27.8 35.2Z"
-                  fill="white"/>
-              </svg>
-            </button>
-            <button class="news-swiper__swiper-button-next swiper-btn _next">
-              <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M41.8 0.900024H5.80005C3.03863 0.900024 0.800049 3.1386 0.800049 5.90002V41.9C0.800049 44.6614 3.03862 46.9 5.80005 46.9H41.8C44.5615 46.9 46.8 44.6614 46.8 41.9V5.90002C46.8 3.1386 44.5615 0.900024 41.8 0.900024Z"
-                  fill="#AFCDFB"/>
-                <path
-                  d="M19.7 35.2C18.7 34.2 17.6 33.1 16.5 32C19.2 29.3 21.9 26.6 24.6 23.9C21.9 21.2 19.2 18.5 16.5 15.8C17.6 14.7 18.7 13.6 19.7 12.6C23.5 16.4 27.2 20.1 31 23.9C27.3 27.6 23.5 31.4 19.7 35.2Z"
-                  fill="white"/>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section faculty">
-      <div class="container">
-        <div class="home-page__subtitle-wrapper">
-          <h2 class="home-page__subtitle">
-            Факультеты и кафедры
-          </h2>
-          <a class="home-page__subtitle-link " href="#">
-            Все подразделения
-            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M23.7 0.900024H3.69995C2.0431 0.900024 0.699951 2.24317 0.699951 3.90003V23.9C0.699951 25.5569 2.0431 26.9 3.69995 26.9H23.7C25.3568 26.9 26.7 25.5569 26.7 23.9V3.90002C26.7 2.24317 25.3568 0.900024 23.7 0.900024Z"
-                fill="#AFCDFB"/>
-              <path
-                d="M11.3999 20.4C10.7999 19.8 10.1999 19.2 9.59985 18.6C11.1999 17 12.6999 15.5 14.2999 13.9C12.6999 12.3 11.1999 10.8 9.59985 9.19995C10.1999 8.59995 10.8999 7.90005 11.4999 7.30005C13.6999 9.50005 15.7999 11.6 17.9999 13.8C15.7999 16 13.5999 18.2 11.3999 20.4Z"
-                fill="white"/>
-            </svg>
-          </a>
-        </div>
-        <div class="swiper faculty-swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide bg-color-1">
-              <div class="faculty-swiper__wrapper">
-                <h3 class="faculty-swiper__title swiper-no-swiping">
-                  Кафедра уголовно-правовых дисциплин
-                </h3>
-                <div class="faculty-swiper__info swiper-no-swiping">
-                  <p><span>Email:</span> kaf-ugp@gief.ru</p>
-                  <p><span>Адрес:</span> г. Гатчина ул. Рощинская д.5 1 этаж
-                    кабинет № 14, 18
-                    Номер внутренней линии: 132</p>
-                </div>
-              </div>
+					<div class="swiper mySwiper swiper-media-center">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#" class="media-center__link">Медиа-центр института
+									<svg width="32" height="27" viewBox="0 0 32 27" fill="none"
+										 xmlns="http://www.w3.org/2000/svg">
+										<path d="M28.2999 12H0.199951V15.2H28.2999V12Z" fill="#1D1814"/>
+										<path
+												d="M17.5999 26.8L15.3999 24.5L27.0999 13.6L15.3999 2.69995L17.5999 0.300049L31.7999 13.6L17.5999 26.8Z"
+												fill="#1D1814"/>
+									</svg>
+								</a>
+								<img src="img/media-slide.jpg" alt="slide">
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="media-center__link">Медиа-центр института
+									<svg width="32" height="27" viewBox="0 0 32 27" fill="none"
+										 xmlns="http://www.w3.org/2000/svg">
+										<path d="M28.2999 12H0.199951V15.2H28.2999V12Z" fill="#1D1814"/>
+										<path
+												d="M17.5999 26.8L15.3999 24.5L27.0999 13.6L15.3999 2.69995L17.5999 0.300049L31.7999 13.6L17.5999 26.8Z"
+												fill="#1D1814"/>
+									</svg>
+								</a>
+								<img src="img/test.jpg" alt="slide">
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-next media-center-next">
+						<svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M41.8008 0.800049H5.80078C3.03936 0.800049 0.800781 3.03862 0.800781 5.80005V41.8C0.800781 44.5615 3.03936 46.8 5.80078 46.8H41.8008C44.5622 46.8 46.8008 44.5615 46.8008 41.8V5.80005C46.8008 3.03863 44.5622 0.800049 41.8008 0.800049Z"
+								  fill="#AFCDFB"/>
+							<path d="M19.7009 35.2C18.7009 34.2 17.601 33.1 16.501 32C19.201 29.3 21.901 26.5999 24.601 23.8999C21.901 21.1999 19.201 18.5 16.501 15.8C17.601 14.7 18.7009 13.6001 19.7009 12.6001C23.5009 16.4001 27.201 20.0999 31.001 23.8999C27.301 27.5999 23.5009 31.4 19.7009 35.2Z"
+								  fill="white"/>
+						</svg>
+					</div>
+					<div class="swiper-button-prev media-center-prev">
+						<svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M41.7002 0.800049H5.7002C2.93877 0.800049 0.700195 3.03862 0.700195 5.80005V41.8C0.700195 44.5615 2.93877 46.8 5.7002 46.8H41.7002C44.4616 46.8 46.7002 44.5615 46.7002 41.8V5.80005C46.7002 3.03863 44.4616 0.800049 41.7002 0.800049Z"
+								  fill="#AFCDFB"/>
+							<path d="M27.8 35.2C28.8 34.2 29.9 33.1 31 32C28.3 29.3 25.6 26.5999 22.9 23.8999C25.6 21.1999 28.3 18.5 31 15.8C29.9 14.7 28.8 13.6001 27.8 12.6001C24 16.4001 20.3 20.0999 16.5 23.8999C20.2 27.5999 24 31.4 27.8 35.2Z"
+								  fill="white"/>
+						</svg>
+					</div>
+				</div>
+				<div class="media-center__content">
+					<h4>Изучать новые
+						технологии</h4>
+					<p>Изучению новых технологий в ГИЭФПТ уделено особое внимание.... Sed ut perspiciatis, unde omnis
+						iste natus
+						error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab
+						illo inventore
+						veritatis et ...</p>
+					<div class="media-center__image">
+						<img src="../img/media-center_5.jpg" alt="">
+					</div>
+				</div>
+				<svg class="word _g" width="111" height="236" viewBox="0 0 111 236" fill="none"
+					 xmlns="http://www.w3.org/2000/svg">
+					<path d="M110.6 221.4L52.8001 235.6L0.800049 24.3L98.2 0.400024L109.4 45.7L69.8 55.4L110.6 221.4Z"
+						  fill="#EFF5FE"/>
+				</svg>
+				<svg class="word _i" width="157" height="234" viewBox="0 0 157 234" fill="none"
+					 xmlns="http://www.w3.org/2000/svg">
+					<path
+							d="M127 233.6L77 226.7L88.6 142.1L51.8 223.3L0.5 216.3L30 0.699951L80 7.59998L68.3 92.5L107.3 11.3L156.5 18L127 233.6Z"
+							fill="#EFF5FE"/>
+				</svg>
 
-            </div>
-            <div class="swiper-slide bg-color-2">
-              <div class="faculty-swiper__wrapper">
-                <h3 class="faculty-swiper__title swiper-no-swiping">
-                  Кафедра управления социальнымии экономическими процессами
-                </h3>
-                <div class="faculty-swiper__info swiper-no-swiping">
-                  <p><span>Email:</span> kaf-usep@gief.ru</p>
-                  <p><span>Телефон:</span> +7 (813) 71 41-568, доб. 145</p>
-                </div>
-              </div>
+			</div>
+		</section>
+		<section class="section news">
+			<div class="container">
+				<div class="home-page__subtitle-wrapper">
+					<h2 class="home-page__subtitle">
+						Новости
+					</h2>
+					<a class="home-page__subtitle-link " href="news.html">
+						Все новости
+						<svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+									d="M23.7 0.900024H3.69995C2.0431 0.900024 0.699951 2.24317 0.699951 3.90003V23.9C0.699951 25.5569 2.0431 26.9 3.69995 26.9H23.7C25.3568 26.9 26.7 25.5569 26.7 23.9V3.90002C26.7 2.24317 25.3568 0.900024 23.7 0.900024Z"
+									fill="#AFCDFB"/>
+							<path
+									d="M11.3999 20.4C10.7999 19.8 10.1999 19.2 9.59985 18.6C11.1999 17 12.6999 15.5 14.2999 13.9C12.6999 12.3 11.1999 10.8 9.59985 9.19995C10.1999 8.59995 10.8999 7.90005 11.4999 7.30005C13.6999 9.50005 15.7999 11.6 17.9999 13.8C15.7999 16 13.5999 18.2 11.3999 20.4Z"
+									fill="white"/>
+						</svg>
+					</a>
+				</div>
+				<div class="swiper news-swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="news-swiper__img">
+								<img src="../img/news-slide1.jpg"
+									 alt="news-slide">
+							</div>
+							<div class="news-swiper__content">
+								<a href="one-news.html" class="news-swiper__title swiper-no-swiping">
+									Заселение в общежитие
+								</a>
+								<p class="news-swiper__description swiper-no-swiping" data-shear="77">Изучению новых
+									технологий в ГИЭФПТ
+									уделено особое внимание lorem...</p>
+								<p class="news-swiper__date swiper-no-swiping">
+									10 августа 2022
+								</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="news-swiper__img">
+								<img src="../img/news-slide2.jpg"
+									 alt="news-slide">
+							</div>
+							<div class="news-swiper__content">
+								<a href="one-news.html" class="news-swiper__title swiper-no-swiping">
+									Продолжается прием на программы бакалавриата
+								</a>
+								<p class="news-swiper__description swiper-no-swiping" data-shear="77">Изучению новых
+									технологий в ГИЭФПТ
+									уделено особое внимание lorem...</p>
+								<p class="news-swiper__date swiper-no-swiping">
+									05 августа 2022
+								</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="news-swiper__img">
+								<img src="../img/news-slide3.jpg"
+									 alt="news-slide">
+							</div>
+							<div class="news-swiper__content">
+								<a href="one-news.html" class="news-swiper__title swiper-no-swiping">
+									Участвуем и побеждаем во Всероссийской олимпиаде
+								</a>
+								<p class="news-swiper__description swiper-no-swiping" data-shear="77">Изучению новых
+									технологий в ГИЭФПТ
+									уделено особое внимание lorem...</p>
+								<p class="news-swiper__date swiper-no-swiping">
+									29 июля 2022
+								</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="news-swiper__img">
+								<img src="../img/news-slide4.jpg"
+									 alt="news-slide">
+							</div>
+							<div class="news-swiper__content">
+								<a href="one-news.html" class="news-swiper__title swiper-no-swiping">
+									Проведение выборов и конкурсный отбор
+								</a>
+								<p class="news-swiper__description swiper-no-swiping" data-shear="77">Изучению новых
+									технологий в ГИЭФПТ
+									уделено особое внимание lorem...</p>
+								<p class="news-swiper__date swiper-no-swiping">
+									29 июля 2022
+								</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="news-swiper__img">
+								<img src="../img/news-slide2.jpg"
+									 alt="news-slide">
+							</div>
+							<div class="news-swiper__content">
+								<a href="one-news.html" class="news-swiper__title swiper-no-swiping">
+									Участвуем и побеждаем во Всероссийской олимпиаде
+								</a>
+								<p class="news-swiper__description swiper-no-swiping" data-shear="77">Изучению новых
+									технологий в ГИЭФПТ
+									уделено особое внимание lorem...</p>
+								<p class="news-swiper__date swiper-no-swiping">
+									10 августа 2022
+								</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="news-swiper__img">
+								<img src="../img/news-slide4.jpg"
+									 alt="news-slide">
+							</div>
+							<div class="news-swiper__content">
+								<a href="one-news.html" class="news-swiper__title swiper-no-swiping">
+									Заселение в общежитие
+								</a>
+								<p class="news-swiper__description swiper-no-swiping" data-shear="77">Изучению новых
+									технологий в ГИЭФПТ
+									уделено особое внимание lorem...</p>
+								<p class="news-swiper__date swiper-no-swiping">
+									10 августа 2022
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper__controls news-swiper__controls">
+						<button class="news-swiper__swiper-button-prev swiper-btn _prev">
+							<svg width="47" height="47" viewBox="0 0 47 47" fill="none"
+								 xmlns="http://www.w3.org/2000/svg">
+								<path
+										d="M41.7 0.900024H5.69995C2.93853 0.900024 0.699951 3.1386 0.699951 5.90002V41.9C0.699951 44.6614 2.93853 46.9 5.69995 46.9H41.7C44.4614 46.9 46.7 44.6614 46.7 41.9V5.90002C46.7 3.1386 44.4614 0.900024 41.7 0.900024Z"
+										fill="#AFCDFB"/>
+								<path
+										d="M27.8 35.2C28.8 34.2 29.9 33.1 31 32C28.3 29.3 25.6 26.6 22.9 23.9C25.6 21.2 28.3 18.5 31 15.8C29.9 14.7 28.8 13.6 27.8 12.6C24 16.4 20.3 20.1 16.5 23.9C20.2 27.6 24 31.4 27.8 35.2Z"
+										fill="white"/>
+							</svg>
+						</button>
+						<button class="news-swiper__swiper-button-next swiper-btn _next">
+							<svg width="47" height="47" viewBox="0 0 47 47" fill="none"
+								 xmlns="http://www.w3.org/2000/svg">
+								<path
+										d="M41.8 0.900024H5.80005C3.03863 0.900024 0.800049 3.1386 0.800049 5.90002V41.9C0.800049 44.6614 3.03862 46.9 5.80005 46.9H41.8C44.5615 46.9 46.8 44.6614 46.8 41.9V5.90002C46.8 3.1386 44.5615 0.900024 41.8 0.900024Z"
+										fill="#AFCDFB"/>
+								<path
+										d="M19.7 35.2C18.7 34.2 17.6 33.1 16.5 32C19.2 29.3 21.9 26.6 24.6 23.9C21.9 21.2 19.2 18.5 16.5 15.8C17.6 14.7 18.7 13.6 19.7 12.6C23.5 16.4 27.2 20.1 31 23.9C27.3 27.6 23.5 31.4 19.7 35.2Z"
+										fill="white"/>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section faculty">
+			<div class="container">
+				<div class="home-page__subtitle-wrapper">
+					<h2 class="home-page__subtitle">
+						Факультеты и кафедры
+					</h2>
+					<a class="home-page__subtitle-link " href="#">
+						Все подразделения
+						<svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+									d="M23.7 0.900024H3.69995C2.0431 0.900024 0.699951 2.24317 0.699951 3.90003V23.9C0.699951 25.5569 2.0431 26.9 3.69995 26.9H23.7C25.3568 26.9 26.7 25.5569 26.7 23.9V3.90002C26.7 2.24317 25.3568 0.900024 23.7 0.900024Z"
+									fill="#AFCDFB"/>
+							<path
+									d="M11.3999 20.4C10.7999 19.8 10.1999 19.2 9.59985 18.6C11.1999 17 12.6999 15.5 14.2999 13.9C12.6999 12.3 11.1999 10.8 9.59985 9.19995C10.1999 8.59995 10.8999 7.90005 11.4999 7.30005C13.6999 9.50005 15.7999 11.6 17.9999 13.8C15.7999 16 13.5999 18.2 11.3999 20.4Z"
+									fill="white"/>
+						</svg>
+					</a>
+				</div>
+				<div class="swiper faculty-swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide bg-color-1">
+							<div class="faculty-swiper__wrapper">
+								<h3 class="faculty-swiper__title swiper-no-swiping">
+									Кафедра уголовно-правовых дисциплин
+								</h3>
+								<div class="faculty-swiper__info swiper-no-swiping">
+									<p><span>Email:</span> kaf-ugp@gief.ru</p>
+									<p><span>Адрес:</span> г. Гатчина ул. Рощинская д.5 1 этаж
+										кабинет № 14, 18
+										Номер внутренней линии: 132</p>
+								</div>
+							</div>
 
-            </div>
-            <div class="swiper-slide bg-color-3">
-              <div class="faculty-swiper__wrapper">
-                <h3 class="faculty-swiper__title swiper-no-swiping">
-                  Кафедра бухгалтерского учёта и статистики
-                </h3>
-                <div class="faculty-swiper__info swiper-no-swiping">
-                  <p><span>Email:</span> kaf-buh@gief.ru</p>
-                  <p><span>Телефон:</span> +7 (813) 71 42-269, доб. 148</p>
-                  <p><span>Время работы:</span> +7 (813) 71 42-269, доб. 148</p>
-                </div>
-              </div>
+						</div>
+						<div class="swiper-slide bg-color-2">
+							<div class="faculty-swiper__wrapper">
+								<h3 class="faculty-swiper__title swiper-no-swiping">
+									Кафедра управления социальнымии экономическими процессами
+								</h3>
+								<div class="faculty-swiper__info swiper-no-swiping">
+									<p><span>Email:</span> kaf-usep@gief.ru</p>
+									<p><span>Телефон:</span> +7 (813) 71 41-568, доб. 145</p>
+								</div>
+							</div>
 
-            </div>
-            <div class="swiper-slide bg-color-4">
-              <div class="faculty-swiper__wrapper">
-                <h3 class="faculty-swiper__title swiper-no-swiping">
-                  Кафедра финансов и кредита
-                </h3>
-                <div class="faculty-swiper__info swiper-no-swiping">
-                  <p><span>Email:</span> kaf-fin@gief.ru</p>
-                  <p><span>Телефон:</span> +7 (813) 71 42-009, доб. 143</p>
-                </div>
-              </div>
+						</div>
+						<div class="swiper-slide bg-color-3">
+							<div class="faculty-swiper__wrapper">
+								<h3 class="faculty-swiper__title swiper-no-swiping">
+									Кафедра бухгалтерского учёта и статистики
+								</h3>
+								<div class="faculty-swiper__info swiper-no-swiping">
+									<p><span>Email:</span> kaf-buh@gief.ru</p>
+									<p><span>Телефон:</span> +7 (813) 71 42-269, доб. 148</p>
+									<p><span>Время работы:</span> +7 (813) 71 42-269, доб. 148</p>
+								</div>
+							</div>
 
-            </div>
-            <div class="swiper-slide bg-color-2">
-              <div class="faculty-swiper__wrapper">
-                <h3 class="faculty-swiper__title swiper-no-swiping">
-                  Кафедра финансов и кредита
-                </h3>
-                <div class="faculty-swiper__info swiper-no-swiping">
-                  <p><span>Email:</span> kaf-fin@gief.ru</p>
-                  <p><span>Телефон:</span> +7 (813) 71 42-009, доб. 143</p>
-                </div>
-              </div>
+						</div>
+						<div class="swiper-slide bg-color-4">
+							<div class="faculty-swiper__wrapper">
+								<h3 class="faculty-swiper__title swiper-no-swiping">
+									Кафедра финансов и кредита
+								</h3>
+								<div class="faculty-swiper__info swiper-no-swiping">
+									<p><span>Email:</span> kaf-fin@gief.ru</p>
+									<p><span>Телефон:</span> +7 (813) 71 42-009, доб. 143</p>
+								</div>
+							</div>
 
-            </div>
-            <div class="swiper-slide bg-color-1">
-              <div class="faculty-swiper__wrapper">
-                <h3 class="faculty-swiper__title swiper-no-swiping">
-                  Кафедра финансов и кредита
-                </h3>
-                <div class="faculty-swiper__info swiper-no-swiping">
-                  <p><span>Email:</span> kaf-fin@gief.ru</p>
-                  <p><span>Телефон:</span> +7 (813) 71 42-009, доб. 143</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper__controls faculty-swiper__controls">
-            <button class="faculty-swiper__swiper-button-prev swiper-btn _prev">
-              <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M41.7 0.800049H5.69995C2.93853 0.800049 0.699951 3.03862 0.699951 5.80005V41.8C0.699951 44.5615 2.93853 46.8 5.69995 46.8H41.7C44.4614 46.8 46.7 44.5615 46.7 41.8V5.80005C46.7 3.03863 44.4614 0.800049 41.7 0.800049Z"
-                  fill="#AFCDFB"/>
-                <path
-                  d="M27.8 35.2C28.8 34.2 29.9 33.1 31 32C28.3 29.3 25.6 26.5999 22.9 23.8999C25.6 21.1999 28.3 18.5 31 15.8C29.9 14.7 28.8 13.6001 27.8 12.6001C24 16.4001 20.3 20.0999 16.5 23.8999C20.2 27.5999 24 31.4 27.8 35.2Z"
-                  fill="white"/>
-              </svg>
-            </button>
-            <button class="faculty-swiper__swiper-button-next swiper-btn _next">
-              <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M41.8 0.800049H5.80005C3.03863 0.800049 0.800049 3.03862 0.800049 5.80005V41.8C0.800049 44.5615 3.03862 46.8 5.80005 46.8H41.8C44.5615 46.8 46.8 44.5615 46.8 41.8V5.80005C46.8 3.03863 44.5615 0.800049 41.8 0.800049Z"
-                  fill="#AFCDFB"/>
-                <path
-                  d="M19.7 35.2C18.7 34.2 17.6 33.1 16.5 32C19.2 29.3 21.9 26.5999 24.6 23.8999C21.9 21.1999 19.2 18.5 16.5 15.8C17.6 14.7 18.7 13.6001 19.7 12.6001C23.5 16.4001 27.2 20.0999 31 23.8999C27.3 27.5999 23.5 31.4 19.7 35.2Z"
-                  fill="white"/>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <svg class="word _e" width="129" height="221" viewBox="0 0 129 221" fill="none"
-             xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M64.7 221C42 221 25.3 216.1 15.3 206.5C5.2 196.9 0.0999985 180.3 0.0999985 157.2V138.5H57.3V173.2C57.3 183 61.4 184.1 64.4 184.1C68.8 184.1 69.9 182.2 70.2 180.6C70.7 178.4 71.3 172.4 71.3 156.6V123.2H40.5V88.2H71.3V53.7C71.3 45.5 70.6 41.7 70.1 40C69.7 38.9 68.8 37.3 65 37.3C61.4 37.3 57.2 38.5 57.2 48V74.6001H0V54.5C0 34 4.9 19.6999 14.4 11.8999C23.9 4.2999 40.3 0.399902 63.2 0.399902C84.4 0.399902 100.7 5.10005 111.7 14.3C122.8 23.6 128.4 37.4 128.4 55.2V159.2C128.4 180.3 123.1 196 112.6 205.9C102.3 216 86.2 221 64.7 221Z"
-            fill="#EFF5FE"/>
-        </svg>
-      </div>
-    </section>
-    <section class="section ads">
-      <div class="container">
-        <div class="ads__categories">
-          <ul class="ads__categories-list">
-            <li>
-              <a href="#">
-                <div class="ads__categories-img">
-                  <img src="../img/ads-category1.jpg" alt="coronavirus">
-                </div>
-                <p>Коронавирус</p>
-              </a>
-            </li>
+						</div>
+						<div class="swiper-slide bg-color-2">
+							<div class="faculty-swiper__wrapper">
+								<h3 class="faculty-swiper__title swiper-no-swiping">
+									Кафедра финансов и кредита
+								</h3>
+								<div class="faculty-swiper__info swiper-no-swiping">
+									<p><span>Email:</span> kaf-fin@gief.ru</p>
+									<p><span>Телефон:</span> +7 (813) 71 42-009, доб. 143</p>
+								</div>
+							</div>
 
-            <li>
-              <a href="#">
-                <div class="ads__categories-img">
-                  <img src="../img/ads-category2.jpg" alt="anti-corruption">
-                </div>
-                <p>Антикоррупция</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="ads__categories-img">
-                  <img src="../img/ads-category3.jpg" alt="anti-terror">
-                </div>
-                <p>Антитеррор</p>
-              </a>
-            </li>
-          </ul>
-          <ul class="ads__categories-list">
-            <li>
-              <a href="#">
-                <div class="ads__categories-img">
-                  <img src="../img/ads-category4.jpg" alt="employment">
-                </div>
-                <p>Трудоустройство</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="ads__categories-img">
-                  <img src="../img/ads-category5.jpg" alt="hostel">
-                </div>
-                <p>Общежитие</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="ads__categories-img">
-                  <img src="../img/ads-category6.jpg" alt="library">
-                </div>
-                <p>Библиотека</p>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="ads__aside">
-          <h3 class="ads__aside-title">Объявления</h3>
-          <ul class="ads__aside-list">
-            <li>
-              <h4>26 авг, 2020</h4>
-              <a href="#" data-shear="70">На кафедру бухгалтерского учета и статистики
-                требуется lorem bla-bla</a>
-            </li>
-            <li>
-              <h4>26 авг, 2020</h4>
-              <a href="#" data-shear="70">На кафедру бухгалтерского учета и статистики
-                требуется...</a>
-            </li>
-            <li>
-              <h4>26 авг, 2020</h4>
-              <a href="#" data-shear="70">На кафедру бухгалтерского учета и статистики
-                требуется...</a>
-            </li>
-            <li>
-              <h4>26 авг, 2020</h4>
-              <a href="#" data-shear="70">На кафедру бухгалтерского учета и статистики
-                требуется...</a>
-            </li>
+						</div>
+						<div class="swiper-slide bg-color-1">
+							<div class="faculty-swiper__wrapper">
+								<h3 class="faculty-swiper__title swiper-no-swiping">
+									Кафедра финансов и кредита
+								</h3>
+								<div class="faculty-swiper__info swiper-no-swiping">
+									<p><span>Email:</span> kaf-fin@gief.ru</p>
+									<p><span>Телефон:</span> +7 (813) 71 42-009, доб. 143</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper__controls faculty-swiper__controls">
+						<button class="faculty-swiper__swiper-button-prev swiper-btn _prev">
+							<svg width="47" height="47" viewBox="0 0 47 47" fill="none"
+								 xmlns="http://www.w3.org/2000/svg">
+								<path
+										d="M41.7 0.800049H5.69995C2.93853 0.800049 0.699951 3.03862 0.699951 5.80005V41.8C0.699951 44.5615 2.93853 46.8 5.69995 46.8H41.7C44.4614 46.8 46.7 44.5615 46.7 41.8V5.80005C46.7 3.03863 44.4614 0.800049 41.7 0.800049Z"
+										fill="#AFCDFB"/>
+								<path
+										d="M27.8 35.2C28.8 34.2 29.9 33.1 31 32C28.3 29.3 25.6 26.5999 22.9 23.8999C25.6 21.1999 28.3 18.5 31 15.8C29.9 14.7 28.8 13.6001 27.8 12.6001C24 16.4001 20.3 20.0999 16.5 23.8999C20.2 27.5999 24 31.4 27.8 35.2Z"
+										fill="white"/>
+							</svg>
+						</button>
+						<button class="faculty-swiper__swiper-button-next swiper-btn _next">
+							<svg width="47" height="47" viewBox="0 0 47 47" fill="none"
+								 xmlns="http://www.w3.org/2000/svg">
+								<path
+										d="M41.8 0.800049H5.80005C3.03863 0.800049 0.800049 3.03862 0.800049 5.80005V41.8C0.800049 44.5615 3.03862 46.8 5.80005 46.8H41.8C44.5615 46.8 46.8 44.5615 46.8 41.8V5.80005C46.8 3.03863 44.5615 0.800049 41.8 0.800049Z"
+										fill="#AFCDFB"/>
+								<path
+										d="M19.7 35.2C18.7 34.2 17.6 33.1 16.5 32C19.2 29.3 21.9 26.5999 24.6 23.8999C21.9 21.1999 19.2 18.5 16.5 15.8C17.6 14.7 18.7 13.6001 19.7 12.6001C23.5 16.4001 27.2 20.0999 31 23.8999C27.3 27.5999 23.5 31.4 19.7 35.2Z"
+										fill="white"/>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<svg class="word _e" width="129" height="221" viewBox="0 0 129 221" fill="none"
+					 xmlns="http://www.w3.org/2000/svg">
+					<path
+							d="M64.7 221C42 221 25.3 216.1 15.3 206.5C5.2 196.9 0.0999985 180.3 0.0999985 157.2V138.5H57.3V173.2C57.3 183 61.4 184.1 64.4 184.1C68.8 184.1 69.9 182.2 70.2 180.6C70.7 178.4 71.3 172.4 71.3 156.6V123.2H40.5V88.2H71.3V53.7C71.3 45.5 70.6 41.7 70.1 40C69.7 38.9 68.8 37.3 65 37.3C61.4 37.3 57.2 38.5 57.2 48V74.6001H0V54.5C0 34 4.9 19.6999 14.4 11.8999C23.9 4.2999 40.3 0.399902 63.2 0.399902C84.4 0.399902 100.7 5.10005 111.7 14.3C122.8 23.6 128.4 37.4 128.4 55.2V159.2C128.4 180.3 123.1 196 112.6 205.9C102.3 216 86.2 221 64.7 221Z"
+							fill="#EFF5FE"/>
+				</svg>
+			</div>
+		</section>
+		<section class="section ads">
+			<div class="container">
+				<div class="ads__categories">
+					<ul class="ads__categories-list">
+						<li>
+							<a href="#">
+								<div class="ads__categories-img">
+									<img src="../img/ads-category1.jpg" alt="coronavirus">
+								</div>
+								<p>Коронавирус</p>
+							</a>
+						</li>
 
-          </ul>
-          <a href="#" class="ads__aside-link">
-            Все объявления
-            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M23.8999 0.5H3.8999C2.24305 0.5 0.899902 1.84315 0.899902 3.5V23.5C0.899902 25.1569 2.24305 26.5 3.8999 26.5H23.8999C25.5568 26.5 26.8999 25.1569 26.8999 23.5V3.5C26.8999 1.84315 25.5568 0.5 23.8999 0.5Z"
-                fill="#AFCDFB"/>
-              <path
-                d="M11.5997 20C10.9997 19.4 10.3998 18.8 9.7998 18.2C11.3998 16.6 12.8998 15.1 14.4998 13.5C12.8998 11.9 11.3998 10.4 9.7998 8.80005C10.3998 8.20005 11.0997 7.4999 11.6997 6.8999C13.8997 9.0999 15.9997 11.1999 18.1997 13.3999C15.8997 15.5999 13.7997 17.8 11.5997 20Z"
-                fill="white"/>
-            </svg>
-          </a>
-        </div>
-        <svg class="word _f" width="216" height="226" viewBox="0 0 216 226" fill="none"
-             xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M212.3 96.7L211.7 93.1001C209.2 79.3001 206.8 69.2999 204.3 63.3999C200.9 54.9999 195.4 47.7999 188.1 41.8999C176.9 32.9999 158 30.8 131.9 35.5C130.2 35.8 127.7 36.2001 124.2 36.6001L117.8 0.899902L59.0998 11.3999L65.4998 47.1001C62.7998 47.8001 60.5998 48.3 59.0998 48.5C33.0998 53.2 16.0998 61.7 8.49984 74C3.69984 82 0.999789 90.7 0.699789 99.8C0.499789 106.2 1.59981 116.5 4.09981 130.2L4.69979 133.8C7.19979 147.6 9.59981 157.6 12.0998 163.5C15.4998 171.9 20.9999 179.1 28.2999 185C39.7999 194.1 58.6998 196.4 84.6998 191.8L91.1998 190.6L97.3999 225.4L156.1 214.9L149.9 180.1L157.5 178.7C183.4 174.1 200.3 165.4 207.9 152.8C212.7 144.8 215.4 136.1 215.7 127C215.9 120.8 214.8 110.5 212.3 96.7Z"
-            fill="#EFF5FE"/>
-          <path
-            d="M147.6 146.9L140.1 148.2L126.1 69.9L133.6 68.5001C138.4 67.6001 142.9 69.4001 147 73.7001C150.8 77.8001 153.5 83.7001 154.8 91.2001L159.6 118.3C160.9 125.7 160.5 132.1 158.3 137.3C156.1 142.8 152.5 146 147.6 146.9Z"
-            fill="white"/>
-          <path
-            d="M89.3 157.3L82.8001 158.5C78.0001 159.4 73.6 157.6 69.5 153.3C65.6 149.2 63 143.3 61.7 135.9L56.9 108.8C55.6 101.3 56 94.8001 58.2 89.6001C60.5 84.1001 64.1001 80.9001 68.8001 80.1001L75.3001 78.8999L89.3 157.3Z"
-            fill="white"/>
-        </svg>
-      </div>
-    </section>
-    <section class="section sponsors-slider">
-      <div class="container">
-        <h2 class="sponsors-slider__title">
-          При поддержке
-        </h2>
-        <div class="swiper sponsors-swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="sponsors-swiper__img">
-                <a href="#">
-                  <img src="../img/sponsors-slide1.jpg"
-                       alt="sponsors-slide">
-                </a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="sponsors-swiper__img">
-                <a href="#">
-                  <img src="../img/sponsors-slide2.jpg"
-                       alt="sponsors-slide">
-                </a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="sponsors-swiper__img">
-                <a href="#">
-                  <img src="../img/sponsors-slide3.jpg"
-                       alt="sponsors-slide">
-                </a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="sponsors-swiper__img">
-                <a href="#">
-                  <img src="../img/sponsors-slide4.jpg"
-                       alt="sponsors-slide">
-                </a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="sponsors-swiper__img">
-                <a href="#">
-                  <img src="../img/sponsors-slide5.jpg"
-                       alt="sponsors-slide">
-                </a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="sponsors-swiper__img">
-                <a href="#">
-                  <img src="../img/sponsors-slide6.jpg"
-                       alt="sponsors-slide">
-                </a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="sponsors-swiper__img">
-                <a href="#">
-                  <img src="../img/sponsors-slide7.jpg"
-                       alt="sponsors-slide">
-                </a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="sponsors-swiper__img">
-                <a href="#">
-                  <img src="../img/sponsors-slide8.jpg"
-                       alt="sponsors-slide">
-                </a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="sponsors-swiper__img">
-                <a href="#">
-                  <img src="../img/sponsors-slide9.jpg"
-                       alt="sponsors-slide">
-                </a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="sponsors-swiper__img">
-                <a href="#">
-                  <img src="../img/sponsors-slide10.jpg"
-                       alt="sponsors-slide">
-                </a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="sponsors-swiper__img">
-                <a href="#">
-                  <img src="../img/sponsors-slide11.jpg"
-                       alt="sponsors-slide">
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="swiper__controls sponsors-swiper__controls">
-            <button class="sponsors-swiper__swiper-button-prev swiper-btn _prev">
-              <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M41.7 0.199951H5.69995C2.93853 0.199951 0.699951 2.43853 0.699951 5.19995V41.2C0.699951 43.9614 2.93853 46.2 5.69995 46.2H41.7C44.4614 46.2 46.7 43.9614 46.7 41.2V5.19995C46.7 2.43853 44.4614 0.199951 41.7 0.199951Z"
-                  fill="#AFCDFB"/>
-                <path
-                  d="M27.8 34.6001C28.8 33.6001 29.9 32.4999 31 31.3999C28.3 28.6999 25.6 26 22.9 23.3C25.6 20.6 28.3 17.9 31 15.2C29.9 14.1 28.8 13 27.8 12C24 15.8 20.3 19.5 16.5 23.3C20.2 27 24 30.8001 27.8 34.6001Z"
-                  fill="white"/>
-              </svg>
+						<li>
+							<a href="#">
+								<div class="ads__categories-img">
+									<img src="../img/ads-category2.jpg" alt="anti-corruption">
+								</div>
+								<p>Антикоррупция</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="ads__categories-img">
+									<img src="../img/ads-category3.jpg" alt="anti-terror">
+								</div>
+								<p>Антитеррор</p>
+							</a>
+						</li>
+					</ul>
+					<ul class="ads__categories-list">
+						<li>
+							<a href="#">
+								<div class="ads__categories-img">
+									<img src="../img/ads-category4.jpg" alt="employment">
+								</div>
+								<p>Трудоустройство</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="ads__categories-img">
+									<img src="../img/ads-category5.jpg" alt="hostel">
+								</div>
+								<p>Общежитие</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="ads__categories-img">
+									<img src="../img/ads-category6.jpg" alt="library">
+								</div>
+								<p>Библиотека</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="ads__aside">
+					<h3 class="ads__aside-title">Объявления</h3>
+					<ul class="ads__aside-list">
+						<li>
+							<h4>26 авг, 2020</h4>
+							<a href="#" data-shear="70">На кафедру бухгалтерского учета и статистики
+								требуется lorem bla-bla
+							</a>
+						</li>
+						<li>
+							<h4>26 авг, 2020</h4>
+							<a href="#" data-shear="70">На кафедру бухгалтерского учета и статистики
+								требуется...
+							</a>
+						</li>
+						<li>
+							<h4>26 авг, 2020</h4>
+							<a href="#" data-shear="70">На кафедру бухгалтерского учета и статистики
+								требуется...
+							</a>
+						</li>
+						<li>
+							<h4>26 авг, 2020</h4>
+							<a href="#" data-shear="70">На кафедру бухгалтерского учета и статистики
+								требуется...
+							</a>
+						</li>
 
-            </button>
-            <button class="sponsors-swiper__swiper-button-next swiper-btn _next">
-              <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M41.8 0.199951H5.80005C3.03863 0.199951 0.800049 2.43853 0.800049 5.19995V41.2C0.800049 43.9614 3.03862 46.2 5.80005 46.2H41.8C44.5615 46.2 46.8 43.9614 46.8 41.2V5.19995C46.8 2.43853 44.5615 0.199951 41.8 0.199951Z"
-                  fill="#AFCDFB"/>
-                <path
-                  d="M19.7 34.6001C18.7 33.6001 17.6 32.4999 16.5 31.3999C19.2 28.6999 21.9 26 24.6 23.3C21.9 20.6 19.2 17.9 16.5 15.2C17.6 14.1 18.7 13 19.7 12C23.5 15.8 27.2 19.5 31 23.3C27.3 27 23.5 30.8001 19.7 34.6001Z"
-                  fill="white"/>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <svg class="word _p" width="175" height="228" viewBox="0 0 175 228" fill="none"
-             xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M116.1 227.3L63.5 211.3L109.4 60.5L98.5999 57.3L52.8 208L0.199951 192L58.5 0.100098L174.5 35.3999L116.1 227.3Z"
-            fill="#EFF5FE"/>
-        </svg>
+					</ul>
+					<a href="#" class="ads__aside-link">
+						Все объявления
+						<svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+									d="M23.8999 0.5H3.8999C2.24305 0.5 0.899902 1.84315 0.899902 3.5V23.5C0.899902 25.1569 2.24305 26.5 3.8999 26.5H23.8999C25.5568 26.5 26.8999 25.1569 26.8999 23.5V3.5C26.8999 1.84315 25.5568 0.5 23.8999 0.5Z"
+									fill="#AFCDFB"/>
+							<path
+									d="M11.5997 20C10.9997 19.4 10.3998 18.8 9.7998 18.2C11.3998 16.6 12.8998 15.1 14.4998 13.5C12.8998 11.9 11.3998 10.4 9.7998 8.80005C10.3998 8.20005 11.0997 7.4999 11.6997 6.8999C13.8997 9.0999 15.9997 11.1999 18.1997 13.3999C15.8997 15.5999 13.7997 17.8 11.5997 20Z"
+									fill="white"/>
+						</svg>
+					</a>
+				</div>
+				<svg class="word _f" width="216" height="226" viewBox="0 0 216 226" fill="none"
+					 xmlns="http://www.w3.org/2000/svg">
+					<path
+							d="M212.3 96.7L211.7 93.1001C209.2 79.3001 206.8 69.2999 204.3 63.3999C200.9 54.9999 195.4 47.7999 188.1 41.8999C176.9 32.9999 158 30.8 131.9 35.5C130.2 35.8 127.7 36.2001 124.2 36.6001L117.8 0.899902L59.0998 11.3999L65.4998 47.1001C62.7998 47.8001 60.5998 48.3 59.0998 48.5C33.0998 53.2 16.0998 61.7 8.49984 74C3.69984 82 0.999789 90.7 0.699789 99.8C0.499789 106.2 1.59981 116.5 4.09981 130.2L4.69979 133.8C7.19979 147.6 9.59981 157.6 12.0998 163.5C15.4998 171.9 20.9999 179.1 28.2999 185C39.7999 194.1 58.6998 196.4 84.6998 191.8L91.1998 190.6L97.3999 225.4L156.1 214.9L149.9 180.1L157.5 178.7C183.4 174.1 200.3 165.4 207.9 152.8C212.7 144.8 215.4 136.1 215.7 127C215.9 120.8 214.8 110.5 212.3 96.7Z"
+							fill="#EFF5FE"/>
+					<path
+							d="M147.6 146.9L140.1 148.2L126.1 69.9L133.6 68.5001C138.4 67.6001 142.9 69.4001 147 73.7001C150.8 77.8001 153.5 83.7001 154.8 91.2001L159.6 118.3C160.9 125.7 160.5 132.1 158.3 137.3C156.1 142.8 152.5 146 147.6 146.9Z"
+							fill="white"/>
+					<path
+							d="M89.3 157.3L82.8001 158.5C78.0001 159.4 73.6 157.6 69.5 153.3C65.6 149.2 63 143.3 61.7 135.9L56.9 108.8C55.6 101.3 56 94.8001 58.2 89.6001C60.5 84.1001 64.1001 80.9001 68.8001 80.1001L75.3001 78.8999L89.3 157.3Z"
+							fill="white"/>
+				</svg>
+			</div>
+		</section>
+		<section class="section sponsors-slider">
+			<div class="container">
+				<h2 class="sponsors-slider__title">
+					При поддержке
+				</h2>
+				<div class="swiper sponsors-swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="sponsors-swiper__img">
+								<a href="#">
+									<img src="../img/sponsors-slide1.jpg"
+										 alt="sponsors-slide">
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="sponsors-swiper__img">
+								<a href="#">
+									<img src="../img/sponsors-slide2.jpg"
+										 alt="sponsors-slide">
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="sponsors-swiper__img">
+								<a href="#">
+									<img src="../img/sponsors-slide3.jpg"
+										 alt="sponsors-slide">
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="sponsors-swiper__img">
+								<a href="#">
+									<img src="../img/sponsors-slide4.jpg"
+										 alt="sponsors-slide">
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="sponsors-swiper__img">
+								<a href="#">
+									<img src="../img/sponsors-slide5.jpg"
+										 alt="sponsors-slide">
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="sponsors-swiper__img">
+								<a href="#">
+									<img src="../img/sponsors-slide6.jpg"
+										 alt="sponsors-slide">
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="sponsors-swiper__img">
+								<a href="#">
+									<img src="../img/sponsors-slide7.jpg"
+										 alt="sponsors-slide">
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="sponsors-swiper__img">
+								<a href="#">
+									<img src="../img/sponsors-slide8.jpg"
+										 alt="sponsors-slide">
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="sponsors-swiper__img">
+								<a href="#">
+									<img src="../img/sponsors-slide9.jpg"
+										 alt="sponsors-slide">
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="sponsors-swiper__img">
+								<a href="#">
+									<img src="../img/sponsors-slide10.jpg"
+										 alt="sponsors-slide">
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="sponsors-swiper__img">
+								<a href="#">
+									<img src="../img/sponsors-slide11.jpg"
+										 alt="sponsors-slide">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper__controls sponsors-swiper__controls">
+						<button class="sponsors-swiper__swiper-button-prev swiper-btn _prev">
+							<svg width="47" height="47" viewBox="0 0 47 47" fill="none"
+								 xmlns="http://www.w3.org/2000/svg">
+								<path
+										d="M41.7 0.199951H5.69995C2.93853 0.199951 0.699951 2.43853 0.699951 5.19995V41.2C0.699951 43.9614 2.93853 46.2 5.69995 46.2H41.7C44.4614 46.2 46.7 43.9614 46.7 41.2V5.19995C46.7 2.43853 44.4614 0.199951 41.7 0.199951Z"
+										fill="#AFCDFB"/>
+								<path
+										d="M27.8 34.6001C28.8 33.6001 29.9 32.4999 31 31.3999C28.3 28.6999 25.6 26 22.9 23.3C25.6 20.6 28.3 17.9 31 15.2C29.9 14.1 28.8 13 27.8 12C24 15.8 20.3 19.5 16.5 23.3C20.2 27 24 30.8001 27.8 34.6001Z"
+										fill="white"/>
+							</svg>
 
-      </div>
-    </section>
-    <section class="section feedback">
-      <div class="container">
-        <div class="feedback__inner">
-          <h2 class="feedback__title">Обратная связь</h2>
-          <form class="feedback__form" action="#">
-            <div class="feedback__form-fields">
-              <div class="feedback__form-left">
-                <div class="feedback__field-wrapper">
-                  <input class="feedback__field" type="text"
-                         name="first_name">
-                  <label class="feedback__field-label">Имя</label>
-                </div>
-                <div class="feedback__field-wrapper">
-                  <input class="feedback__field feedback__field-phone phone-input"
-                         type="text" name="phone" required>
-                  <label class="feedback__field-label">Моб. телефон</label>
-                </div>
-                <div class="feedback__field-wrapper">
-                  <input class="feedback__field" type="email"
-                         name="email" required>
-                  <label class="feedback__field-label">E-mail</label>
-                </div>
+						</button>
+						<button class="sponsors-swiper__swiper-button-next swiper-btn _next">
+							<svg width="47" height="47" viewBox="0 0 47 47" fill="none"
+								 xmlns="http://www.w3.org/2000/svg">
+								<path
+										d="M41.8 0.199951H5.80005C3.03863 0.199951 0.800049 2.43853 0.800049 5.19995V41.2C0.800049 43.9614 3.03862 46.2 5.80005 46.2H41.8C44.5615 46.2 46.8 43.9614 46.8 41.2V5.19995C46.8 2.43853 44.5615 0.199951 41.8 0.199951Z"
+										fill="#AFCDFB"/>
+								<path
+										d="M19.7 34.6001C18.7 33.6001 17.6 32.4999 16.5 31.3999C19.2 28.6999 21.9 26 24.6 23.3C21.9 20.6 19.2 17.9 16.5 15.2C17.6 14.1 18.7 13 19.7 12C23.5 15.8 27.2 19.5 31 23.3C27.3 27 23.5 30.8001 19.7 34.6001Z"
+										fill="white"/>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<svg class="word _p" width="175" height="228" viewBox="0 0 175 228" fill="none"
+					 xmlns="http://www.w3.org/2000/svg">
+					<path
+							d="M116.1 227.3L63.5 211.3L109.4 60.5L98.5999 57.3L52.8 208L0.199951 192L58.5 0.100098L174.5 35.3999L116.1 227.3Z"
+							fill="#EFF5FE"/>
+				</svg>
 
-              </div>
-              <div class="feedback__form-right">
+			</div>
+		</section>
+		<section class="section feedback">
+			<div class="container">
+				<div class="feedback__inner">
+					<h2 class="feedback__title">Обратная связь</h2>
+					<form class="feedback__form" action="#">
+						<div class="feedback__form-fields">
+							<div class="feedback__form-left">
+								<div class="feedback__field-wrapper">
+									<input class="feedback__field" type="text"
+										   name="first_name">
+									<label class="feedback__field-label">Имя</label>
+								</div>
+								<div class="feedback__field-wrapper">
+									<input class="feedback__field feedback__field-phone phone-input"
+										   type="text" name="phone" required>
+									<label class="feedback__field-label">Моб. телефон</label>
+								</div>
+								<div class="feedback__field-wrapper">
+									<input class="feedback__field" type="email"
+										   name="email" required>
+									<label class="feedback__field-label">E-mail</label>
+								</div>
+
+							</div>
+							<div class="feedback__form-right">
                 <textarea class="feedback__field" placeholder="Сообщение"
-                          name="message"></textarea>
-              </div>
-            </div>
-            <div class="error-message feedback__error-message_fields"></div>
+						  name="message"></textarea>
+							</div>
+						</div>
+						<div class="error-message feedback__error-message_fields"></div>
 
-            <div class="feedback__form-agreement">
+						<div class="feedback__form-agreement">
 
-              <div class="feedback__agreement-checkbox">
+							<div class="feedback__agreement-checkbox">
 
-                <div
-                  class="feedback__checkbox-wrapper">
-                  <input type="checkbox" class="feedback__checkbox"
-                         id="agreementCheck"
-                         name="agreement_check"
-                  >
-                  <label for="agreementCheck"> Нажимая кнопку «Отправить»,
-                    я даю свое согласие на обработку
-                    моих персональных данных, в соответствии с Федеральным
-                    законом от 27.07.2006 года №152-ФЗ «О персональных данных»,
-                    на условиях и для целей, определенных в Согласии на
-                    обработку персональных данных</label>
-                </div>
-                <p class="error-message feedback__error-message_agreement"></p>
-                <button class="btn">Отправить</button>
-              </div>
+								<div
+										class="feedback__checkbox-wrapper">
+									<input type="checkbox" class="feedback__checkbox"
+										   id="agreementCheck"
+										   name="agreement_check"
+									>
+									<label for="agreementCheck"> Нажимая кнопку «Отправить»,
+										я даю свое согласие на обработку
+										моих персональных данных, в соответствии с Федеральным
+										законом от 27.07.2006 года №152-ФЗ «О персональных данных»,
+										на условиях и для целей, определенных в Согласии на
+										обработку персональных данных</label>
+								</div>
+								<p class="error-message feedback__error-message_agreement"></p>
+								<button class="btn">Отправить</button>
+							</div>
 
-            </div>
+						</div>
 
-          </form>
-        </div>
-        <svg class="word _t" width="132" height="230" viewBox="0 0 132 230" fill="none"
-             xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M66.3002 229.9L7.40015 220.9L33.2001 51.8999L0.600098 47L7.70007 0.899902L131.5 19.8L124.4 65.8999L92.1001 60.8999L66.3002 229.9Z"
-            fill="#EFF5FE"/>
-        </svg>
+					</form>
+				</div>
+				<svg class="word _t" width="132" height="230" viewBox="0 0 132 230" fill="none"
+					 xmlns="http://www.w3.org/2000/svg">
+					<path
+							d="M66.3002 229.9L7.40015 220.9L33.2001 51.8999L0.600098 47L7.70007 0.899902L131.5 19.8L124.4 65.8999L92.1001 60.8999L66.3002 229.9Z"
+							fill="#EFF5FE"/>
+				</svg>
 
-      </div>
-    </section>
-  </main>
+			</div>
+		</section>
+	</main>
 
-  @include('partials/footer.html')
+	@include('partials/footer.html')
 </div>
 
 </body>
