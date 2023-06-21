@@ -1,3 +1,15 @@
+@media (max-width: 1500px) {
+  .home-page .media-center .container {
+    flex-direction: column;
+  }
+  .home-page .media-center__inner {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .home-page .media-center__content {
+    max-width: 100%;
+  }
+}
 @media (max-width: 1280px) {
   .home-page .media-center__photos {
     flex-wrap: wrap;
@@ -63,13 +75,8 @@
   .home-page .media-center .container {
     flex-direction: column;
   }
-  .home-page .media-center__inner {
-    margin-bottom: 20px;
-    padding: 40px 20px;
-  }
-  .home-page .media-center__content {
-    max-width: 100%;
-  }
+
+
   .home-page .media-center__link {
     font-size: 42px;
     line-height: 54px;
@@ -120,6 +127,8 @@
   .home-page .media-center__link {
     font-size: 32px;
     line-height: 40px;
+    top: 20px;
+    left: 20px;
   }
   .home-page .btn {
     margin: 0 auto;

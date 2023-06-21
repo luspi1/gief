@@ -1,3 +1,9 @@
+@media (min-width: 1920px) {
+  .header__slider-bg {
+    width: 1920px;
+  }
+}
+
 @media (max-width: 1500px) {
   .header__menu-item {
     max-width: 188px;
@@ -47,7 +53,7 @@
   }
   .header .visually-btn {
     margin-right: 0;
-    border-radius:  5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
   }
 
   .header__search {
@@ -157,7 +163,7 @@
   }
 
   .header__control-personal a span,
-  .header__search input{
+  .header__search input {
     display: none;
   }
   .header__control-personal a {
@@ -165,7 +171,7 @@
     margin-right: 15px;
   }
   .header__control-personal a svg,
-  .header__search-btn{
+  .header__search-btn {
     margin-right: 0;
   }
   .header__search {
@@ -174,7 +180,7 @@
     margin-right: 15px;
   }
   .header__burger-mobile,
-  .header__close-mobile,{
+  .header__close-mobile, {
     order: 3;
   }
 

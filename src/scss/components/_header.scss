@@ -471,7 +471,7 @@
     left: 50%;
     transform: translateX(-50%);
     top: 0;
-    width: 1920px;
+    width: 100%;
     display: none;
 
     &._active {
@@ -479,12 +479,37 @@
     }
 
     img {
+      height: 100%;
       object-position: center;
-      display: block;
-    }
+      display: flex;
+      margin: auto;
+      }
 
     .bg-swiper {
       height: 545px;
+
+      .swiper-button-next:after,
+      .swiper-button-prev:after {
+        display: none;
+      }
+
+      .bg-swiper-next, .bg-swiper-prev {
+        width: 46px;
+        height: 46px;
+        visibility: hidden;
+      }
+
+      &:hover {
+        .bg-swiper-next {
+          visibility: visible;
+        }
+      }
+
+      &:hover {
+        .bg-swiper-prev {
+          visibility: visible;
+        }
+      }
     }
   }
 }
