@@ -8,8 +8,11 @@
 <body class="page__body">
 
 <div class="site-container">
-  @include('partials/header.html')
-
+  @include('partials/header.html', {
+  'slider-bg': '_active',
+  'slider-caption': '_active',
+  'container-height' : '_active'
+  })
   <main class="main remote-education-page">
     <section class="section">
       <div class="container">
