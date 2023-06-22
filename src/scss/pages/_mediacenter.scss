@@ -1,6 +1,7 @@
 .mediacenter {
   padding-top: 30px;
   padding-bottom: 200px;
+
   h1 {
     margin-bottom: 28px;
     font-size: 26px;
@@ -18,7 +19,8 @@
   &__inner {
     display: flex;
     justify-content: space-between;
-    }
+    align-items: flex-start;
+  }
 
   &__content {
     margin-right: 38px;
@@ -32,33 +34,6 @@
         margin-bottom: 45px;
       }
 
-    }
-  }
-
-  &__list {
-    min-width: 300px;
-    width: 300px;
-    height: 100%;
-    padding: 22px 46px 24px 22px;
-    border-radius: 10px;
-    background: #EFF5FE;
-  }
-
-  &__list-item {
-    &:not(:last-child) {
-      margin-bottom: 12px;
-    }
-
-    a {
-      color: #0348B0;
-      font-size: 14px;
-      font-weight: 500;
-    }
-
-    &._active {
-      a {
-        color: #151616;
-      }
     }
   }
 

@@ -1,8 +1,14 @@
-@media(max-width: 992px){
+@media(max-width: 992px) {
   .mediacenter .mediacenter__inner {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
-  .mediacenter .mediacenter__list{
-    margin-bottom: 20px;
+
+
+  .mediacenter .main-sidebar {
+    margin-bottom: 50px;
+    width: 100%;
+    margin-left: 0;
+    order: -1;
   }
+
 }
