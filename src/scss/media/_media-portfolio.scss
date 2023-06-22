@@ -10,6 +10,13 @@
     flex-direction: column;
   }
 
+  .portfolio-page .main-sidebar{
+    margin-bottom: 20px;
+    margin-left: 0;
+    order: -1;
+    width: 100%;
+  }
+
   .portfolio-page .profile-menu {
     width: 100%;
     margin-right: 0;

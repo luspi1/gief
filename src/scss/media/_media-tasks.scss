@@ -26,13 +26,15 @@
     flex-direction: column;
   }
 
-  .tasks-page .profile-menu {
+  .tasks-page .tasks-page__inner {
     width: 100%;
-    display: flex;
-    justify-content: center;
   }
-  .tasks-page .profile-menu__list {
-    width: auto;
+
+  .tasks-page .main-sidebar{
+    margin-bottom: 20px;
+    margin-left: 0;
+    order: -1;
+    width: 100%;
   }
 
   .tasks-page .tasks-table {

@@ -16,54 +16,6 @@
   <main class="main professors-page">
     <section class="section">
       <div class="container">
-        <nav class="profile-menu">
-          <ul class="profile-menu__list">
-            <li class="profile-menu__list-item">
-              <a class="profile-menu__main-link" href="#">Объявления</a>
-            </li>
-            <li class="profile-menu__list-item">
-              <a class="profile-menu__main-link" href="profile.html">Профиль</a>
-            </li>
-            <li class="profile-menu__list-item">
-              <a class="profile-menu__main-link" href="edit-profile.html">Редактирование профиля</a>
-            </li>
-            <li class="profile-menu__list-item">
-              <a class="profile-menu__main-link" href="tasks.html">Учебная деятельность</a>
-              <ul class="profile-menu__submenu profile-menu__tasks-submenu">
-                <li>
-                  <a href="tasks.html">
-                    Задания
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    Задания на доработку
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="profile-menu__list-item">
-              <a class="profile-menu__main-link" href="portfolio.html">Портфолио</a>
-            </li>
-            <li class="profile-menu__list-item">
-              <a class="profile-menu__main-link" href="achievements.html">Достижения</a>
-              <ul class="profile-menu__submenu">
-                <li>
-                  <a href="#">
-                    Добавить достижение
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="profile-menu__list-item profile-menu_active">
-              <a class="profile-menu__main-link" href="professors.html">Преподаватели</a>
-            </li>
-            <li class="profile-menu__list-item">
-              <a class="profile-menu__main-link" href="#">Научная деятельность</a>
-            </li>
-          </ul>
-        </nav>
-
         <div class="professors-page__inner">
           <h2 class="professors-page__title">
             Преподаватели
@@ -71,19 +23,24 @@
           <ul class="flex-table professors-table">
 
             <li class="flex-table__row professors-table__inputs-row">
-              <div class="flex-table__cell professors-page__input-wrapper professors-table__cell-name">
+              <div
+                class="flex-table__cell professors-page__input-wrapper professors-table__cell-name">
                 <label>Фамилия, имя, отчество</label>
                 <input class="professors-page__input" name="professor_name">
               </div>
-              <div class="flex-table__cell professors-page__input-wrapper professors-table__cell-department">
+              <div
+                class="flex-table__cell professors-page__input-wrapper professors-table__cell-department">
                 <label>Кафедра</label>
-                <input class="professors-page__input" name="professor_department">
+                <input class="professors-page__input"
+                       name="professor_department">
               </div>
-              <div class="flex-table__cell professors-page__input-wrapper professors-table__cell-degree">
+              <div
+                class="flex-table__cell professors-page__input-wrapper professors-table__cell-degree">
                 <label>Ученая степень</label>
                 <input class="professors-page__input" name="professor_degree">
               </div>
-              <div class="flex-table__cell professors-page__input-wrapper professors-table__cell-rank">
+              <div
+                class="flex-table__cell professors-page__input-wrapper professors-table__cell-rank">
                 <label>Ученое звание</label>
                 <input class="professors-page__input" name="professor_rank">
               </div>
@@ -289,6 +246,38 @@
             </li>
           </ul>
         </div>
+        <nav class="main-sidebar">
+          <ul class="main-sidebar__list">
+            <li>
+              <a href="#">Объявления</a>
+            </li>
+            <li>
+              <a href="profile.html">Профиль</a>
+            </li>
+            <li>
+              <a href="edit-profile.html">Редактирование
+                профиля</a>
+            </li>
+            <li>
+              <a href="tasks.html">Учебная
+                деятельность</a>
+            </li>
+            <li>
+              <a
+                href="portfolio.html">Портфолио</a>
+            </li>
+            <li>
+              <a href="achievements.html">Достижения</a>
+            </li>
+            <li class="_active">
+              <a href="professors.html">Преподаватели</a>
+            </li>
+            <li>
+              <a href="#">Научная
+                деятельность</a>
+            </li>
+          </ul>
+        </nav>
 
       </div>
     </section>

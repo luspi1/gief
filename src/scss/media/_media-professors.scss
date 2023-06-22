@@ -21,10 +21,15 @@
     align-items: center;
   }
 
-  .professors-page .profile-menu {
+  .professors-page .main-sidebar{
+    margin-bottom: 20px;
+    margin-left: 0;
+    order: -1;
     width: 100%;
-    margin-bottom: 40px;
-    margin-right: 0;
+  }
+
+  .professors-page .professors-page__inner {
+    width: 100%;
   }
 
   .professors-page .professors-table__inputs-row {

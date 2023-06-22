@@ -9,6 +9,17 @@
     padding: 20px 0 350px;
   }
 
+  .achievements-page .achievements-page__inner {
+    width: 100%;
+  }
+
+  .achievements-page .main-sidebar{
+    margin-bottom: 20px;
+    margin-left: 0;
+    order: -1;
+    width: 100%;
+  }
+
   .achievements-page .container {
     flex-direction: column;
     display: flex;
