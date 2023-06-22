@@ -6,9 +6,10 @@
   border-top: 1px solid #DBDBDB;
   h1 {
     @include montserrat-semibold;
-    font-size: 30px;
+    color: #151616;
+    font-size: 26px;
     line-height: 37px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   &__date {
@@ -90,6 +91,7 @@
 
   &__content-text {
     flex-grow: 1;
+    font-size: 16px;
 
     p {
       margin-bottom: 25px;
@@ -97,7 +99,7 @@
   }
 
   &__news-link {
-    max-width: 200px;
+    max-width: 230px;
   }
 
 }

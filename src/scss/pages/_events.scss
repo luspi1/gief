@@ -7,7 +7,7 @@
 
   h1 {
     @include montserrat-semibold;
-    font-size: 30px;
+    font-size: 26px;
     line-height: 37px;
   }
 
@@ -28,6 +28,7 @@
           margin-right: 20px;
           width: 200px;
           height: 115px;
+          border-radius: 5px;
           @media (max-width: 550px) {
             margin-bottom: 20px;
           }
@@ -36,7 +37,7 @@
         h4 {
           @include montserrat-semibold;
           color: #000000;
-          font-size: 18px;
+          font-size: 20px;
           line-height: 22px;
           margin-bottom: 7px;
           @media (max-width: 550px) {

@@ -11,21 +11,12 @@
 
     h1 {
       @include montserrat-semibold;
-      font-size: 30px;
+      color: #151616;
+      font-size: 26px;
       line-height: 37px;
-      margin-right: 30px;
+      margin-right: 35px;
     }
 
-    select {
-      @include montserrat-medium;
-      font-size: 13px;
-      line-height: 16px;
-      letter-spacing: 0.05em;
-      border: 1px solid #C9C9C9;
-      padding: 12px 13px;
-      cursor: pointer;
-      width: 130px;
-    }
   }
 
   .news-page__inner {
@@ -61,6 +52,7 @@
           margin-right: 20px;
           width: 200px;
           height: 115px;
+          border-radius: 5px;
           @media (max-width: 550px) {
             margin-bottom: 20px;
           }
@@ -69,7 +61,7 @@
         h4 {
           @include montserrat-semibold;
           color: #000000;
-          font-size: 18px;
+          font-size: 20px;
           line-height: 22px;
           margin-bottom: 7px;
           @media (max-width: 550px) {
@@ -110,8 +102,9 @@
       @include montserrat-medium;
       font-size: 15px;
       line-height: 18px;
-      color: #000000;
-      background: #F2F2F2;
+      color: #151616;
+      border-radius: 50px;
+      background: #EFF5FE;
     }
 
 

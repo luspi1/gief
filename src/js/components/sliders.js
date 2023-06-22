@@ -84,7 +84,7 @@ const swiperSponsors = new Swiper('.sponsors-swiper', {
 
     slidesPerView: 1,
     spaceBetween: 30,
-    breakpoints: {
+     breakpoints: {
 
         600: {
             slidesPerView: 2,

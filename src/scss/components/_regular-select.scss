@@ -1,0 +1,35 @@
+.regular-select {
+  width: 130px;
+  position: relative;
+
+  svg {
+    position: absolute;
+    right: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 7px;
+  }
+
+  select {
+    @include montserrat-medium;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    border: 1px solid #C9C9C9;
+    padding: 12px 13px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 50px;
+    outline: none;
+    &:focus {
+      border: 1px solid $main-blue;
+    }
+    &:focus + svg {
+      top: 42%;
+      transform: rotate(180deg);
+    }
+  }
+
+
+}

@@ -3,6 +3,8 @@
   font-size: 15px;
   line-height: 22px;
   color: $black;
+  border-top: 1px solid #DBDBDB;
+
   h1 {
     @include montserrat-semibold;
     margin-bottom: 23px;
@@ -29,12 +31,12 @@
     flex-grow: 1;
   }
 
-   aside {
-     width: 300px;
+  aside {
+    width: 300px;
     min-width: 300px;
-    padding: 23px 20px 60px 20px;
-     background: #EFF5FE;
-     border-radius: 10px;
+    padding: 23px 20px 40px 20px;
+    background: #EFF5FE;
+    border-radius: 10px;
     @media (max-width: 768px) {
       order: -1;
       margin-bottom: 30px;
@@ -61,7 +63,7 @@
       a {
         font-size: 14px;
         line-height: 17px;
-        color: #000000;
+        color: #151616;
       }
 
       &._active {

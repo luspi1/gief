@@ -103,14 +103,15 @@ select::-ms-expand {
   display: flex;
   align-items: center;
   justify-content: center;
-  @include montserrat-medium;
-  font-size: 15px;
+  @include montserrat-semibold;
+  font-size: 18px;
   line-height: 22px;
-  padding: 11px 25px;
+  padding: 11px 50px;
   transition: all .3s;
+  border-radius: 50px;
   color: $white;
   border: none;
-  background: $main-blue;
+  background: #AFCDFB;
 
 }
 
