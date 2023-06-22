@@ -18,7 +18,7 @@
   &__info-wrapper {
     display: flex;
     justify-content: space-between;
-
+  align-items: center;
   }
 
   &__logo {
@@ -350,7 +350,8 @@
       &__description {
         display: flex;
         align-items: center;
-        max-width: calc(100% - 240px);
+        min-width: 0;
+        width: calc(100% - 240px);
         height: 100%;
         padding-left: 60px;
         font-weight: 600;
@@ -358,8 +359,11 @@
         line-height: 32px;
         color: #AFCDFB;
         position: relative;
-        white-space: nowrap;
-        overflow: hidden;
+       span {
+         text-overflow: ellipsis;
+         white-space: nowrap;
+         overflow: hidden;
+       }
 
         &::before {
           content: "";
