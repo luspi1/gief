@@ -326,11 +326,12 @@
       height: 100%;
       padding: 0 15px;
 
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+      }
+
       &__btn {
-        position: absolute;
-        right: 15px;
-        top: 50%;
-        transform: translateY(-50%);
         width: 155px;
         height: 30px;
         display: flex;
@@ -343,20 +344,27 @@
         line-height: 17px;
         color: #0348B0;
         border: 1px solid #FFFFFF;
-        z-index: 5;
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
 
       &__description {
         display: flex;
         align-items: center;
-        min-width: 0;
-        width: calc(100% - 240px);
         height: 100%;
         font-weight: 600;
         font-size: 26px;
         line-height: 32px;
         color: #AFCDFB;
         position: relative;
+        flex-grow: 1;
+        pointer-events: none;
+        z-index: 999;
+        @media (max-width: 768px) {
+          pointer-events: all;
+          width: 100%;
+        }
 
         span {
           text-overflow: ellipsis;
