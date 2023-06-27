@@ -344,6 +344,9 @@
         color: #0348B0;
         border: 1px solid #FFFFFF;
         z-index: 5;
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
 
       &__description {

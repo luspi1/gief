@@ -124,6 +124,10 @@
     flex-direction: column;
   }
 
+  .header__slider-caption .caption-swiper__description {
+    width: 100%;
+  }
+
   .header__info-wrapper {
     align-items: center;
   }
@@ -287,8 +291,5 @@
   .header__slider-caption .caption-swiper__btn {
     width: 135px;
     right: 5px;
-  }
-  .header__slider-caption .caption-swiper__description {
-    width: calc(100% - 190px);
   }
 }
