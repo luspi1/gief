@@ -241,10 +241,6 @@
     padding-right: 22px;
   }
 
-  .header__menu-item:last-child svg {
-    display: block;
-  }
-
   .header__menu-item:hover {
 
     .header__menu-link {
@@ -261,13 +257,10 @@
   }
   .header__menu-item:not(:last-child) {
     margin-right: 0;
-
   }
 
   .header__menu-item svg {
-    position: static;
-    transform: translateY(0) rotate(270deg);
-
+    display: none;
   }
   .header__menu-item svg path {
     fill: #FFFFFF;
