@@ -97,6 +97,7 @@
 }
 
 @media (max-width: 850px) {
+
   .header__menu-item:nth-child(4) {
     .header__dropdown-menu {
       right: initial;
@@ -151,8 +152,9 @@
   }
 
   .header__slider-bg .bg-swiper {
-    height: 300px;
+    height: 215px;
   }
+
   .header__slider-caption._active {
     order: 4;
   }
@@ -284,5 +286,8 @@
   .header__slider-caption .caption-swiper__btn {
     width: 135px;
     right: 5px;
+  }
+  .header__slider-bg .bg-swiper {
+    height: 150px;
   }
 }
