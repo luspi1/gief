@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+'title': 'Новости'
+})
+
+<body class="page__body">
+
+<div class="site-container">
+  @include('partials/header.html', {
+  'slider-bg': '_active',
+  'slider-caption': '_active',
+  'container-height' : '_active'
+  })
+  <main class="main photo-galleries-page">
+    <section class="section">
+      <div class="container">
+        <div class="bread-crumbs">
+          <a href="index.html" class="_active">ГИЭФПТ</a> /
+          <span>Фотогалереи</span>
+        </div>
+        <div class="photo-galleries-page__top">
+          <h1>Фотогалереи института</h1>
+          <div class="custom-select">
+            <select name="period_years">
+              <option value="all">ВСЕ ГОДЫ</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+            </select>
+          </div>
+          <div class="custom-select">
+            <select name="period_month">
+              <option value="all">ВСЕ МЕСЯЦЫ</option>
+              <option value="1">ЯНВАРЬ</option>
+              <option value="2">ФЕВРАЛЬ</option>
+              <option value="3">МАРТ</option>
+              <option value="4">АПРЕЛЬ</option>
+            </select>
+          </div>
+        </div>
+        <div class="photo-galleries-page__inner">
+          <ul class="photo-galleries-list">
+            <li class="photo-galleries-list__item">
+              <div class="img-wrapper">
+                <img src="./img/gallery-1.jpg" alt="1-pic">
+              </div>
+              <a href="#">Студенты ГИЭФПТ приняли участие в работе конференции</a>
+              <p>3 марта 2023</p>
+            </li>
+            <li class="photo-galleries-list__item">
+              <div class="img-wrapper">
+                <img src="./img/gallery-2.jpg" alt="2-pic">
+              </div>
+              <a href="#">Институт посетили депутаты Законодательного собрания Ленинградской области
+                Олег Петров и Александр Русских</a>
+              <p>2 марта 2023</p>
+            </li>
+            <li class="photo-galleries-list__item">
+              <div class="img-wrapper">
+                <img src="./img/gallery-3.jpg" alt="3-pic">
+              </div>
+              <a href="#">Агропромышленный факультет ГИЭФПТ. Конкурс «Студент года — 2023»</a>
+              <p>20 февраля 2023</p>
+            </li>
+            <li class="photo-galleries-list__item">
+              <div class="img-wrapper">
+                <img src="./img/gallery-4.jpg" alt="4-pic">
+              </div>
+              <a href="#">На площадках ГИЭФПТ прошел карьерный форум «Путь к успеху!»</a>
+              <p>17 февраля 2023</p>
+            </li>
+            <li class="photo-galleries-list__item">
+              <div class="img-wrapper">
+                <img src="./img/gallery-5.jpg" alt="5-pic">
+              </div>
+              <a href="#">Практическое занятие «Авторский хлеб»</a>
+              <p>3 февраля 2023</p>
+            </li>
+            <li class="photo-galleries-list__item">
+              <div class="img-wrapper">
+                <img src="./img/gallery-6.jpg" alt="6-pic">
+              </div>
+              <a href="#">Десертомания</a>
+              <p>1 февраля 2023</p>
+            </li>
+            <li class="photo-galleries-list__item">
+              <div class="img-wrapper">
+                <img src="./img/gallery-7.jpg" alt="7-pic">
+              </div>
+              <a href="#">Студенческий квиз</a>
+              <p>25 января 2023</p>
+            </li>
+            <li class="photo-galleries-list__item">
+              <div class="img-wrapper">
+                <img src="./img/gallery-8.jpg" alt="8-pic">
+              </div>
+              <a href="#">Товарищеский волейбольный матч команд ГИЭФПТ и ЛГУ им. А.С. Пушкина</a>
+              <p>25 января 2023</p>
+            </li>
+            <li class="photo-galleries-list__item">
+              <div class="img-wrapper">
+                <img src="./img/gallery-9.jpg" alt="9-pic">
+              </div>
+              <a href="#">Библиотека ГИЭФПТ. Будни</a>
+              <p>24 января 2023</p>
+            </li>
+          </ul>
+          <div class="photo-galleries-tags">
+            <a class="_active" href="photo-galleries.html">Все фотогалереи</a>
+            <a href="#">Олимпиада</a>
+            <a href="#">Выставки</a>
+            <a href="#">Почетные гости</a>
+            <a href="#">Росмолодежь</a>
+            <a href="#">ВКМП</a>
+            <a href="#">НЛСК</a>
+            <a href="#">Наши награды</a>
+            <a href="#">Молодежная политика</a>
+            <a href="#">Наука</a>
+            <a href="#">Наши преподаватели</a>
+            <a href="#">Мывместе</a>
+            <a href="#">События</a>
+            <a href="#">Антикоррупция</a>
+            <a href="#">Анонс</a>
+            <a href="#">ФИП</a>
+            <a href="#">Колледж</a>
+          </div>
+        </div>
+        <a class="main-button" href="#">Показать еще</a>
+      </div>
+    </section>
+  </main>
+  @include('partials/footer.html')
+</div>
+
+</body>
+
+</html>

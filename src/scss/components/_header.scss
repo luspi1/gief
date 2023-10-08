@@ -165,7 +165,7 @@
   }
 
   &__menu {
-    padding: 43px 0 24px;
+    padding: 24px 0 24px;
 
     &._disable {
       display: none;
@@ -230,6 +230,9 @@
       right: 0;
       top: 50%;
       transform: translateY(-50%);
+      path {
+        fill: #000000;
+      }
     }
   }
 
@@ -313,7 +316,7 @@
   }
 
   &__slider-caption {
-    background-color: #0348B0;
+    background-color: #E31E24;
     height: 68px;
     display: none;
 
@@ -341,7 +344,7 @@
         font-weight: 600;
         font-size: 14px;
         line-height: 17px;
-        color: #0348B0;
+        color: #E31E24;
         border: 1px solid #FFFFFF;
         z-index: 5;
         @media (max-width: 768px) {
@@ -358,7 +361,7 @@
         font-weight: 600;
         font-size: 26px;
         line-height: 32px;
-        color: #AFCDFB;
+        color: #FFFFFF;
         position: relative;
 
         span {

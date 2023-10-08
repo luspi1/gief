@@ -1,6 +1,6 @@
 .footer {
   padding: 36px 0 33px;
-  background-color: #242F82;
+  background-color: #8D0A0E;
 
   &__top {
     display: flex;
@@ -33,7 +33,7 @@
     @include montserrat-regular;
     font-size: 13px;
     line-height: 18px;
-    color:  #9297C1;
+    color:  #ffffff;
 
   }
 
@@ -43,7 +43,7 @@
       font-size: 13px;
       line-height: 16px;
       text-decoration-line: underline;
-      color:  #9297C1;
+      color:  #ffffff;
     }
   }
 

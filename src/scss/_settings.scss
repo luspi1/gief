@@ -446,15 +446,7 @@ select::-ms-expand {
   text-overflow: ellipsis;
 }
 
-.bread-crumbs {
-  font-size: 12px;
-  line-height: 15px;
-  margin-bottom: 30px;
 
-  a {
-    color: $main-blue;
-  }
-}
 
 .main-subtitle {
   @include montserrat-semibold;
