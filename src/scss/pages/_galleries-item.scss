@@ -1,0 +1,29 @@
+.galleries-item-page {
+  padding: 30px 0 75px;
+  border-top: 1px solid #DBDBDB;
+
+  .bread-crumbs {
+    margin-bottom: 30px;
+  }
+
+  .main-button {
+    padding: 11px 0;
+    max-width: 225px;
+    background: #FBB6B2;
+  }
+
+  h1 {
+    color: #151616;
+    @include montserrat-semibold;
+    font-size: 26px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+  }
+
+  &__gallery {
+    margin-bottom: 80px;
+
+  }
+
+
+}

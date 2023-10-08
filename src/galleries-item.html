@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+'title': 'Новости'
+})
+
+<body class="page__body">
+
+<div class="site-container">
+  @include('partials/header.html', {
+  'slider-bg': '_active',
+  'slider-caption': '_active',
+  'container-height' : '_active'
+  })
+  <main class="main galleries-item-page">
+    <section class="section">
+      <div class="container">
+        <div class="bread-crumbs">
+          <a href="index.html">ГИЭФПТ</a> /
+          <a href="photo-galleries.html">Фотогалереи</a> /
+          <span>Библиотека ГИЭФПТ. Будни</span>
+        </div>
+        <h1>Библиотека ГИЭФПТ. Будни</h1>
+        <div class="galleries-item-page__gallery main-gallery">
+          <a href="img/gallery-item-1.jpg">
+            <img src="img/gallery-item-1.jpg"/>
+          </a>
+          <a href="img/gallery-item-2.jpg">
+            <img src="img/gallery-item-2.jpg"/>
+          </a>
+          <a href="img/gallery-item-3.jpg">
+            <img src="img/gallery-item-3.jpg"/>
+          </a>
+          <a href="img/gallery-item-4.jpg">
+            <img src="img/gallery-item-4.jpg"/>
+          </a>
+          <a href="img/gallery-item-5.jpg">
+            <img src="img/gallery-item-5.jpg"/>
+          </a>
+          <a href="img/gallery-item-6.jpg">
+            <img src="img/gallery-item-6.jpg"/>
+          </a>
+        </div>
+        <a class="main-button" href="#">Все галереи</a>
+      </div>
+    </section>
+  </main>
+  @include('partials/footer.html')
+</div>
+
+</body>
+
+</html>

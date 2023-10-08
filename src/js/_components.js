@@ -7,4 +7,5 @@ import './components/customDate'
 import './components/changeLinkSlider'
 import './components/burgerMenu'
 import './components/customSelect'
+import './components/galleryImg'
 
