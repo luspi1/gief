@@ -33,7 +33,7 @@
     @include montserrat-regular;
     font-size: 13px;
     line-height: 18px;
-    color:  #ffffff;
+    color: #ffffff;
 
   }
 
@@ -43,7 +43,7 @@
       font-size: 13px;
       line-height: 16px;
       text-decoration-line: underline;
-      color:  #ffffff;
+      color: #ffffff;
     }
   }
 
@@ -69,14 +69,17 @@
   .footer__bottom {
     padding: 15px 0 0;
   }
+
   &__bottom-item-mobile {
     max-width: 210px;
     display: none;
-   a {
-     display: block;
-     text-align: center;
-   }
+
+    a {
+      display: block;
+      text-align: center;
+    }
   }
+
   .footer__bottom-list {
     display: flex;
     justify-content: space-between;
@@ -114,6 +117,7 @@
     padding-left: 36px;
     color: #A1A2A2;
     position: relative;
+
     svg {
       opacity: 0.5;
       position: absolute;
@@ -124,12 +128,60 @@
 
   }
 
+  &__bottom-visually {
+    &:hover {
+      button {
+        color: #ffffff;
+      }
+
+      svg path {
+        fill: #ffffff;
+      }
+
+      svg {
+        opacity: 1;
+      }
+    }
+  }
+  .footer__bottom-item-contact {
+    &:hover {
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+
+  .footer__bottom-search {
+    &:hover {
+      a {
+        color: #ffffff;
+      }
+
+      svg path {
+        fill: #ffffff;
+      }
+    }
+
+  }
+
 }
+
 #footer__bottom-list-social-id {
   display: flex;
+
   li {
     &:not(:last-child) {
       margin-right: 30px;
+    }
+
+    &:hover {
+      span {
+        color: #ffffff;
+      }
+
+      svg path {
+        fill: #ffffff;
+      }
     }
   }
 }

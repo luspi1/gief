@@ -1,7 +1,5 @@
 import lightGallery from 'lightgallery';
 
-// Plugins
-import lgThumbnail from 'lightgallery/plugins/thumbnail'
 
 const galleries = document.querySelectorAll('.main-gallery')
 
@@ -11,7 +9,6 @@ if (galleries) {
 
   galleries.forEach(gallery => {
     lightGallery(gallery, {
-      plugins: [lgThumbnail],
       counter: false,
       download: false,
       thumbHeight: '150px',
